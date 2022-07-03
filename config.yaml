@@ -51,7 +51,7 @@ languages:
         main:
           - identifier: search
             name: 🔍搜索
-            url: search
+            url: /search
             weight: 1
           - identifier: home
             name: 🏠主页
@@ -59,11 +59,11 @@ languages:
             weight: 2
           - identifier: categories
             name: 🏠分类
-            url: categories
+            url: /categories
             weight: 3
           - identifier: posts
             name: 📚文章
-            url: posts
+            url: /posts
             weight: 4
           # - identifier: archives
           #   name: ⏱时间轴
