@@ -88,7 +88,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
+  post: true
   language:
 
 
@@ -135,7 +135,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -172,7 +172,7 @@ avatar:
   # Replace the default image and set the url here.
   url: /images/avatar.jpg #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -184,8 +184,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/nullUfull || fab fa-github
+  E-Mail: mailto:1737619321@qq.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -250,16 +250,18 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: true
+    enable: false
     another_day: true
   categories: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: true
-  item_text_post: true
-  item_text_total: false
+  separated_meta: true  # false会显示一行
+  item_text_post: true  # 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字
+  item_text_total: true # 底部footer是否显示字数统计属性文字
+  awl: 4                # 计算字数的一个设置,没设置过
+  wpm: 275              # 一分钟阅读的字数
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -364,9 +366,9 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
     style:
 
@@ -1002,3 +1004,5 @@ vendors:
 css: css
 js: js
 images: images
+
+save_scroll: false        # 自动保存每篇文章或页面上一次滚动的地方
