@@ -92,6 +92,13 @@ creative_commons:
   language:
 
 
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
