@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on FineSnow&#39;s Blog</title>
+    <link>/posts/tech/</link>
+    <description>Recent content in 技术 on FineSnow&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 29 May 2021 18:27:14 +0000</lastBuildDate><atom:link href="/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不错的技术文章</title>
+      <link>/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Sat, 29 May 2021 18:27:14 +0000</pubDate>
+      
+      <guid>/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</guid>
+      <description>kotlin Android-Redux-Intro [Improve Java to Kotlin code review 协程 Coroutines : First things first 如何优雅的取消协程 ？ Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消 [译] 如</description>
+    </item>
+    
+    <item>
+      <title>gradle.properties中定义变量</title>
+      <link>/posts/tech/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Thu, 29 Apr 2021 18:27:14 +0000</pubDate>
+      
+      <guid>/posts/tech/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</guid>
+      <description>gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
+    </item>
+    
+  </channel>
+</rss>
