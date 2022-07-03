@@ -56,10 +56,10 @@ languages:
           - identifier: home
             name: 🏠主页
             url: /
-            weight: 2
+            weight: 1
           - identifier: categories
             name: 🏠分类
-            url: categories/
+            url: categories
             weight: 2
           - identifier: posts
             name: 📚文章
