@@ -49,30 +49,30 @@ languages:
             url: posts/life
       menu:
         main:
-          # - identifier: search
-          #   name: 🔍搜索
-          #   url: search
-          #   weight: 1
+          - identifier: search
+            name: 🔍搜索
+            url: search
+            weight: 1
           - identifier: home
             name: 🏠主页
             url: /
-            weight: 1
+            weight: 2
           - identifier: categories
             name: 🏠分类
             url: categories
-            weight: 2
+            weight: 3
           - identifier: posts
             name: 📚文章
             url: posts
-            weight: 3
+            weight: 4
           # - identifier: archives
           #   name: ⏱时间轴
           #   url: archives/
           #   weight: 20
-          - identifier: tags
-            name: 🔖标签
-            url: tags
-            weight: 40
+          # - identifier: tags
+          #   name: 🔖标签
+          #   url: tags
+          #   weight: 40
 
 outputs:
     home:
