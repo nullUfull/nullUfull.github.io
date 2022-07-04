@@ -71,7 +71,7 @@ languages:
           #   weight: 20
           - identifier: tags
             name: 🔖标签
-            url: tags
+            url: /tags/
             weight: 40
 
 outputs:
