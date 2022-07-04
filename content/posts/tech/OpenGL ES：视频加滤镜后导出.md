@@ -3,13 +3,13 @@ title: "OpenGL ES：视频加滤镜后导出"
 date: 2019-08-04
 ---
 
-**视频加滤镜播放：**
+## 视频加滤镜播放
 
 MediaCodec解码——>OpenGL es——> GLSurfaceView
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190719111816383.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDEwMjM2,size_16,color_FFFFFF,t_70)
 
-**视频滤镜合成导出：**
+## 视频滤镜合成导出
 MediaCodec解码——>OpenGL es——> MediaCodec编码
 ![MediaCodec解码——>outputSurface——>OpenGL es——>inputSurface——>MediaCodec编码](https://img-blog.csdnimg.cn/20190719111604329.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDEwMjM2,size_16,color_FFFFFF,t_70)
 
@@ -20,7 +20,7 @@ MediaCodec解码——>OpenGL es——> MediaCodec编码
 
 
 
-## **注意：**
+## 注意
 
 1.	MediaMuxer写完数据需要手动停止并释放资源，否则写的视频文件没有文件尾会导致不能播放。同理解码器和编码器在用完以后也需要释放。
 2.	 一个线程对应一个OpenGL es 上下文，因此我们需要初始化俩个上下文环境，一个用于OpenGL着色器、顶点数据等渲染配置的初始化，一个用于在编解码线程中渲染。编解码线程中的上下文需要设置与OpenGL的初始化的线程共享上下文资源，包括纹理、FrameBuffer以及其他的Buffer等资源。
