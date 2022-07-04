@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>OpenGL ES：视频加滤镜后导出 | FineSnow&#39;s Blog</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="OpenGL ES">
 <meta name="description" content="视频加滤镜播放 MediaCodec解码——&gt;OpenGL es——&gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——&gt;Open">
 <meta name="author" content="FineSnow">
 <link rel="canonical" href="/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/">
@@ -102,7 +102,7 @@
   "name": "OpenGL ES：视频加滤镜后导出",
   "description": "视频加滤镜播放 MediaCodec解码——\u0026gt;OpenGL es——\u0026gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——\u0026gt;Open",
   "keywords": [
-    
+    "OpenGL ES"
   ],
   "articleBody": "视频加滤镜播放 MediaCodec解码——\u003eOpenGL es——\u003e GLSurfaceView\n视频滤镜合成导出 MediaCodec解码——\u003eOpenGL es——\u003e MediaCodec编码 大体来说就是OpenGL渲染后的输出不一样，需要使用编码器编码保存到本地，由于OpenGL ES并不负责窗口管理以及上下文管理，该职责由各个平台自行完成，没有了GLSurfaceView为我们创建的上下文环境，因此我们需要使用相关的API初始化OpenGL的上下文环境以支持后续的操作。\n主要流程还是上图所示，该功能的实现，需要对整体的流程有一定的了解同时也需要掌握MediaCodec的使用以及需要注意一些坑，否则可能会导致视频无法播放。\n注意 MediaMuxer写完数据需要手动停止并释放资源，否则写的视频文件没有文件尾会导致不能播放。同理解码器和编码器在用完以后也需要释放。 一个线程对应一个OpenGL es 上下文，因此我们需要初始化俩个上下文环境，一个用于OpenGL着色器、顶点数据等渲染配置的初始化，一个用于在编解码线程中渲染。编解码线程中的上下文需要设置与OpenGL的初始化的线程共享上下文资源，包括纹理、FrameBuffer以及其他的Buffer等资源。 渲染一次完成后，需要切换一次egl的frame buffer，EGL的工作模式是双缓存模式，内部拥有俩个frame buffer（fb），当EGL将一个fb渲染到屏幕上的时候，另一个就在后台等待OpenGL进行交换。 1 EGL14.eglSwapBuffers(mEglDisplay, mEglSurfaceEncoder); ",
   "wordCount" : "633",
@@ -325,6 +325,7 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="/tags/opengl-es/">OpenGL ES</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="/posts/life/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/">
@@ -342,7 +343,7 @@
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share OpenGL ES：视频加滤镜后导出 on twitter"
-        href="https://twitter.com/intent/tweet/?text=OpenGL%20ES%ef%bc%9a%e8%a7%86%e9%a2%91%e5%8a%a0%e6%bb%a4%e9%95%9c%e5%90%8e%e5%af%bc%e5%87%ba&amp;url=%2fposts%2ftech%2fopengl-es%25E8%25A7%2586%25E9%25A2%2591%25E5%258A%25A0%25E6%25BB%25A4%25E9%2595%259C%25E5%2590%258E%25E5%25AF%25BC%25E5%2587%25BA%2f&amp;hashtags=">
+        href="https://twitter.com/intent/tweet/?text=OpenGL%20ES%ef%bc%9a%e8%a7%86%e9%a2%91%e5%8a%a0%e6%bb%a4%e9%95%9c%e5%90%8e%e5%af%bc%e5%87%ba&amp;url=%2fposts%2ftech%2fopengl-es%25E8%25A7%2586%25E9%25A2%2591%25E5%258A%25A0%25E6%25BB%25A4%25E9%2595%259C%25E5%2590%258E%25E5%25AF%25BC%25E5%2587%25BA%2f&amp;hashtags=OpenGLES">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
