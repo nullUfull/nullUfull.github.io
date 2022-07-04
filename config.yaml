@@ -38,7 +38,7 @@ languages:
         enabled: true
         title: 一个自留地而已
         subtitle: "爱看书 爱看电影<br/>to be a better man<br/>"
-        imageUrl: "images/avatar.jpg" #图片放在static/img/Q.gif
+        imageUrl: "https://raw.githubusercontent.com/nullUfull/MyPicBed/main/avatar.jpg" #图片放在static/img/Q.gif
         imageTitle: 
         imageWidth: 150
         imageHeight: 150
@@ -120,7 +120,7 @@ params:
     label:
       text: "FineSnow's Blog"
       #icon: "img/Q.gif"
-      icon: "images/avatar.jpg"
+      icon: "https://raw.githubusercontent.com/nullUfull/MyPicBed/main/avatar.jpg"
       iconHeight: 35
 
     # analytics:  #谷歌分析
