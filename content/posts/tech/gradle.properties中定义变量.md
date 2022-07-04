@@ -1,9 +1,8 @@
 ---
 title: gradle.properties中定义变量
 date: 2021-04-29 18:27:14
-tags:
-categories:
-- 技术
+tags: [gradle]
+categories: [技术]
 ---
 
 # gradle.properties中定义变量

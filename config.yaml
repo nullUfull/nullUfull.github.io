@@ -69,10 +69,10 @@ languages:
           #   name: ⏱时间轴
           #   url: archives/
           #   weight: 20
-          # - identifier: tags
-          #   name: 🔖标签
-          #   url: tags
-          #   weight: 40
+          - identifier: tags
+            name: 🔖标签
+            url: tags
+            weight: 40
 
 outputs:
     home:
