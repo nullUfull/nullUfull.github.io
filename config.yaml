@@ -65,13 +65,13 @@ languages:
             name: 📚文章
             url: /posts/
             weight: 4
-          # - identifier: archives
-          #   name: ⏱时间轴
-          #   url: archives/
-          #   weight: 20
+          - identifier: archives
+            name: ⏱时间轴
+            url: archives/
+            weight: 20
           - identifier: tags
             name: 🔖标签
-            url: /tags/
+            url: tags/
             weight: 40
 
 outputs:
