@@ -34,5 +34,14 @@
       <description>gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
     </item>
     
+    <item>
+      <title>OpenGL ES：视频加滤镜后导出</title>
+      <link>/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</guid>
+      <description>视频加滤镜播放 MediaCodec解码——&amp;gt;OpenGL es——&amp;gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——&amp;gt;Open</description>
+    </item>
+    
   </channel>
 </rss>
