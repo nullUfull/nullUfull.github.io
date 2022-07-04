@@ -6,7 +6,16 @@
     <description>Recent content on FineSnow&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 May 2022 18:33:56 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 18:27:14 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mvi</title>
+      <link>/posts/tech/mvi/</link>
+      <pubDate>Wed, 01 Jun 2022 18:27:14 +0000</pubDate>
+      
+      <guid>/posts/tech/mvi/</guid>
+      <description>简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie</description>
+    </item>
+    
     <item>
       <title>双月湾游记</title>
       <link>/posts/life/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</link>

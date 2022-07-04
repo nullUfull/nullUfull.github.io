@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>gradle.properties中定义变量 | FineSnow&#39;s Blog</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="gradle">
 <meta name="description" content="gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14">
 <meta name="author" content="FineSnow">
 <link rel="canonical" href="/posts/tech/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/">
@@ -102,7 +102,7 @@
   "name": "gradle.properties中定义变量",
   "description": "gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14",
   "keywords": [
-    
+    "gradle"
   ],
   "articleBody": "gradle.properties中定义变量 1  light_sdk_version = 2.2.5.14   build.gradle中使用  现在gradle中定义一个函数  1 2 3 4 5 6 7 8 9 10 11 12 13 14  def getProperty(String filename, String propName) { def propsFile = rootProject.file(filename) if (propsFile.exists()) { def props = new Properties() props.load(new FileInputStream(propsFile)) if (props[propName] != null) { return props[propName] } else { print(\"No such property \" + propName + \" in file \" + filename) } } else { print(filename + \" does not exist!\") } }   使用  1  lightsdk : \"com.tencent.light-withoutso:lightsdk:${getProperty(\"gradle.properties\", \"light_sdk_version\")}\"   代码中使用  在build.gradle中定义  1 2 3  defaultConfig { buildConfigField \"String\", \"LIGHT_SDK_VERSION\", \"${light_sdk_version}\" }   使用  1  BuildConfig.LIGHT_SDK_VERSION   build.gradle中定义变量 1 2 3 4 5 6  ext { light_sdk_version = \"2.2.5.14\" light_sdk_component_level = \"78\" pag_sdk_version = \"3.3.0.138\" pag_sdk_tag_level=\"3\" }   build.gradle中使用 1 2 3  defaultConfig { buildConfigField \"String\", \"LIGHT_SDK_VERSION\", \"\\\"${project.light_sdk_version}\\\"\" }   代码中使用  在build.gradle中定义  1 2 3  defaultConfig { buildConfigField \"String\", \"LIGHT_SDK_VERSION\", \"\\\"${project.light_sdk_version}\\\"\" }   使用  1  BuildConfig.LIGHT_SDK_VERSION   ",
   "wordCount" : "263",
@@ -189,6 +189,11 @@
             <li>
                 <a href="/posts/" title="📚文章">
                     <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="tags" title="🔖标签">
+                    <span>🔖标签</span>
                 </a>
             </li>
         </ul>
@@ -385,6 +390,7 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="/tags/gradle/">gradle</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">
@@ -402,7 +408,7 @@
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share gradle.properties中定义变量 on twitter"
-        href="https://twitter.com/intent/tweet/?text=gradle.properties%e4%b8%ad%e5%ae%9a%e4%b9%89%e5%8f%98%e9%87%8f&amp;url=%2fposts%2ftech%2fgradle.properties%25E4%25B8%25AD%25E5%25AE%259A%25E4%25B9%2589%25E5%258F%2598%25E9%2587%258F%2f&amp;hashtags=">
+        href="https://twitter.com/intent/tweet/?text=gradle.properties%e4%b8%ad%e5%ae%9a%e4%b9%89%e5%8f%98%e9%87%8f&amp;url=%2fposts%2ftech%2fgradle.properties%25E4%25B8%25AD%25E5%25AE%259A%25E4%25B9%2589%25E5%258F%2598%25E9%2587%258F%2f&amp;hashtags=gradle">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />

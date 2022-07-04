@@ -5,6 +5,70 @@
     <link>/tags/</link>
     <description>Recent content in Tags on FineSnow&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 01 Jun 2022 18:27:14 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>kotlin</title>
+      <link>/tags/kotlin/</link>
+      <pubDate>Wed, 01 Jun 2022 18:27:14 +0000</pubDate>
+      
+      <guid>/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mvi</title>
+      <link>/tags/mvi/</link>
+      <pubDate>Wed, 01 Jun 2022 18:27:14 +0000</pubDate>
+      
+      <guid>/tags/mvi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>旅行</title>
+      <link>/tags/%E6%97%85%E8%A1%8C/</link>
+      <pubDate>Tue, 03 May 2022 18:33:56 +0000</pubDate>
+      
+      <guid>/tags/%E6%97%85%E8%A1%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>海边</title>
+      <link>/tags/%E6%B5%B7%E8%BE%B9/</link>
+      <pubDate>Tue, 03 May 2022 18:33:56 +0000</pubDate>
+      
+      <guid>/tags/%E6%B5%B7%E8%BE%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gradle</title>
+      <link>/tags/gradle/</link>
+      <pubDate>Thu, 29 Apr 2021 18:27:14 +0000</pubDate>
+      
+      <guid>/tags/gradle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>零食</title>
+      <link>/tags/%E9%9B%B6%E9%A3%9F/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E9%9B%B6%E9%A3%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>眼镜</title>
+      <link>/tags/%E7%9C%BC%E9%95%9C/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E7%9C%BC%E9%95%9C/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
