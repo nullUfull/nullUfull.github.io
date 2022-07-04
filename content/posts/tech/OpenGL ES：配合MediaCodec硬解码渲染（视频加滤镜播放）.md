@@ -1,6 +1,8 @@
 ---
 title: "OpenGL ES：配合MediaCodec硬解码渲染（视频加滤镜播放）"
 date: 2019-07-11
+tags: [OpenGL ES]
+categories: [技术]
 ---
 
 ## 注意点

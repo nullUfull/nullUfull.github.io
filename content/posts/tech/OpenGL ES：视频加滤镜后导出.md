@@ -1,6 +1,8 @@
 ---
 title: "OpenGL ES：视频加滤镜后导出"
 date: 2019-08-04
+tags: [OpenGL ES]
+categories: [技术]
 ---
 
 ## 视频加滤镜播放
