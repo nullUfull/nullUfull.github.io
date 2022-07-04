@@ -67,12 +67,12 @@ languages:
             weight: 4
           - identifier: archives
             name: ⏱时间轴
-            url: archives/
-            weight: 20
+            url: /archives/
+            weight: 5
           - identifier: tags
             name: 🔖标签
-            url: tags/
-            weight: 40
+            url: /tags/
+            weight: 6
 
 outputs:
     home:
