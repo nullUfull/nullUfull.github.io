@@ -2,12 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/categories/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/posts/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/%E6%88%90%E9%95%BF%E7%A2%8E%E7%A2%8E%E5%BF%B5%E6%83%85%E6%84%9F/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8D%E8%8F%B2%E7%9A%84%E5%80%9F%E6%AC%BE/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/%E7%94%9F%E6%B4%BB/</loc><lastmod>2022-07-09T19:03:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/categories/newsletter/</loc><lastmod>2022-07-09T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/newsletter-000-%E5%BC%80%E7%AB%AF/</loc><lastmod>2022-07-09T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/posts/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/%E6%80%9D%E8%80%83/</loc><lastmod>2022-07-09T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/kotlin/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/mvi/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -15,7 +18,6 @@
             <loc>https://example.com/categories/%E6%8A%80%E6%9C%AF/</loc><lastmod>2022-07-09T18:51:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/%E6%B5%B7%E8%BE%B9/</loc><lastmod>2022-05-03T18:33:56&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/tags/%E6%97%85%E8%A1%8C/</loc><lastmod>2022-05-03T18:33:56&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/categories/%E7%94%9F%E6%B4%BB/</loc><lastmod>2022-05-03T18:33:56&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</loc><lastmod>2022-05-03T18:33:56&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc><lastmod>2021-05-29T18:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/tags/gradle/</loc><lastmod>2021-04-29T18:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
