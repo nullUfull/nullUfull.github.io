@@ -47,6 +47,8 @@ languages:
             url: posts/tech
           - name: 🏖生活
             url: posts/life
+          - name: ✍️newsletter
+            url: posts/newsletter
       menu:
         main:
           - identifier: search
