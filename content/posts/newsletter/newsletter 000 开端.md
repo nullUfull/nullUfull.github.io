@@ -13,7 +13,7 @@ tags: [思考]
 
 近几个月来订阅了不少优质内容，相对于咨询来说，我比较喜欢看有价值的文章，所谓有价值的文章并不只是说知识的分享，也可以是作者的一些想法与思考，可以让我相对于昨天的自己有所收获。
 
-例如我关注的一个ID为happy xiao的一份名为《可乐周报》的newsletter，其每份newsletter的前言如下：
+例如我关注的一个推特ID为[happy xiao](https://twitter.com/coolxiao)的一份名为[《可乐周报》](https://happyxiao.com/)的newsletter，其每份newsletter的前言如下：
 ```
 我是 happy xiao，欢迎你订阅可乐周报，我在这里分享过去一周里值得推荐的想法。我不关注新闻，不关注科技，不关注政治，不关注知识。
 我只关注让你我成长的想法。
