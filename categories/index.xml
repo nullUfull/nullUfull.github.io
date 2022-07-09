@@ -6,7 +6,16 @@
     <description>Recent content in Categories on FineSnow&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 01 Jun 2022 18:27:14 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>newsletter</title>
+      <link>/categories/newsletter/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/newsletter/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>技术</title>
       <link>/categories/%E6%8A%80%E6%9C%AF/</link>

@@ -104,7 +104,7 @@
   "keywords": [
     "OpenGL ES"
   ],
-  "articleBody": "视频加滤镜播放 MediaCodec解码——OpenGL es—— GLSurfaceView\n视频滤镜合成导出 MediaCodec解码——OpenGL es—— MediaCodec编码 大体来说就是OpenGL渲染后的输出不一样，需要使用编码器编码保存到本地，由于OpenGL ES并不负责窗口管理以及上下文管理，该职责由各个平台自行完成，没有了GLSurfaceView为我们创建的上下文环境，因此我们需要使用相关的API初始化OpenGL的上下文环境以支持后续的操作。\n主要流程还是上图所示，该功能的实现，需要对整体的流程有一定的了解同时也需要掌握MediaCodec的使用以及需要注意一些坑，否则可能会导致视频无法播放。\n注意  MediaMuxer写完数据需要手动停止并释放资源，否则写的视频文件没有文件尾会导致不能播放。同理解码器和编码器在用完以后也需要释放。 一个线程对应一个OpenGL es 上下文，因此我们需要初始化俩个上下文环境，一个用于OpenGL着色器、顶点数据等渲染配置的初始化，一个用于在编解码线程中渲染。编解码线程中的上下文需要设置与OpenGL的初始化的线程共享上下文资源，包括纹理、FrameBuffer以及其他的Buffer等资源。 渲染一次完成后，需要切换一次egl的frame buffer，EGL的工作模式是双缓存模式，内部拥有俩个frame buffer（fb），当EGL将一个fb渲染到屏幕上的时候，另一个就在后台等待OpenGL进行交换。  1  EGL14.eglSwapBuffers(mEglDisplay, mEglSurfaceEncoder);   ",
+  "articleBody": "视频加滤镜播放 MediaCodec解码——\u003eOpenGL es——\u003e GLSurfaceView\n视频滤镜合成导出 MediaCodec解码——\u003eOpenGL es——\u003e MediaCodec编码 大体来说就是OpenGL渲染后的输出不一样，需要使用编码器编码保存到本地，由于OpenGL ES并不负责窗口管理以及上下文管理，该职责由各个平台自行完成，没有了GLSurfaceView为我们创建的上下文环境，因此我们需要使用相关的API初始化OpenGL的上下文环境以支持后续的操作。\n主要流程还是上图所示，该功能的实现，需要对整体的流程有一定的了解同时也需要掌握MediaCodec的使用以及需要注意一些坑，否则可能会导致视频无法播放。\n注意 MediaMuxer写完数据需要手动停止并释放资源，否则写的视频文件没有文件尾会导致不能播放。同理解码器和编码器在用完以后也需要释放。 一个线程对应一个OpenGL es 上下文，因此我们需要初始化俩个上下文环境，一个用于OpenGL着色器、顶点数据等渲染配置的初始化，一个用于在编解码线程中渲染。编解码线程中的上下文需要设置与OpenGL的初始化的线程共享上下文资源，包括纹理、FrameBuffer以及其他的Buffer等资源。 渲染一次完成后，需要切换一次egl的frame buffer，EGL的工作模式是双缓存模式，内部拥有俩个frame buffer（fb），当EGL将一个fb渲染到屏幕上的时候，另一个就在后台等待OpenGL进行交换。 1 EGL14.eglSwapBuffers(mEglDisplay, mEglSurfaceEncoder); ",
   "wordCount" : "633",
   "inLanguage": "en",
   "datePublished": "2019-08-04T00:00:00Z",
@@ -311,13 +311,13 @@
 <li>一个线程对应一个OpenGL es 上下文，因此我们需要初始化俩个上下文环境，一个用于OpenGL着色器、顶点数据等渲染配置的初始化，一个用于在编解码线程中渲染。编解码线程中的上下文需要设置与OpenGL的初始化的线程共享上下文资源，包括纹理、FrameBuffer以及其他的Buffer等资源。</li>
 <li>渲染一次完成后，需要切换一次egl的frame buffer，EGL的工作模式是双缓存模式，内部拥有俩个frame buffer（fb），当EGL将一个fb渲染到屏幕上的时候，另一个就在后台等待OpenGL进行交换。</li>
 </ol>
-<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">1
+<div class="highlight"><div style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">	EGL14.eglSwapBuffers(mEglDisplay, mEglSurfaceEncoder);
-</code></pre></td></tr></table>
+<pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>	EGL14.eglSwapBuffers(mEglDisplay, mEglSurfaceEncoder);
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
 
