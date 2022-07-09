@@ -1,7 +1,7 @@
 # mvi
 
 
-# 简介
+## 简介
 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源
 
 ## 优势
@@ -20,7 +20,6 @@ MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数�
 
 当State复杂起来
 
-### 
 
 ## 案例
 
@@ -52,7 +51,8 @@ enum class GuideState{
 }
 ```
 
-其次，我再看看UI层的逻辑
+其次，再看看UI层的逻辑
+
 ![触发显示引导](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/example_1.2.png)
 
 其实这个逻辑也是挺奇怪的，监听Title变化的地方，存在引导显示的逻辑；这就违背了我们的原则，View只需监听相对应的状态变化即可。
@@ -61,7 +61,6 @@ enum class GuideState{
 
 其次，再看看这个ViewAction的具体执行逻辑，如图，通过判断是否需要显示来更新引导的状态。
 所以第二个疑惑的点就是，引导的状态其实并不依赖于其他的UI上面的东西，和用户的操作无关，正如与用户的操作无关却发送一个ViewAction是不太合适的，其实只需要在列表数据加载成功后，通过接口查询当前是否展示引导 去更新引导的状态即可。
-
 
 OK，我们总结下如何在MVI架构添加业务逻辑：
 1. 定义一个状态来描述这个元素
@@ -82,6 +81,6 @@ OK，我们总结下如何在MVI架构添加业务逻辑：
 
 其实这种流向是不符合我们的规范的，用户只是打开了该页面并没有输入一个事件，实际上应该是可以做成在ViewModel初始化的时候去触发数据加载的。
 
-# 参考
+## 参考
 [Android官方-应用架构指南](https://developer.android.com/jetpack/guide?hl=zh-cn)
 [Android官方-界面事件](https://developer.android.com/jetpack/guide/ui-layer/events?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-architecture%3Frec%3DCjZodHRwczovL2RldmVsb3Blci5hbmRyb2lkLmNvbS9qZXRwYWNrL2d1aWRlL2RhdGEtbGF5ZXIQARgPIAEoBDALOgMzLjc#decision-tree)

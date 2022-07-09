@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/mvi/" /><meta property="og:image" content="https://example.com"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-06-01T18:27:14+00:00" />
-<meta property="article:modified_time" content="2022-07-04T10:55:51+08:00" /><meta property="og:site_name" content="LoveIt" />
+<meta property="article:modified_time" content="2022-07-09T18:51:58+08:00" /><meta property="og:site_name" content="LoveIt" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com"/>
@@ -30,8 +30,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/mvi\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, mvi","wordcount":  1614 ,
-        "url": "https:\/\/example.com\/mvi\/","datePublished": "2022-06-01T18:27:14+00:00","dateModified": "2022-07-04T10:55:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, mvi","wordcount":  1613 ,
+        "url": "https:\/\/example.com\/mvi\/","datePublished": "2022-06-01T18:27:14+00:00","dateModified": "2022-07-09T18:51:58+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">mvi</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-01">2022-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1614 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-01">2022-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1613 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -114,12 +114,12 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#简介">简介</a></li>
     <li><a href="#优势">优势</a></li>
     <li><a href="#问题">问题</a></li>
     <li><a href="#最佳实践">最佳实践</a>
       <ul>
         <li><a href="#以页面为维度定义state并且注意state中数据的定义切勿数据裸在state里面">以页面为维度定义State，并且注意State中数据的定义，切勿数据裸在State里面</a></li>
-        <li><a href="#heading"></a></li>
       </ul>
     </li>
     <li><a href="#案例">案例</a>
@@ -135,9 +135,10 @@
         <li><a href="#页面初始化逻辑">页面初始化逻辑</a></li>
       </ul>
     </li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="简介">简介</h1>
+            </div><div class="content" id="content"><h2 id="简介">简介</h2>
 <p>MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源</p>
 <h2 id="优势">优势</h2>
 <ol>
@@ -153,7 +154,6 @@
 <h3 id="以页面为维度定义state并且注意state中数据的定义切勿数据裸在state里面">以页面为维度定义State，并且注意State中数据的定义，切勿数据裸在State里面</h3>
 <p>例如一个按钮的状态可能对应State中的数个字段，可进行包裹为ButtonState放置在State。</p>
 <p>当State复杂起来</p>
-<h3 id="heading"></h3>
 <h2 id="案例">案例</h2>
 <h3 id="收藏逻辑">收藏逻辑</h3>
 <p>我要收藏一个视频，UI发送一个事件到ViewModel，ViewModel调用Repository触发我们的收藏请求。
@@ -194,8 +194,8 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>其次，我再看看UI层的逻辑
-<img
+</div><p>其次，再看看UI层的逻辑</p>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/example_1.2.png"
@@ -233,15 +233,15 @@
 <h3 id="页面初始化逻辑">页面初始化逻辑</h3>
 <p>目前页面数据的加载的触发由名为LoadTypeFlow的流驱动，而目前在UI层主动向ViewModel dispatch一个ViewAction以触发LoadTypeFlow的改变以触发页面数据拉取</p>
 <p>其实这种流向是不符合我们的规范的，用户只是打开了该页面并没有输入一个事件，实际上应该是可以做成在ViewModel初始化的时候去触发数据加载的。</p>
-<h1 id="参考">参考</h1>
+<h2 id="参考">参考</h2>
 <p><a href="https://developer.android.com/jetpack/guide?hl=zh-cn" target="_blank" rel="noopener noreffer ">Android官方-应用架构指南</a>
 <a href="https://developer.android.com/jetpack/guide/ui-layer/events?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-architecture%3Frec%3DCjZodHRwczovL2RldmVsb3Blci5hbmRyb2lkLmNvbS9qZXRwYWNrL2d1aWRlL2RhdGEtbGF5ZXIQARgPIAEoBDALOgMzLjc#decision-tree" target="_blank" rel="noopener noreffer ">Android官方-界面事件</a></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-07-04&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/2e417c3227a532301f39dddae40fc81da90dc257" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) 2e417c3227a532301f39dddae40fc81da90dc257: add mvi post">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>2e417c3</a></span>
+                <span>更新于 2022-07-09&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/24428dc3dbc74f69ce9a5266f94ce32ca53bf2d4" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) 24428dc3dbc74f69ce9a5266f94ce32ca53bf2d4: update">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>24428dc</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
