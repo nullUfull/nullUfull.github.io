@@ -56,7 +56,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   link = ""
 
   [params.logo]
-    url = "favicon-32x32.png"
+    url = ""
     width = 32
     height = 32
 
@@ -117,7 +117,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   description = "Hugo theme - LoveIt"
   # website images for Open Graph and Twitter Cards
   # 网站图片, 用于 Open Graph 和 Twitter Cards
-  images = ["/favicon-32x32.png"]
+  images = [""]
 
   # Header config
   # 页面头部导航栏配置
@@ -210,7 +210,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-    svgFavicon = "favicon.ico"
+    svgFavicon = ""
     # Android browser theme color
     # Android 浏览器主题色
     themeColor = "#ffffff"
