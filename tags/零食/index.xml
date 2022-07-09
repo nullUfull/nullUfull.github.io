@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>零食 on FineSnow&#39;s Blog</title>
-    <link>/tags/%E9%9B%B6%E9%A3%9F/</link>
-    <description>Recent content in 零食 on FineSnow&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E9%9B%B6%E9%A3%9F/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>一些零食推荐</title>
-      <link>/posts/life/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/life/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</guid>
-      <description>零食 百草味 商品名 推荐指数 满300-200 价格 菠萝干 100g ★★★★ 25.50 ￥8.73 泡椒凤爪 160g ★★★★★ 26.90 ￥9.21 脆冬枣 35g ★★★ 10.90 ￥3.73 椰丝球 210g ★</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>零食 - 标签 - FineSnow&#39;s Blog</title>
+        <link>https://example.com/tags/%E9%9B%B6%E9%A3%9F/</link>
+        <description>零食 - 标签 - FineSnow&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 16 Jul 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/%E9%9B%B6%E9%A3%9F/" rel="self" type="application/rss+xml" /><item>
+    <title>一些零食推荐</title>
+    <link>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</link>
+    <pubDate>Thu, 16 Jul 2020 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</guid>
+    <description><![CDATA[零食 百草味 商品名 推荐指数 满300-200 价格 菠萝干 100g ★★★★ 25.50 ￥8.73 泡椒凤爪 160g ★★★★★ 26.90 ￥9.21 脆冬枣 35g ★★★ 10.90 ￥3.73 椰丝球 210g ★]]></description>
+</item>
+</channel>
 </rss>

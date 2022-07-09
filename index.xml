@@ -1,103 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>FineSnow&#39;s Blog</title>
-    <link>/</link>
-    <description>Recent content on FineSnow&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>newsletter 000 开端</title>
-      <link>/posts/newsletter/newsletter-000-%E5%BC%80%E7%AB%AF/</link>
-      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/newsletter/newsletter-000-%E5%BC%80%E7%AB%AF/</guid>
-      <description>缘起 数月前开始寻找中文互联网的一些优质的内容，至于契机是什么，也想不起来了，不过也无妨，总之接触到了RSS、newsletter的概念，也让</description>
-    </item>
-    
-    <item>
-      <title>mvi</title>
-      <link>/posts/tech/mvi/</link>
-      <pubDate>Wed, 01 Jun 2022 18:27:14 +0000</pubDate>
-      
-      <guid>/posts/tech/mvi/</guid>
-      <description>简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie</description>
-    </item>
-    
-    <item>
-      <title>双月湾游记</title>
-      <link>/posts/life/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</link>
-      <pubDate>Tue, 03 May 2022 18:33:56 +0000</pubDate>
-      
-      <guid>/posts/life/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</guid>
-      <description>摩的 双月湾的出行很是不便，滴滴是无人接单的，于是晚上出去觅食只能暂且步行而去。 天下着小雨，路上瞅见小巷里的几辆电动单车，心中不免一般欢喜，可</description>
-    </item>
-    
-    <item>
-      <title>不错的技术文章</title>
-      <link>/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Sat, 29 May 2021 18:27:14 +0000</pubDate>
-      
-      <guid>/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</guid>
-      <description>kotlin Android-Redux-Intro 协程 Coroutines : First things first 如何优雅的取消协程 ？ Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消 [译] 如何优雅的处理</description>
-    </item>
-    
-    <item>
-      <title>gradle.properties中定义变量</title>
-      <link>/posts/tech/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</link>
-      <pubDate>Thu, 29 Apr 2021 18:27:14 +0000</pubDate>
-      
-      <guid>/posts/tech/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</guid>
-      <description>gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
-    </item>
-    
-    <item>
-      <title>一些零食推荐</title>
-      <link>/posts/life/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/life/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</guid>
-      <description>零食 百草味 商品名 推荐指数 满300-200 价格 菠萝干 100g ★★★★ 25.50 ￥8.73 泡椒凤爪 160g ★★★★★ 26.90 ￥9.21 脆冬枣 35g ★★★ 10.90 ￥3.73 椰丝球 210g ★</description>
-    </item>
-    
-    <item>
-      <title>明月眼镜对比</title>
-      <link>/posts/life/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/life/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/</guid>
-      <description>源于最近需要换眼镜，因此做了下功课。 防蓝光非球面镜片 其实现在镜片都会带有防蓝光的属性，但是这个会更好一些，不过会造成镜片偏黄，透光度下降。生</description>
-    </item>
-    
-    <item>
-      <title>2019年总结</title>
-      <link>/posts/life/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/life/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
-      <description>18年末 年后便是大三，驾照也已到手，也没其余杂事。那可要准备面试，年后就得找暑期实习了。虽说离毕业还有两年，但学校里的课程是不能再学到可用的</description>
-    </item>
-    
-    <item>
-      <title>OpenGL ES：视频加滤镜后导出</title>
-      <link>/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</guid>
-      <description>视频加滤镜播放 MediaCodec解码——&amp;gt;OpenGL es——&amp;gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——&amp;gt;Open</description>
-    </item>
-    
-    <item>
-      <title>OpenGL ES：配合MediaCodec硬解码渲染（视频加滤镜播放）</title>
-      <link>/posts/tech/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</link>
-      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/tech/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</guid>
-      <description>注意点 MediaCodec 解码后的原始数据，格式为yuv，而OpenGL所能渲染的格式为rgb，因此我们需要使用扩展库中的扩展纹理 GLES11Ext.GL_TEXTURE_EXTERNAL_OES 而它的作用就是实现YUV格</description>
-    </item>
-    
-    
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>FineSnow&#39;s Blog</title>
+        <link>https://example.com/</link>
+        <description>Hugo theme - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Jul 2022 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>newsletter 000 开端</title>
+    <link>https://example.com/newsletter-000-%E5%BC%80%E7%AB%AF/</link>
+    <pubDate>Sat, 09 Jul 2022 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/newsletter-000-%E5%BC%80%E7%AB%AF/</guid>
+    <description><![CDATA[缘起 数月前开始寻找中文互联网的一些优质的内容，至于契机是什么，也想不起来了，不过也无妨，总之接触到了RSS、newsletter的概念，也让]]></description>
+</item>
+<item>
+    <title>mvi</title>
+    <link>https://example.com/mvi/</link>
+    <pubDate>Wed, 01 Jun 2022 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/mvi/</guid>
+    <description><![CDATA[简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie]]></description>
+</item>
+<item>
+    <title>双月湾游记</title>
+    <link>https://example.com/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</link>
+    <pubDate>Tue, 03 May 2022 18:33:56 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</guid>
+    <description><![CDATA[摩的 双月湾的出行很是不便，滴滴是无人接单的，于是晚上出去觅食只能暂且步行而去。 天下着小雨，路上瞅见小巷里的几辆电动单车，心中不免一般欢喜，可]]></description>
+</item>
+<item>
+    <title>不错的技术文章</title>
+    <link>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
+    <pubDate>Sat, 29 May 2021 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</guid>
+    <description><![CDATA[kotlin Android-Redux-Intro 协程 Coroutines : First things first 如何优雅的取消协程 ？ Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消 [译] 如何优雅的处理]]></description>
+</item>
+<item>
+    <title>gradle.properties中定义变量</title>
+    <link>https://example.com/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</link>
+    <pubDate>Thu, 29 Apr 2021 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</guid>
+    <description><![CDATA[gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14]]></description>
+</item>
+<item>
+    <title>一些零食推荐</title>
+    <link>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</link>
+    <pubDate>Thu, 16 Jul 2020 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</guid>
+    <description><![CDATA[零食 百草味 商品名 推荐指数 满300-200 价格 菠萝干 100g ★★★★ 25.50 ￥8.73 泡椒凤爪 160g ★★★★★ 26.90 ￥9.21 脆冬枣 35g ★★★ 10.90 ￥3.73 椰丝球 210g ★]]></description>
+</item>
+<item>
+    <title>明月眼镜对比</title>
+    <link>https://example.com/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/</link>
+    <pubDate>Sat, 16 May 2020 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/</guid>
+    <description><![CDATA[源于最近需要换眼镜，因此做了下功课。 防蓝光非球面镜片 其实现在镜片都会带有防蓝光的属性，但是这个会更好一些，不过会造成镜片偏黄，透光度下降。生]]></description>
+</item>
+<item>
+    <title>2019年总结</title>
+    <link>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Mon, 03 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[18年末 年后便是大三，驾照也已到手，也没其余杂事。那可要准备面试，年后就得找暑期实习了。虽说离毕业还有两年，但学校里的课程是不能再学到可用的]]></description>
+</item>
+<item>
+    <title>OpenGL ES：视频加滤镜后导出</title>
+    <link>https://example.com/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</link>
+    <pubDate>Sun, 04 Aug 2019 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</guid>
+    <description><![CDATA[视频加滤镜播放 MediaCodec解码——&gt;OpenGL es——&gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——&gt;Open]]></description>
+</item>
+<item>
+    <title>OpenGL ES：配合MediaCodec硬解码渲染（视频加滤镜播放）</title>
+    <link>https://example.com/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</link>
+    <pubDate>Thu, 11 Jul 2019 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</guid>
+    <description><![CDATA[注意点 MediaCodec 解码后的原始数据，格式为yuv，而OpenGL所能渲染的格式为rgb，因此我们需要使用扩展库中的扩展纹理 GLES11Ext.GL_TEXTURE_EXTERNAL_OES 而它的作用就是实现YUV格]]></description>
+</item>
+</channel>
 </rss>

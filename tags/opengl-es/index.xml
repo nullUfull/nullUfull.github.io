@@ -1,29 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>OpenGL ES on FineSnow&#39;s Blog</title>
-    <link>/tags/opengl-es/</link>
-    <description>Recent content in OpenGL ES on FineSnow&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/opengl-es/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>OpenGL ES：视频加滤镜后导出</title>
-      <link>/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/tech/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</guid>
-      <description>视频加滤镜播放 MediaCodec解码——&amp;gt;OpenGL es——&amp;gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——&amp;gt;Open</description>
-    </item>
-    
-    <item>
-      <title>OpenGL ES：配合MediaCodec硬解码渲染（视频加滤镜播放）</title>
-      <link>/posts/tech/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</link>
-      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/tech/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</guid>
-      <description>注意点 MediaCodec 解码后的原始数据，格式为yuv，而OpenGL所能渲染的格式为rgb，因此我们需要使用扩展库中的扩展纹理 GLES11Ext.GL_TEXTURE_EXTERNAL_OES 而它的作用就是实现YUV格</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>OpenGL ES - 标签 - FineSnow&#39;s Blog</title>
+        <link>https://example.com/tags/opengl-es/</link>
+        <description>OpenGL ES - 标签 - FineSnow&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Aug 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/opengl-es/" rel="self" type="application/rss+xml" /><item>
+    <title>OpenGL ES：视频加滤镜后导出</title>
+    <link>https://example.com/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</link>
+    <pubDate>Sun, 04 Aug 2019 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/opengl-es%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E5%90%8E%E5%AF%BC%E5%87%BA/</guid>
+    <description><![CDATA[视频加滤镜播放 MediaCodec解码——&gt;OpenGL es——&gt; GLSurfaceView 视频滤镜合成导出 MediaCodec解码——&gt;Open]]></description>
+</item>
+<item>
+    <title>OpenGL ES：配合MediaCodec硬解码渲染（视频加滤镜播放）</title>
+    <link>https://example.com/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</link>
+    <pubDate>Thu, 11 Jul 2019 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/opengl-es%E9%85%8D%E5%90%88mediacodec%E7%A1%AC%E8%A7%A3%E7%A0%81%E6%B8%B2%E6%9F%93%E8%A7%86%E9%A2%91%E5%8A%A0%E6%BB%A4%E9%95%9C%E6%92%AD%E6%94%BE/</guid>
+    <description><![CDATA[注意点 MediaCodec 解码后的原始数据，格式为yuv，而OpenGL所能渲染的格式为rgb，因此我们需要使用扩展库中的扩展纹理 GLES11Ext.GL_TEXTURE_EXTERNAL_OES 而它的作用就是实现YUV格]]></description>
+</item>
+</channel>
 </rss>

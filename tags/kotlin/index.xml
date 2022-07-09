@@ -1,29 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>kotlin on FineSnow&#39;s Blog</title>
-    <link>/tags/kotlin/</link>
-    <description>Recent content in kotlin on FineSnow&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 01 Jun 2022 18:27:14 +0000</lastBuildDate><atom:link href="/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>mvi</title>
-      <link>/posts/tech/mvi/</link>
-      <pubDate>Wed, 01 Jun 2022 18:27:14 +0000</pubDate>
-      
-      <guid>/posts/tech/mvi/</guid>
-      <description>简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie</description>
-    </item>
-    
-    <item>
-      <title>不错的技术文章</title>
-      <link>/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Sat, 29 May 2021 18:27:14 +0000</pubDate>
-      
-      <guid>/posts/tech/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</guid>
-      <description>kotlin Android-Redux-Intro 协程 Coroutines : First things first 如何优雅的取消协程 ？ Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消 [译] 如何优雅的处理</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>kotlin - 标签 - FineSnow&#39;s Blog</title>
+        <link>https://example.com/tags/kotlin/</link>
+        <description>kotlin - 标签 - FineSnow&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Jun 2022 18:27:14 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/kotlin/" rel="self" type="application/rss+xml" /><item>
+    <title>mvi</title>
+    <link>https://example.com/mvi/</link>
+    <pubDate>Wed, 01 Jun 2022 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/mvi/</guid>
+    <description><![CDATA[简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie]]></description>
+</item>
+<item>
+    <title>不错的技术文章</title>
+    <link>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
+    <pubDate>Sat, 29 May 2021 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</guid>
+    <description><![CDATA[kotlin Android-Redux-Intro 协程 Coroutines : First things first 如何优雅的取消协程 ？ Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消 [译] 如何优雅的处理]]></description>
+</item>
+</channel>
 </rss>
