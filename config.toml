@@ -843,7 +843,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [languages.zh-cn.params]
       [languages.zh-cn.params.search]
         enable = true
-        type = "algolia"
+        type = "lunr"
         contentLength = 4000
         placeholder = ""
         maxResultLength = 10
@@ -851,9 +851,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         highlightTag = "em"
         absoluteURL = false
         [languages.zh-cn.params.search.algolia]
-          index = "index.zh-cn"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          index = "nullUfull.github.io"
+          appID = "B4NTEU91UG"
+          searchKey = "451374565f4f7b1300b234c02c01dcbf"
       [languages.zh-cn.params.home]
         rss = 10
         [languages.zh-cn.params.home.profile]
