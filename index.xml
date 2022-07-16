@@ -7,7 +7,7 @@
             <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 16 Jul 2022 15:20:32 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>生活周刊 001</title>
+    <title>生活周刊 001 天青色等烟雨</title>
     <link>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-001/</link>
     <pubDate>Sat, 16 Jul 2022 15:20:32 &#43;0800</pubDate>
     <author>FineSnow</author>
@@ -47,14 +47,6 @@
     <description><![CDATA[摩的 双月湾的出行很是不便，滴滴是无人接单的，于是晚上出去觅食只能暂且步行而去。 天下着小雨，路上瞅见小巷里的几辆电动单车，心中不免一般欢喜，可]]></description>
 </item>
 <item>
-    <title>第一次不菲的借款</title>
-    <link>https://example.com/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8D%E8%8F%B2%E7%9A%84%E5%80%9F%E6%AC%BE/</link>
-    <pubDate>Thu, 03 Mar 2022 00:00:00 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8D%E8%8F%B2%E7%9A%84%E5%80%9F%E6%AC%BE/</guid>
-    <description><![CDATA[打开了腾讯电子签，点击小借款，输入借出数额：100000，填上借出归还时间：2022.1.28-2022.2.28，为期一个月，利率0%，点]]></description>
-</item>
-<item>
     <title>不错的技术文章</title>
     <link>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
     <pubDate>Sat, 29 May 2021 18:27:14 &#43;0000</pubDate>
@@ -85,6 +77,14 @@
     <author>FineSnow</author>
     <guid>https://example.com/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/</guid>
     <description><![CDATA[源于最近需要换眼镜，因此做了下功课。 防蓝光非球面镜片 其实现在镜片都会带有防蓝光的属性，但是这个会更好一些，不过会造成镜片偏黄，透光度下降。生]]></description>
+</item>
+<item>
+    <title>2019年总结</title>
+    <link>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Mon, 03 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[18年末 年后便是大三，驾照也已到手，也没其余杂事。那可要准备面试，年后就得找暑期实习了。虽说离毕业还有两年，但学校里的课程是不能再学到可用的]]></description>
 </item>
 </channel>
 </rss>
