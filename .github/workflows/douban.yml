@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: movie
-      uses: 161758056/doumark-action@master
+      uses: lizheming/doumark-action@0.1.0
       with:
         id: 161758056
         type: movie
