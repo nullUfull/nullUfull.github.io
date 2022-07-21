@@ -1,11 +1,10 @@
 # .github/workflows/douban.yml
 name: douban
-on: [push]
-# on: 
-#   schedule:
-#   - cron: "0 5,11,18,23 * * *"
-#   watch:
-#     types: [started]
+on: 
+  schedule:
+  - cron: "0 5,11,18,23 * * *"
+  watch:
+    types: [started]
 
 jobs:
   douban:
