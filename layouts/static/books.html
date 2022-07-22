@@ -148,6 +148,13 @@
       margin-right: 5px
     }
 
+    .sc-hKFxyN img {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block !important;
+      vertical-align: middle !important
+    }
+
     @media(min-width:1024px) {
       .lg\:col-span-6 {
         grid-column: span 6/span 6 !important
@@ -241,7 +248,7 @@
           <a rel="link" href="{{index $book 6}}" target="_blank">
             <div class="cover">
               <div class="lazyload-wrapper ">
-                <img class="img" src="{{index $book 4}}" referrer-policy="no-referrer" loading="lazy"
+                <img class="sc-hKFxyN img" src="{{index $book 4}}" referrer-policy="no-referrer" loading="lazy"
                   alt="{{index $book 1}}" width="150" height="220">
               </div>
             </div>
