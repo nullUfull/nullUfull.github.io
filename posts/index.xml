@@ -45,6 +45,14 @@
     <description><![CDATA[摩的 双月湾的出行很是不便，滴滴是无人接单的，于是晚上出去觅食只能暂且步行而去。 天下着小雨，路上瞅见小巷里的几辆电动单车，心中不免一般欢喜，可]]></description>
 </item>
 <item>
+    <title>hugo-添加阅读页面</title>
+    <link>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</link>
+    <pubDate>Sat, 29 May 2021 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</guid>
+    <description><![CDATA[创建博客的起初，就想有一个页面用来置放看过的书籍、电影等，之前用hexo搭建博客，其实就有个豆瓣的插件，后来迁移到了hugo也一直在找，但是]]></description>
+</item>
+<item>
     <title>不错的技术文章</title>
     <link>https://example.com/%E4%B8%8D%E9%94%99%E7%9A%84%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
     <pubDate>Sat, 29 May 2021 18:27:14 &#43;0000</pubDate>
@@ -75,14 +83,6 @@
     <author>FineSnow</author>
     <guid>https://example.com/%E6%98%8E%E6%9C%88%E7%9C%BC%E9%95%9C%E5%AF%B9%E6%AF%94/</guid>
     <description><![CDATA[源于最近需要换眼镜，因此做了下功课。 防蓝光非球面镜片 其实现在镜片都会带有防蓝光的属性，但是这个会更好一些，不过会造成镜片偏黄，透光度下降。生]]></description>
-</item>
-<item>
-    <title>2019年总结</title>
-    <link>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
-    <pubDate>Mon, 03 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
-    <description><![CDATA[18年末 年后便是大三，驾照也已到手，也没其余杂事。那可要准备面试，年后就得找暑期实习了。虽说离毕业还有两年，但学校里的课程是不能再学到可用的]]></description>
 </item>
 </channel>
 </rss>
