@@ -4,21 +4,21 @@
         <link>https://example.com/categories/%E6%8A%80%E6%9C%AF/</link>
         <description>技术 - 分类 - FineSnow&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
-            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Jun 2022 18:27:14 &#43;0000</lastBuildDate><atom:link href="https://example.com/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo-添加阅读页面</title>
+    <link>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</link>
+    <pubDate>Sat, 23 Jul 2022 00:00:00 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</guid>
+    <description><![CDATA[创建博客的起初，就想有一个页面用来置放看过的书籍、电影等，之前用hexo搭建博客，其实就有个豆瓣的插件，后来迁移到了hugo也一直在找，但是]]></description>
+</item>
+<item>
     <title>mvi</title>
     <link>https://example.com/mvi/</link>
     <pubDate>Wed, 01 Jun 2022 18:27:14 &#43;0000</pubDate>
     <author>FineSnow</author>
     <guid>https://example.com/mvi/</guid>
     <description><![CDATA[简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie]]></description>
-</item>
-<item>
-    <title>hugo-添加阅读页面</title>
-    <link>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</link>
-    <pubDate>Sat, 29 May 2021 18:27:14 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</guid>
-    <description><![CDATA[创建博客的起初，就想有一个页面用来置放看过的书籍、电影等，之前用hexo搭建博客，其实就有个豆瓣的插件，后来迁移到了hugo也一直在找，但是]]></description>
 </item>
 <item>
     <title>不错的技术文章</title>
