@@ -1,6 +1,6 @@
 ---
 title: hugo-添加阅读页面
-date: 2021-05-29 18:27:14
+date: 2022-07-23
 tags: [hugo,blog]
 categories: [技术]
 ---
