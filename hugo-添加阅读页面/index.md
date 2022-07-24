@@ -1,4 +1,4 @@
-# hugo-添加阅读页面
+# Hugo-添加阅读页面
 
 创建博客的起初，就想有一个页面用来置放看过的书籍、电影等，之前用hexo搭建博客，其实就有个豆瓣的插件，后来迁移到了hugo也一直在找，但是可惜没有找到。
 本周一时兴起，想再找找，就看到了一个豆瓣书影音同步的GitHub Action：[doumark-action](https://github.com/lizheming/doumark-action) ，这个 Action可以帮我们拉到指定用户的书籍、影视信息并保存下来，这样一来有了数据，就可以通过网页将其渲染出来就好。
