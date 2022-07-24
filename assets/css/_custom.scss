@@ -15,7 +15,7 @@
   
   .post-preview--meta {
     width: 75%;
-    padding: 25px;
+    padding: 16px;
     overflow: hidden;
   }
   
@@ -63,7 +63,8 @@
     }
   
     .post-preview--excerpt {
-        display: none;
+        display: inline-block;
+        font-size: 0.8rem;
     }
   
     .post-preview--middle {
