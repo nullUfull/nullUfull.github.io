@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>Hugo theme - LoveIt</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
-            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Jul 2022 07:54:32 &#43;0800</lastBuildDate>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 07:54:32 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>生活周刊 004 无题</title>
+    <link>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-004/</link>
+    <pubDate>Sat, 06 Aug 2022 07:54:32 &#43;0800</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-004/</guid>
+    <description><![CDATA[享受生活，热爱生活，发现生活中的美 阅读 《兄弟》 看了大概300页，在那文革的背景下，文中的人物的命运可真是太惨了。时代的一粒灰落到一个普通人身]]></description>
+</item>
+<item>
     <title>生活周刊 003 围城</title>
     <link>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-003-%E5%9B%B4%E5%9F%8E/</link>
     <pubDate>Sat, 30 Jul 2022 07:54:32 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>FineSnow</author>
     <guid>https://example.com/mvi/</guid>
     <description><![CDATA[简介 MVI 与 MVVM 比较相似，其借鉴了前端框架的思想，着重强调数据的单向流动和唯一数据源 优势 强调数据单向流动，很容易对状态变化进行跟踪和回溯 使用Vie]]></description>
-</item>
-<item>
-    <title>双月湾游记</title>
-    <link>https://example.com/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</link>
-    <pubDate>Tue, 03 May 2022 18:33:56 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/%E5%8F%8C%E6%9C%88%E6%B9%BE%E6%B8%B8%E8%AE%B0/</guid>
-    <description><![CDATA[摩的 双月湾的出行很是不便，滴滴是无人接单的，于是晚上出去觅食只能暂且步行而去。 天下着小雨，路上瞅见小巷里的几辆电动单车，心中不免一般欢喜，可]]></description>
 </item>
 </channel>
 </rss>
