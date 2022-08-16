@@ -1,4 +1,4 @@
-# Mac使用App推荐
+# Mac实用App推荐
 
 ## 自动切换输入法
 使用电脑的时候，每次切换App，都要先切换一下中/英文，以免输入有误，就有点烦，一般来说某些App就存在一个默认的输入方式，比如编码的时候就是英文，打开浏览器一般输入中文，如果有个小工具，能在我们切换应用的时候帮我们自动切换输入法就很方便了。
@@ -6,3 +6,8 @@
 后来逛V2EX的时候还真的遇见了这样一款小工具：[Input Source Pro](https://inputsource.pro/)
 
 [有没有经常弄混 macOS 输入法的？我实在是受不了了 😤](https://www.v2ex.com/t/866880)
+
+## 菜单栏管理工具
+使用MacBook会发现菜单栏不够把所有的App入口显示出来，所以找了这样一款工具，可以将菜单栏折叠起来。
+
+[bartender](https://xclient.info/s/bartender.html#versions)
