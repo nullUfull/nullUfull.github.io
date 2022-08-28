@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/kotlin-data-class%E4%BD%BF%E7%94%A8gson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E7%A9%BA%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Gson, kotlin","wordcount":  955 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Gson, kotlin","wordcount":  1061 ,
         "url": "https:\/\/example.com\/kotlin-data-class%E4%BD%BF%E7%94%A8gson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E7%A9%BA%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98\/","datePublished": "2022-08-26T07:54:32+08:00","dateModified": "2022-08-26T07:54:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
@@ -105,8 +105,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">kotlin data class使用Gson反序列化的空安全问题</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-26">2022-08-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 955 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-26">2022-08-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1061 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -134,7 +134,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">java.lang.NullPointerException: Attempt to invoke virtual method &#39;float java.lang.Number.floatValue()&#39; on a null object reference
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>从非空集合中取到了null，导致出现了NPE，经过一番溯源，发现这个集合是从数据库中获取的Json串通过Gsono反序列化出来的，而Gson反序列化的时候并不会报错。</p>
+</div><p>从非空集合中取到了null，导致出现了NPE，经过一番溯源，发现这个集合是从数据库中获取的Json串通过Gsono反序列化出来的，而Gson反序列化的时候并不会报错，直到数据使用时才抛出NPE。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -260,8 +260,14 @@
 </span></span><span class="line"><span class="cl">  ...
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="兼容">兼容</h2>
-<p>Gson是并没有适配Kotlin的可空类型的，会返回一个带有null的集合，导致取用的时候会NPE，但是查看了相关写入数据库的代码也并咩有找到存在写入null的情况，因此我们只能在反序列化的时候坐一个兼容逻辑，如果读取到null值则则写入默认值0f到集合，以及为了进一步排查问题，也可以打印相关的日志，比如一个集合中存在多少个null值，以便可以进一步分析。</p>
+</div><p>阅读源码后我们也就可以知道Gson对Kotlin的一些特性别并不兼容：</p>
+<ol>
+<li>不支持空安全</li>
+<li>不支持默认参数</li>
+</ol>
+<h2 id="兼容">兼容</h2>
+<p>Gson是并没有适配Kotlin的可空类型的，会返回一个带有null的集合，导致取用的时候会NPE，但是查看了相关写入数据库的代码也并咩有找到存在写入null的情况，因此我们只能在反序列化的时候做一个兼容逻辑，如果读取到null值则则写入默认值0f到集合，以及为了进一步排查问题，也可以打印相关的日志，比如一个集合中存在多少个null值，以便可以进一步分析。</p>
+<p>不过也有一个Square出品的与kotlin兼容极好的现代化JSON解析库——<a href="https://github.com/square/moshi" target="_blank" rel="noopener noreffer ">moshi</a></p>
 <p>针对于List<Float>类型，我们注入一个自定义的类型适配器，Gson内部会取类型所对应的Adapter来处理序列化和反序列化。</p>
 <h3 id="编写listfloat的自定义适配器">编写List<Float>的自定义适配器</h3>
 <div class="highlight"><div class="chroma">

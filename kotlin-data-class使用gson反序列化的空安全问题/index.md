@@ -5,7 +5,7 @@
 ```
 java.lang.NullPointerException: Attempt to invoke virtual method 'float java.lang.Number.floatValue()' on a null object reference
 ```
-从非空集合中取到了null，导致出现了NPE，经过一番溯源，发现这个集合是从数据库中获取的Json串通过Gsono反序列化出来的，而Gson反序列化的时候并不会报错。
+从非空集合中取到了null，导致出现了NPE，经过一番溯源，发现这个集合是从数据库中获取的Json串通过Gsono反序列化出来的，而Gson反序列化的时候并不会报错，直到数据使用时才抛出NPE。
 
 ```
 val type = object : TypeToken<List<Float>>() {}.type
@@ -72,8 +72,15 @@ public final class ObjectTypeAdapter extends TypeAdapter<Object> {
   ...
 
 ```
+
+阅读源码后我们也就可以知道Gson对Kotlin的一些特性别并不兼容：
+1. 不支持空安全
+2. 不支持默认参数
+
 ## 兼容
-Gson是并没有适配Kotlin的可空类型的，会返回一个带有null的集合，导致取用的时候会NPE，但是查看了相关写入数据库的代码也并咩有找到存在写入null的情况，因此我们只能在反序列化的时候坐一个兼容逻辑，如果读取到null值则则写入默认值0f到集合，以及为了进一步排查问题，也可以打印相关的日志，比如一个集合中存在多少个null值，以便可以进一步分析。
+Gson是并没有适配Kotlin的可空类型的，会返回一个带有null的集合，导致取用的时候会NPE，但是查看了相关写入数据库的代码也并咩有找到存在写入null的情况，因此我们只能在反序列化的时候做一个兼容逻辑，如果读取到null值则则写入默认值0f到集合，以及为了进一步排查问题，也可以打印相关的日志，比如一个集合中存在多少个null值，以便可以进一步分析。
+
+不过也有一个Square出品的与kotlin兼容极好的现代化JSON解析库——[moshi](https://github.com/square/moshi)
 
 针对于List<Float>类型，我们注入一个自定义的类型适配器，Gson内部会取类型所对应的Adapter来处理序列化和反序列化。
 
