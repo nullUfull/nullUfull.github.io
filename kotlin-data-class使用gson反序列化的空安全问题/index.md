@@ -73,7 +73,7 @@ public final class ObjectTypeAdapter extends TypeAdapter<Object> {
 
 ```
 
-阅读源码后我们也就可以知道Gson对Kotlin的一些特性别并不兼容：
+阅读源码后我们也就可以知道Gson对Kotlin的一些特性别并不兼容：w
 1. 不支持空安全
 2. 不支持默认参数
 
