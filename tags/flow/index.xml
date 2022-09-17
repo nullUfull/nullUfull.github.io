@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>flow - 标签 - FineSnow&#39;s Blog</title>
+        <link>https://example.com/tags/flow/</link>
+        <description>flow - 标签 - FineSnow&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Sep 2022 18:27:14 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/flow/" rel="self" type="application/rss+xml" /><item>
+    <title>flow</title>
+    <link>https://example.com/flow/</link>
+    <pubDate>Fri, 16 Sep 2022 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/flow/</guid>
+    <description><![CDATA[kotlin-flow repeatOnLifecycle API design story]]></description>
+</item>
+</channel>
+</rss>

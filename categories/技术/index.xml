@@ -4,7 +4,15 @@
         <link>https://example.com/categories/%E6%8A%80%E6%9C%AF/</link>
         <description>技术 - 分类 - FineSnow&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
-            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Aug 2022 07:54:32 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Sep 2022 18:27:14 &#43;0000</lastBuildDate><atom:link href="https://example.com/categories/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+    <title>flow</title>
+    <link>https://example.com/flow/</link>
+    <pubDate>Fri, 16 Sep 2022 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/flow/</guid>
+    <description><![CDATA[kotlin-flow repeatOnLifecycle API design story]]></description>
+</item>
+<item>
     <title>kotlin data class使用Gson反序列化的空安全问题</title>
     <link>https://example.com/kotlin-data-class%E4%BD%BF%E7%94%A8gson%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E7%A9%BA%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/</link>
     <pubDate>Fri, 26 Aug 2022 07:54:32 &#43;0800</pubDate>
