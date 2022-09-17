@@ -141,7 +141,7 @@ private fun ContentResolver.insertMediaImage(fileName: String): InsertResult? {
             put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES)
             put(MediaStore.Images.Media.IS_PENDING, 1)
         }
-        // 高版本直接插入，会自动重命名
+        // 高版本直接插入，会自动重命名；但是自动重命名有数量限制超过32张会抛异常，当然外部传入就加上时间戳更好，内部实现也可以兼容下这种情况 // todo 兼容
         collection = MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
     } else {
         val pictureDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
@@ -207,3 +207,4 @@ private fun ContentResolver.queryMediaImageAboveQ(imagePath: String): Uri? {
 
 ## 参考
 [Access media files from shared storage](https://developer.android.google.cn/training/data-storage/shared/media)
+[java.lang.IllegalStateException:Failed to build unique file:](https://blog.csdn.net/flycatdeng/article/details/106794828)
