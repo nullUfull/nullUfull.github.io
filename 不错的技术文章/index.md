@@ -8,8 +8,10 @@
 
 2. [如何优雅的取消协程 ？](https://mp.weixin.qq.com/s/h8Qg_5fLkpcNDzP3IZDyqg)
 
-3. [Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消
-](https://johnnyshieh.me/posts/kotlin-coroutine-integration-and-cancel/)
+3. [Kotlin Coroutines(协程) 完全解析（三），封装异步回调、协程间关系及协程的取消](https://johnnyshieh.me/posts/kotlin-coroutine-integration-and-cancel/)
 
 4. [[译] 如何优雅的处理协程的异常？](https://juejin.im/post/5ebeaef5f265da7bcb65ff80)
+
+## 内存泄露
+[ViewLifecycleLazy and other ways to avoid View memory leaks in Android Fragments](https://bladecoder.medium.com/viewlifecyclelazy-and-other-ways-to-avoid-view-memory-leaks-in-android-fragments-4aa982e6e579)
 

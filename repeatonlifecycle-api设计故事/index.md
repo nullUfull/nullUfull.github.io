@@ -1,7 +1,7 @@
 # repeatOnLifecycle API设计故事
 
 
-> 翻译自[repeatOnLifecycle API design story](https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333)
+> 翻译自[repeatOnLifecycle API design story](https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333)，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布了[中文版本](https://juejin.cn/post/7001371050202103838)，不过感受到了机翻的意思表达不那么明确，官方的中文版还OK的，正好也能对比一下，提高下英文水准。
 
 在这篇博文中，你将了解`Lifecycle.repeatOnLifecycle` API背后的设计决策，以及为什么我们删除了2.4.0版`lifecycle-runtime-ktx`库的第一个alpha版本中添加的一些辅助函数。
 
@@ -49,7 +49,7 @@ class LocationActivity : AppCompatActivity() {
 > 注意：如果你对`repeatOnLifecycle`是如何实现的感兴趣，这里有一个[源代码链接](https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/RepeatOnLifecycle.kt;l=63)。
 
 ## 为什么它是一个挂起函数
-挂起函数是这种重启行为的最佳选择，因为它保留了调用环境。它涉及调用协程的`Job`树。由于`repeatOnLifecycle`的内部实现是使用`suspendCancellableCoroutine`，它配合取消：取消调用的协程也会取消`repeatOnLifecycle`并且重启`block`。
+由于可以保留调用上下文，所以挂起函数是执行重启行为的最佳选择。它在调用协程时遵从`Job`树。由于`repeatOnLifecycle`的内部实现是使用`suspendCancellableCoroutine`，它可以和取消操作共同运作：取消发起调用的协程的同时也会取消`repeatOnLifecycle`和它重启执行的`block`。
 
 另外，我们还可以在`repeatOnLifecycle`之上添加更多的API，比如`Flow.flowWithLifecycle`流操作符。更重要的是，如果你的项目需要它还允许你在这个API之上创建辅助函数。这就是我们试图用`LifecycleOwner.addRepeatingJob`API做的事情，我们在`lifecycle-runtime-ktx:2.4.0-alpha01`中添加了这个API，事实上，在`alpha02`中删除了它。
 
@@ -88,12 +88,12 @@ class LocationActivity : AppCompatActivity() {
 
 乍一看，你可能认为这种代码更干净，需要的代码更少。然而，如果你不仔细注意的话，有一些隐藏的问题会让你自食其果：
 
-- 尽管`addRepeatingJob`需要一个暂停块，但`addRepeatingJob`不是一个挂起函数。因此，你不应该在协程中调用它！！
+- 尽管`addRepeatingJob`接受一个挂起代码块，但`addRepeatingJob`不是一个挂起函数。因此，你不应该在协程中调用它！！
 - 更少的代码？你只节省了一行代码，代价是拥有一个更容易出错的API。
 
-第一点可能看起来很明显，但它总是让开发者上当。而且具有讽刺意味的是，它实际上是基于协程的一个最核心的概念：[结构化并发](https://elizarov.medium.com/structured-concurrency-722d765aa952)。
+第一点可能看起来很明显，但它总是让开发者上当。而且讽刺的是，实际上它是基于协程的一个最核心的概念：[结构化并发](https://elizarov.medium.com/structured-concurrency-722d765aa952)。
 
-`addRepeatingJob`不是一个挂起函数，因此，默认情况下不支持结构化并发（注意，你可以通过使用`coroutineContext`参数来手动使其支持）。由于`block`参数是一个挂起的lambda，你把这个API与协程联系起来，你可以很容易地写出这样的危险代码：
+`addRepeatingJob`不是一个挂起函数，因此，默认情况下不支持结构化并发（需要你注意的是你可以通过使用`coroutineContext`参数来手动使其支持）。由于`block`参数是一个挂起的lambda，你把这个API与协程联系起来，你可以很容易地写出这样的危险代码：
 
 ```
 class LocationActivity : AppCompatActivity() {
@@ -127,15 +127,15 @@ class LocationActivity : AppCompatActivity() {
 
 由于`addRepeatingJob`使用隐含在实现细节中的`lifecycleScope`创建新的协程来运行重复块，新的协程不遵从结构化的并发，也不保留调用协程的上下文。因此，当你调用`job.cancel()`时，将不会被取消。*这可能会导致你的应用程序中出现非常不易察觉的bug，很难调试*。
 
-## repeatOnLifecycle万岁
+## repeatOnLifecycle才是大赢家
 
 `addRepeatingJob`里面使用的隐式`CoroutineScope`是使API在某些情况下使用不安全的原因。这是一个隐藏的问题，需要特别注意才能写出正确的代码。这一点是避免在库中的 `repeatOnLifecycle`之上增加包装API的反复论证。
 
 `suspend repeatOnLifecycle`API的主要好处是，它默认与结构化并发合作，而`addRepeatingJob`没有。它还能帮助你思考你希望重复的任务在哪个范围内执行。这个API是自解释的并且符合开发者的预期：
 
-- 和其他的挂起函数一样，它将挂起该协程的执行，直到发生一些事情。在这种情况下，直到生命周期被销毁。
-- 没有惊喜! 它可以和其他的协程代码一起使用，它的行为符合你的预期。
-- `repeatOnLifecycle`周围的代码是可读的，对新手来说是有意义的："首先，我启动一个新的协程，跟随用户界面的生命周期。然后，我调用`repeatOnLifecycle`，在用户界面达到这个生命周期状态时启动这个`block`"。
+- 和其他的挂起函数一样，它会将当前协程的执行中断，直到特定事件发生。比如这里是当生命周期被销毁时继续执行。
+- 没有意外惊吓! 它可以和其他的协程代码一起使用，并且会按照您的预期工作。
+- `repeatOnLifecycle`周围的代码可读性高，对新手来说是有意义的："首先，我启动一个跟随用户界面的生命周期的新协程。然后，我需要调用`repeatOnLifecycle`使得每当用户界面达到这个生命周期状态时启动执行这个`block`"。
 
 ## Flow.flowWithLifecycle
 
@@ -184,7 +184,7 @@ class LocationActivity : AppCompatActivity() {
 
 这个名字也多少受到了现有`LifecycleCoroutineScope.launchWhenX`挂起API的影响。由于`launchWhenStarted`和`repeatOnLifecycle(STARTED)`提供了完全不同的功能（`launchWhenStarted`暂停了协程的执行，而`repeatOnLifecycle`取消并重新启动一个新的协程），如果新API的名称相似（例如，用`launchWhenever`来表示重启API），开发者可能会感到困惑，甚至在不知不觉中交替使用它们。
 
-## 单行flow收集
+## 一行代码收集数据流
 LiveData的observe函数具有生命周期感知，并且只在生命周期至少开始时处理排放。如果你要从LiveData迁移到Kotlin flow，你可能会认为有一个单行的替换是个好主意！你可以删除模板代码，而且迁移很直接。
 
 因此，您可以像[Ian Lake](https://twitter.com/ianhlake)在他第一次开始使用`repeatOnLifecycle`API 时所做的那样。他创建了一个名为`collectIn`的便捷包装器，如下所示（为了遵循上面讨论的命名约定，我将其重命名为`launchAndCollectIn`）：
@@ -220,16 +220,16 @@ class LocationActivity : AppCompatActivity() {
 }
 ```
 
-这个包装器，虽然在这个例子中看起来很好很直接，但它存在着我们前面提到的关于`LifecycleOwner.addRepeatingJob`的同样问题。它不尊重调用的上下文，在其他循环程序中使用会很危险。此外，原来的名字真的很有误导性：`collectIn`并不是一个挂起的函数 如前所述，开发者希望`collect`函数能够挂起。也许，这个包装器的更好的名字可以是`Flow.launchAndCollectIn`，以防止不良使用。
+这个包装器，虽然在这个例子中看起来很好很直接，但它存在着我们前面提到的关于`LifecycleOwner.addRepeatingJob`的同样问题。它不尊重调用的上下文，在其他循环程序中使用会很危险。此外，原来的名字真的很有误导性：`collectIn`并不是一个挂起的函数 如前所述，开发者希望`collect`函数能够挂起。也许，这个封装函数的更好的名字可以是`Flow.launchAndCollectIn`，以防止不良使用。
 
-## iosched的包装器
+## iosched的封装函数
 
-`repeatOnLifecycle`必须与Fragments中的`viewLifecycleOwner`一起使用。在开源的 Google I/O 应用程序[iosched](https://github.com/google/iosched)项目中，团队决定创建一个包装器，以避免在 Fragments 中滥用 API，其 API 名称非常明确：[Fragment.launchAndRepeatWithViewLifecycle](https://github.com/google/iosched/blob/main/mobile/src/main/java/com/google/samples/apps/iosched/util/UiUtils.kt#L60)。
+`repeatOnLifecycle`必须与Fragments中的`viewLifecycleOwner`一起使用。在开源的 Google I/O 应用程序[iosched](https://github.com/google/iosched)项目中，团队决定创建一个封装函数，以避免在 Fragments 中滥用 API，其 API 名称非常明确：[Fragment.launchAndRepeatWithViewLifecycle](https://github.com/google/iosched/blob/main/mobile/src/main/java/com/google/samples/apps/iosched/util/UiUtils.kt#L60)。
 
 > 注意：实现与`addRepeatingJob`API非常相似。当使用`alpha01`版本的库编写此代码时，在`alpha02`中添加的`repeatOnLifecycle`API lint 检查没有到位。
 
 
-## 你需要一个包装器吗？
+## 你需要封装函数吗？
 
 如果你需要在`repeatOnLifecycle`API之上创建包装器，以适应你的应用程序中最常见的用例，请问你是否真的需要它，以及为什么需要它。如果你确信并想继续下去，我建议你选择一个非常明确的API名称，以明确定义包装器的行为，避免误用。同时，要非常清楚地记录它，让新来的人能够充分理解使用它的意义。
 

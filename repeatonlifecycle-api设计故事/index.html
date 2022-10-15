@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta name="referrer" content="never">
         <title>repeatOnLifecycle API设计故事 - FineSnow&#39;s Blog</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="repeatOnLifecycle API设计故事" />
-<meta property="og:description" content="翻译自repeatOnLifecycle API design story 在这篇博文中，你将了解Lifecycle.repeatOnLifecycle API背后的设计决" />
+<meta property="og:description" content="翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" /><meta property="og:image" content="https://example.com"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-17T21:08:36+08:00" />
@@ -16,11 +16,11 @@
 <meta name="twitter:image" content="https://example.com"/>
 
 <meta name="twitter:title" content="repeatOnLifecycle API设计故事"/>
-<meta name="twitter:description" content="翻译自repeatOnLifecycle API design story 在这篇博文中，你将了解Lifecycle.repeatOnLifecycle API背后的设计决"/>
+<meta name="twitter:description" content="翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布"/>
 <meta name="application-name" content="FineSnow&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="FineSnow&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" /><link rel="prev" href="https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" /><link rel="prev" href="https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/" /><link rel="next" href="https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine, 翻译","wordcount":  5384 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine, 翻译","wordcount":  5523 ,
         "url": "https:\/\/example.com\/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B\/","datePublished": "2022-09-17T21:08:36+08:00","dateModified": "2022-09-17T21:08:36+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
@@ -105,8 +105,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">repeatOnLifecycle API设计故事</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-17">2022-09-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 5384 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 11 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-17">2022-09-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 5523 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 12 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -117,17 +117,17 @@
     <li><a href="#repeatonlifecycle">repeatOnLifecycle</a></li>
     <li><a href="#为什么它是一个挂起函数">为什么它是一个挂起函数</a></li>
     <li><a href="#移除addrepeatingjob-api">移除addRepeatingJob API</a></li>
-    <li><a href="#repeatonlifecycle万岁">repeatOnLifecycle万岁</a></li>
+    <li><a href="#repeatonlifecycle才是大赢家">repeatOnLifecycle才是大赢家</a></li>
     <li><a href="#flowflowwithlifecycle">Flow.flowWithLifecycle</a></li>
     <li><a href="#我们应该增加一个额外的api吗">我们应该增加一个额外的API吗？</a></li>
     <li><a href="#命名很重要也很困难">命名很重要（也很困难）</a></li>
-    <li><a href="#单行flow收集">单行flow收集</a></li>
-    <li><a href="#iosched的包装器">iosched的包装器</a></li>
-    <li><a href="#你需要一个包装器吗">你需要一个包装器吗？</a></li>
+    <li><a href="#一行代码收集数据流">一行代码收集数据流</a></li>
+    <li><a href="#iosched的封装函数">iosched的封装函数</a></li>
+    <li><a href="#你需要封装函数吗">你需要封装函数吗？</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><blockquote>
-<p>翻译自<a href="https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333" target="_blank" rel="noopener noreffer ">repeatOnLifecycle API design story</a></p>
+<p>翻译自<a href="https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333" target="_blank" rel="noopener noreffer ">repeatOnLifecycle API design story</a>，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布了<a href="https://juejin.cn/post/7001371050202103838" target="_blank" rel="noopener noreffer ">中文版本</a>，不过感受到了机翻的意思表达不那么明确，官方的中文版还OK的，正好也能对比一下，提高下英文水准。</p>
 </blockquote>
 <p>在这篇博文中，你将了解<code>Lifecycle.repeatOnLifecycle</code> API背后的设计决策，以及为什么我们删除了2.4.0版<code>lifecycle-runtime-ktx</code>库的第一个alpha版本中添加的一些辅助函数。</p>
 <p>一路走来，你会看到某些协程API在某些情况下的使用是多么危险，命名是多么困难，以及为什么我们决定在库中只保留低级别的<code>suspend</code> API。</p>
@@ -195,7 +195,7 @@
 <p>注意：如果你对<code>repeatOnLifecycle</code>是如何实现的感兴趣，这里有一个<a href="https://cs.android.com/androidx/platform/frameworks/support/&#43;/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/RepeatOnLifecycle.kt;l=63" target="_blank" rel="noopener noreffer ">源代码链接</a>。</p>
 </blockquote>
 <h2 id="为什么它是一个挂起函数">为什么它是一个挂起函数</h2>
-<p>挂起函数是这种重启行为的最佳选择，因为它保留了调用环境。它涉及调用协程的<code>Job</code>树。由于<code>repeatOnLifecycle</code>的内部实现是使用<code>suspendCancellableCoroutine</code>，它配合取消：取消调用的协程也会取消<code>repeatOnLifecycle</code>并且重启<code>block</code>。</p>
+<p>由于可以保留调用上下文，所以挂起函数是执行重启行为的最佳选择。它在调用协程时遵从<code>Job</code>树。由于<code>repeatOnLifecycle</code>的内部实现是使用<code>suspendCancellableCoroutine</code>，它可以和取消操作共同运作：取消发起调用的协程的同时也会取消<code>repeatOnLifecycle</code>和它重启执行的<code>block</code>。</p>
 <p>另外，我们还可以在<code>repeatOnLifecycle</code>之上添加更多的API，比如<code>Flow.flowWithLifecycle</code>流操作符。更重要的是，如果你的项目需要它还允许你在这个API之上创建辅助函数。这就是我们试图用<code>LifecycleOwner.addRepeatingJob</code>API做的事情，我们在<code>lifecycle-runtime-ktx:2.4.0-alpha01</code>中添加了这个API，事实上，在<code>alpha02</code>中删除了它。</p>
 <h2 id="移除addrepeatingjob-api">移除addRepeatingJob API</h2>
 <p><code>LifecycleOwner.addRepeatingJob</code>API在库的第一个<code>alpha</code>版本中添加了这个功能，现在已经从库中移除，它是这样实现的。</p>
@@ -255,11 +255,11 @@
 </div>
 </div><p>乍一看，你可能认为这种代码更干净，需要的代码更少。然而，如果你不仔细注意的话，有一些隐藏的问题会让你自食其果：</p>
 <ul>
-<li>尽管<code>addRepeatingJob</code>需要一个暂停块，但<code>addRepeatingJob</code>不是一个挂起函数。因此，你不应该在协程中调用它！！</li>
+<li>尽管<code>addRepeatingJob</code>接受一个挂起代码块，但<code>addRepeatingJob</code>不是一个挂起函数。因此，你不应该在协程中调用它！！</li>
 <li>更少的代码？你只节省了一行代码，代价是拥有一个更容易出错的API。</li>
 </ul>
-<p>第一点可能看起来很明显，但它总是让开发者上当。而且具有讽刺意味的是，它实际上是基于协程的一个最核心的概念：<a href="https://elizarov.medium.com/structured-concurrency-722d765aa952" target="_blank" rel="noopener noreffer ">结构化并发</a>。</p>
-<p><code>addRepeatingJob</code>不是一个挂起函数，因此，默认情况下不支持结构化并发（注意，你可以通过使用<code>coroutineContext</code>参数来手动使其支持）。由于<code>block</code>参数是一个挂起的lambda，你把这个API与协程联系起来，你可以很容易地写出这样的危险代码：</p>
+<p>第一点可能看起来很明显，但它总是让开发者上当。而且讽刺的是，实际上它是基于协程的一个最核心的概念：<a href="https://elizarov.medium.com/structured-concurrency-722d765aa952" target="_blank" rel="noopener noreffer ">结构化并发</a>。</p>
+<p><code>addRepeatingJob</code>不是一个挂起函数，因此，默认情况下不支持结构化并发（需要你注意的是你可以通过使用<code>coroutineContext</code>参数来手动使其支持）。由于<code>block</code>参数是一个挂起的lambda，你把这个API与协程联系起来，你可以很容易地写出这样的危险代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -318,13 +318,13 @@
 </div>
 </div><p><code>addRepeatingJob</code>做的是协程的事情，没有什么能阻止我在协程中调用它，对吗？</p>
 <p>由于<code>addRepeatingJob</code>使用隐含在实现细节中的<code>lifecycleScope</code>创建新的协程来运行重复块，新的协程不遵从结构化的并发，也不保留调用协程的上下文。因此，当你调用<code>job.cancel()</code>时，将不会被取消。<em>这可能会导致你的应用程序中出现非常不易察觉的bug，很难调试</em>。</p>
-<h2 id="repeatonlifecycle万岁">repeatOnLifecycle万岁</h2>
+<h2 id="repeatonlifecycle才是大赢家">repeatOnLifecycle才是大赢家</h2>
 <p><code>addRepeatingJob</code>里面使用的隐式<code>CoroutineScope</code>是使API在某些情况下使用不安全的原因。这是一个隐藏的问题，需要特别注意才能写出正确的代码。这一点是避免在库中的 <code>repeatOnLifecycle</code>之上增加包装API的反复论证。</p>
 <p><code>suspend repeatOnLifecycle</code>API的主要好处是，它默认与结构化并发合作，而<code>addRepeatingJob</code>没有。它还能帮助你思考你希望重复的任务在哪个范围内执行。这个API是自解释的并且符合开发者的预期：</p>
 <ul>
-<li>和其他的挂起函数一样，它将挂起该协程的执行，直到发生一些事情。在这种情况下，直到生命周期被销毁。</li>
-<li>没有惊喜! 它可以和其他的协程代码一起使用，它的行为符合你的预期。</li>
-<li><code>repeatOnLifecycle</code>周围的代码是可读的，对新手来说是有意义的：&ldquo;首先，我启动一个新的协程，跟随用户界面的生命周期。然后，我调用<code>repeatOnLifecycle</code>，在用户界面达到这个生命周期状态时启动这个<code>block</code>&quot;。</li>
+<li>和其他的挂起函数一样，它会将当前协程的执行中断，直到特定事件发生。比如这里是当生命周期被销毁时继续执行。</li>
+<li>没有意外惊吓! 它可以和其他的协程代码一起使用，并且会按照您的预期工作。</li>
+<li><code>repeatOnLifecycle</code>周围的代码可读性高，对新手来说是有意义的：&ldquo;首先，我启动一个跟随用户界面的生命周期的新协程。然后，我需要调用<code>repeatOnLifecycle</code>使得每当用户界面达到这个生命周期状态时启动执行这个<code>block</code>&quot;。</li>
 </ul>
 <h2 id="flowflowwithlifecycle">Flow.flowWithLifecycle</h2>
 <p><code>Flow.flowWithLifecycle</code>操作符（<a href="https://cs.android.com/androidx/platform/frameworks/support/&#43;/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/FlowExt.kt;l=87" target="_blank" rel="noopener noreffer ">实现在此</a>）是建立在<code>repeatOnLifecycle</code>之上的，只有当生命周期至少处于<code>minActiveState</code>时，才会发射上游流发送的项目。</p>
@@ -378,7 +378,7 @@
 </blockquote>
 <p>甚至<code>LifecycleOwner.addRepeatingJob</code>的API也是一个很难命名的问题。因为它用<code>lifecycleScope</code>创建了新的协程，所以它的前缀应该是<code>launch</code>。然而，我们想消除协程在后台使用的事实，而且由于它添加了一个新的生命周期观察者，这个名字与其他<code>LifecycleOwner</code>APIs的名字更一致。</p>
 <p>这个名字也多少受到了现有<code>LifecycleCoroutineScope.launchWhenX</code>挂起API的影响。由于<code>launchWhenStarted</code>和<code>repeatOnLifecycle(STARTED)</code>提供了完全不同的功能（<code>launchWhenStarted</code>暂停了协程的执行，而<code>repeatOnLifecycle</code>取消并重新启动一个新的协程），如果新API的名称相似（例如，用<code>launchWhenever</code>来表示重启API），开发者可能会感到困惑，甚至在不知不觉中交替使用它们。</p>
-<h2 id="单行flow收集">单行flow收集</h2>
+<h2 id="一行代码收集数据流">一行代码收集数据流</h2>
 <p>LiveData的observe函数具有生命周期感知，并且只在生命周期至少开始时处理排放。如果你要从LiveData迁移到Kotlin flow，你可能会认为有一个单行的替换是个好主意！你可以删除模板代码，而且迁移很直接。</p>
 <p>因此，您可以像<a href="https://twitter.com/ianhlake" target="_blank" rel="noopener noreffer ">Ian Lake</a>在他第一次开始使用<code>repeatOnLifecycle</code>API 时所做的那样。他创建了一个名为<code>collectIn</code>的便捷包装器，如下所示（为了遵循上面讨论的命名约定，我将其重命名为<code>launchAndCollectIn</code>）：</p>
 <div class="highlight"><div class="chroma">
@@ -440,13 +440,13 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>这个包装器，虽然在这个例子中看起来很好很直接，但它存在着我们前面提到的关于<code>LifecycleOwner.addRepeatingJob</code>的同样问题。它不尊重调用的上下文，在其他循环程序中使用会很危险。此外，原来的名字真的很有误导性：<code>collectIn</code>并不是一个挂起的函数 如前所述，开发者希望<code>collect</code>函数能够挂起。也许，这个包装器的更好的名字可以是<code>Flow.launchAndCollectIn</code>，以防止不良使用。</p>
-<h2 id="iosched的包装器">iosched的包装器</h2>
-<p><code>repeatOnLifecycle</code>必须与Fragments中的<code>viewLifecycleOwner</code>一起使用。在开源的 Google I/O 应用程序<a href="https://github.com/google/iosched" target="_blank" rel="noopener noreffer ">iosched</a>项目中，团队决定创建一个包装器，以避免在 Fragments 中滥用 API，其 API 名称非常明确：<a href="https://github.com/google/iosched/blob/main/mobile/src/main/java/com/google/samples/apps/iosched/util/UiUtils.kt#L60" target="_blank" rel="noopener noreffer ">Fragment.launchAndRepeatWithViewLifecycle</a>。</p>
+</div><p>这个包装器，虽然在这个例子中看起来很好很直接，但它存在着我们前面提到的关于<code>LifecycleOwner.addRepeatingJob</code>的同样问题。它不尊重调用的上下文，在其他循环程序中使用会很危险。此外，原来的名字真的很有误导性：<code>collectIn</code>并不是一个挂起的函数 如前所述，开发者希望<code>collect</code>函数能够挂起。也许，这个封装函数的更好的名字可以是<code>Flow.launchAndCollectIn</code>，以防止不良使用。</p>
+<h2 id="iosched的封装函数">iosched的封装函数</h2>
+<p><code>repeatOnLifecycle</code>必须与Fragments中的<code>viewLifecycleOwner</code>一起使用。在开源的 Google I/O 应用程序<a href="https://github.com/google/iosched" target="_blank" rel="noopener noreffer ">iosched</a>项目中，团队决定创建一个封装函数，以避免在 Fragments 中滥用 API，其 API 名称非常明确：<a href="https://github.com/google/iosched/blob/main/mobile/src/main/java/com/google/samples/apps/iosched/util/UiUtils.kt#L60" target="_blank" rel="noopener noreffer ">Fragment.launchAndRepeatWithViewLifecycle</a>。</p>
 <blockquote>
 <p>注意：实现与<code>addRepeatingJob</code>API非常相似。当使用<code>alpha01</code>版本的库编写此代码时，在<code>alpha02</code>中添加的<code>repeatOnLifecycle</code>API lint 检查没有到位。</p>
 </blockquote>
-<h2 id="你需要一个包装器吗">你需要一个包装器吗？</h2>
+<h2 id="你需要封装函数吗">你需要封装函数吗？</h2>
 <p>如果你需要在<code>repeatOnLifecycle</code>API之上创建包装器，以适应你的应用程序中最常见的用例，请问你是否真的需要它，以及为什么需要它。如果你确信并想继续下去，我建议你选择一个非常明确的API名称，以明确定义包装器的行为，避免误用。同时，要非常清楚地记录它，让新来的人能够充分理解使用它的意义。</p>
 <p>我希望这篇博文能让您了解团队在决定如何处理<code>repeatOnLifecycle</code>API以及我们可以在其之上添加的潜在帮助方法时的考虑因素。</p>
 <p>再次感谢 Adam Powell、Wojtek Kaliciński、Ian Lake 和 Yigit Boyar 提供反馈并讨论这些 API 的形态。</p>
@@ -473,7 +473,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/" class="prev" rel="prev" title="生活周刊 008 远山淡影"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>生活周刊 008 远山淡影</a></div>
+    <div class="post-nav"><a href="/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/" class="prev" rel="prev" title="生活周刊 008 远山淡影"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>生活周刊 008 远山淡影</a>
+            <a href="/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/" class="next" rel="next" title="生活周刊 008 远山淡影">生活周刊 008 远山淡影<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
