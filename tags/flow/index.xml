@@ -12,5 +12,13 @@
     <guid>https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/</guid>
     <description><![CDATA[翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布]]></description>
 </item>
+<item>
+    <title>flow</title>
+    <link>https://example.com/flow/</link>
+    <pubDate>Fri, 16 Sep 2022 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/flow/</guid>
+    <description><![CDATA[[toc] 基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow。 Flow的定义很简单，表示它是一个可以被]]></description>
+</item>
 </channel>
 </rss>

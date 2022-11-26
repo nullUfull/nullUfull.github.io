@@ -12,6 +12,10 @@
 
 4. [[译] 如何优雅的处理协程的异常？](https://juejin.im/post/5ebeaef5f265da7bcb65ff80)
 
+5. [Kotlin 协程五 —— 在Android 中使用 Kotlin 协程](https://www.cnblogs.com/joy99/p/15805969.html)
+
+6. [Kotlin Coroutines dispatchers
+](https://kt.academy/article/cc-dispatchers)
 ## 内存泄露
 [ViewLifecycleLazy and other ways to avoid View memory leaks in Android Fragments](https://bladecoder.medium.com/viewlifecyclelazy-and-other-ways-to-avoid-view-memory-leaks-in-android-fragments-4aa982e6e579)
 

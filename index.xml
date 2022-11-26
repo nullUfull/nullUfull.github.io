@@ -4,9 +4,17 @@
         <link>https://example.com/</link>
         <description>Hugo theme - LoveIt</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
-            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 13:29:11 &#43;0800</lastBuildDate>
+            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Nov 2022 16:52:32 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>study roadmap</title>
+    <link>https://example.com/study_roadmap/</link>
+    <pubDate>Sat, 26 Nov 2022 16:52:32 &#43;0800</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/study_roadmap/</guid>
+    <description><![CDATA[kotlin协程 《深入理解kotlin协程》 flow blog撰写 深入理解flow 深入理解redux框架 KSP KMM 了解KMM Compose 简单入门]]></description>
+</item>
+<item>
     <title>生活周刊 009 蛤蟆先生</title>
     <link>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/</link>
     <pubDate>Thu, 06 Oct 2022 13:29:11 &#43;0800</pubDate>
@@ -21,6 +29,14 @@
     <author>FineSnow</author>
     <guid>https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/</guid>
     <description><![CDATA[翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布]]></description>
+</item>
+<item>
+    <title>flow</title>
+    <link>https://example.com/flow/</link>
+    <pubDate>Fri, 16 Sep 2022 18:27:14 &#43;0000</pubDate>
+    <author>FineSnow</author>
+    <guid>https://example.com/flow/</guid>
+    <description><![CDATA[[toc] 基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow。 Flow的定义很简单，表示它是一个可以被]]></description>
 </item>
 <item>
     <title>生活周刊 008 远山淡影</title>
@@ -69,22 +85,6 @@
     <author>FineSnow</author>
     <guid>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-004-%E6%97%A0%E9%A2%98/</guid>
     <description><![CDATA[享受生活，热爱生活，发现生活中的美 阅读 《兄弟》 看了大概300页，在那文革的背景下，文中的人物的命运可真是太惨了。时代的一粒灰落到一个普通人身]]></description>
-</item>
-<item>
-    <title>生活周刊 003 围城</title>
-    <link>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-003-%E5%9B%B4%E5%9F%8E/</link>
-    <pubDate>Sat, 30 Jul 2022 07:54:32 &#43;0800</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-003-%E5%9B%B4%E5%9F%8E/</guid>
-    <description><![CDATA[享受生活，热爱生活，发现生活中的美 阅读 https://book.douban.com/subject/1008145/ 本周读的是钱钟书先生的《围城》，百闻不如一读，读之前与之有关的无非是下面这一句话，乍一看这本书可能是]]></description>
-</item>
-<item>
-    <title>Hugo-添加阅读页面</title>
-    <link>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</link>
-    <pubDate>Sat, 23 Jul 2022 00:00:00 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/hugo-%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%A1%B5%E9%9D%A2/</guid>
-    <description><![CDATA[创建博客的起初，就想有一个页面用来置放看过的书籍、电影等，之前用hexo搭建博客，其实就有个豆瓣的插件，后来迁移到了hugo也一直在找，但是]]></description>
 </item>
 </channel>
 </rss>
