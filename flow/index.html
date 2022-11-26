@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta name="referrer" content="never">
-        <title>flow - FineSnow&#39;s Blog</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="flow" />
-<meta property="og:description" content="[toc] 基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow。 Flow的定义很简单，表示它是一个可以被" />
+        <title>kotlin flow - FineSnow&#39;s Blog</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="kotlin flow" />
+<meta property="og:description" content="基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow Flow的定义很简单，表示它是一个可以被订阅" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/flow/" /><meta property="og:image" content="https://example.com"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-16T18:27:14+00:00" />
-<meta property="article:modified_time" content="2022-11-26T17:14:44+08:00" /><meta property="og:site_name" content="LoveIt" />
+<meta property="article:published_time" content="2022-09-16T16:52:32+08:00" />
+<meta property="article:modified_time" content="2022-11-26T19:54:41+08:00" /><meta property="og:site_name" content="LoveIt" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com"/>
 
-<meta name="twitter:title" content="flow"/>
-<meta name="twitter:description" content="[toc] 基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow。 Flow的定义很简单，表示它是一个可以被"/>
+<meta name="twitter:title" content="kotlin flow"/>
+<meta name="twitter:description" content="基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow Flow的定义很简单，表示它是一个可以被订阅"/>
 <meta name="application-name" content="FineSnow&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="FineSnow&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -26,13 +26,13 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "flow",
+        "headline": "kotlin flow",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/flow\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine","wordcount":  1634 ,
-        "url": "https:\/\/example.com\/flow\/","datePublished": "2022-09-16T18:27:14+00:00","dateModified": "2022-11-26T17:14:44+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine","wordcount":  1638 ,
+        "url": "https:\/\/example.com\/flow\/","datePublished": "2022-09-16T16:52:32+08:00","dateModified": "2022-11-26T19:54:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -103,9 +103,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">flow</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">kotlin flow</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1634 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1638 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -149,10 +149,9 @@
     <li><a href="#参考">参考</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>[toc]</p>
-<h2 id="基础">基础</h2>
-<p>Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow。</p>
-<p>Flow的定义很简单，表示它是一个可以被订阅收集的东西。</p>
+            </div><div class="content" id="content"><h2 id="基础">基础</h2>
+<p><code>Flow</code>是一种基于流的编程模型，可以理解在<code>Kotlin</code>协程中提供的响应式编程方式就是<code>Flow</code></p>
+<p><code>Flow</code>的定义很简单，表示它是一个可以被订阅收集的东西</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -167,7 +166,7 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>而其中的FlowCollector代表流的接收者，其中定义了发送数据的功能。</p>
+</div><p>而其中的<code>FlowCollector</code>代表流的接收者，其中定义了发送数据的功能。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -193,14 +192,14 @@
 </div><h3 id="livedata">LiveData</h3>
 <ol>
 <li>简单易用，但难以处理复杂数据</li>
-<li>postValue丢失数据</li>
+<li><code>postValue</code>丢失数据</li>
 <li>数据倒灌</li>
 <li>不防抖</li>
 </ol>
 <h3 id="冷流">冷流</h3>
-<p>Flow 是一种 “冷流”(Cold Stream)。</p>
+<p><code>Flow</code>是一种 “冷流”(<code>Cold Stream</code>)。</p>
 <p>冷流是一种数据源，该类数据源的生产者会在每个监听者开始消费事件的时候执行，从而在每个订阅上创建新的数据流。</p>
-<p>这种冷流的行为我们可以从SafeFlow的实现中得知，在订阅的时候会执行传入的代码块：</p>
+<p>这种冷流的行为我们可以从<code>SafeFlow</code>的实现中得知，在订阅的时候会执行传入的代码块：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -219,24 +218,26 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>而一旦消费者停止监听（例如：collect所在协程被取消了），数据流将会被自动关闭，不会再发射数据。</p>
+</div><p>而一旦消费者停止监听（例如：<code>collect</code>所在协程被取消了），数据流将会被自动关闭，不会再发射数据。</p>
 <ol>
 <li>结构式并发；父子协程之间的关系；主从作用域、协同作用域</li>
 <li>协程的取消</li>
-<li>UI层订阅Flow的最佳实践</li>
+<li><code>UI</code>层订阅<code>Flow</code>的最佳实践</li>
 </ol>
 <h4 id="flow的创建">Flow的创建</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">flow {
@@ -247,12 +248,14 @@
 </span></span><span class="line"><span class="cl">    }
 </span></span><span class="line"><span class="cl">}
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">public fun &lt;T&gt; flow(@BuilderInference block: suspend FlowCollector&lt;T&gt;.() -&gt; Unit): Flow&lt;T&gt; = SafeFlow(block)
+</span></span><span class="line"><span class="cl">public fun &lt;T&gt; flow(
+</span></span><span class="line"><span class="cl">    @BuilderInference block: suspend FlowCollector&lt;T&gt;.() -&gt; Unit
+</span></span><span class="line"><span class="cl">): Flow&lt;T&gt; = SafeFlow(block)
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li><code>flow</code>是一个高阶函数，参数是带接收者<code>FlowCollector</code>并且有<code>suspend</code>修饰符的函数类型，意味着<code>block</code>代码块中可以调用挂起函数</li>
-<li><code>emit</code>函数不是线程安全的，不应该并发调用，所以再flow的代码块中不允许切换线程</li>
+<li><code>emit</code>函数不是线程安全的，不应该并发调用，所以再<code>flow</code>的代码块中不允许切换线程</li>
 </ol>
 <p>除此之外还封装了<code>asFlow</code>、<code>flowOf</code>等函数，都是基于<code>flow{}</code>实现的，方便调用方使用</p>
 <div class="highlight"><div class="chroma">
@@ -314,11 +317,11 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>以广播方式在其所有Flow器之间共享发射值的热流，以便所有收集器获得所有发射值。共享流称为热流，因为它的活动实例独立于收集器的存在而存在。</p>
-<p>这与常规Flow相反，例如由flow { &hellip; }函数定义的，它是冷的并且为每个收集器单独启动。</p>
+</div><p>以广播方式在其所有<code>Flow</code>器之间共享发射值的热流，以便所有收集器获得所有发射值。共享流称为热流，因为它的活动实例独立于收集器的存在而存在。</p>
+<p>这与常规<code>Flow</code>相反，例如由<code>flow</code> { &hellip; }函数定义的，它是冷的并且为每个收集器单独启动。</p>
 <p>共享流程永远不会完成。在共享流上调用<code>Flow.collect</code>永远不会正常完成，由<code>Flow.launchIn</code>函数启动的协程也不会正常完成。共享流的活动收集器称为订阅者。</p>
 <h4 id="stateflow">StateFlow</h4>
-<p>特殊的ShareFlow  replay = 1 对标LiveData，必须有一个默认值，因为对外提供了一个接口用于获取当前值</p>
+<p>特殊的<code>ShareFlow</code>  replay = 1 对标LiveData，必须有一个默认值，因为对外提供了一个接口用于获取当前值</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -337,11 +340,11 @@
 </span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>事件：事件是一次有效的，新订阅者不应该收到旧的事件，事件数据适合用SharedFlow(replay=0)
-状态：状态是可以恢复的，新订阅者允许收到旧的状态数据，状态数据适合用StateFlow</p>
-<p>比如说ViewModel通知View显示一个弹窗提示，切后台后回来会走onStart，会重新订阅事件对应的Flow，因此会再次收到事件，而显示弹窗</p>
+</div><p>事件：事件是一次有效的，新订阅者不应该收到旧的事件，事件数据适合用<code>SharedFlow</code>(replay=0)
+状态：状态是可以恢复的，新订阅者允许收到旧的状态数据，状态数据适合用<code>StateFlow</code></p>
+<p>比如说<code>ViewModel</code>通知<code>View</code>显示一个弹窗提示，切后台后回来会走<code>onStart</code>，会重新订阅事件对应的<code>Flow</code>，因此会再次收到事件，而显示弹窗</p>
 <h4 id="冷流转化为热流">冷流转化为热流</h4>
-<p>推荐使用shareIn扩展方法 and SharingStarted.WhileSubscribed(5000) default use</p>
+<p>推荐使用<code>shareIn</code>扩展方法 and <code>SharingStarted.WhileSubscribed(5000)</code> default use</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -462,15 +465,15 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-11-26&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/cf741efa647394215c0efb643daa8d74e65e24a0" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) cf741efa647394215c0efb643daa8d74e65e24a0: update">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>cf741ef</a></span>
+                <span>更新于 2022-11-26&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/280368cef0370b281ddc27023dac405e9e276444" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) 280368cef0370b281ddc27023dac405e9e276444: update">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>280368c</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
                             <a class="link-to-markdown" href="/flow/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/flow/" data-title="flow" data-hashtags="kotlin,flow,coroutine"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/flow/" data-hashtag="kotlin"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/flow/" data-title="flow"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/flow/" data-title="flow"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/flow/" data-title="flow"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/flow/" data-title="kotlin flow" data-hashtags="kotlin,flow,coroutine"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/flow/" data-hashtag="kotlin"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/flow/" data-title="kotlin flow"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/flow/" data-title="kotlin flow"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/flow/" data-title="kotlin flow"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>

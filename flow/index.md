@@ -1,13 +1,11 @@
-# flow
+# kotlin flow
 
-
-[toc]
 
 ## 基础
 
-Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow。
+`Flow`是一种基于流的编程模型，可以理解在`Kotlin`协程中提供的响应式编程方式就是`Flow`
 
-Flow的定义很简单，表示它是一个可以被订阅收集的东西。
+`Flow`的定义很简单，表示它是一个可以被订阅收集的东西
 ```
 public interface Flow<out T> {
     @InternalCoroutinesApi
@@ -15,7 +13,7 @@ public interface Flow<out T> {
 }
 ```
 
-而其中的FlowCollector代表流的接收者，其中定义了发送数据的功能。
+而其中的`FlowCollector`代表流的接收者，其中定义了发送数据的功能。
 
 ```
 public interface FlowCollector<in T> {
@@ -32,17 +30,17 @@ public interface FlowCollector<in T> {
 ### LiveData
 
 1. 简单易用，但难以处理复杂数据
-2. postValue丢失数据
+2. `postValue`丢失数据
 3. 数据倒灌
 4. 不防抖
 
 ### 冷流
 
-Flow 是一种 “冷流”(Cold Stream)。
+`Flow`是一种 “冷流”(`Cold Stream`)。
 
 冷流是一种数据源，该类数据源的生产者会在每个监听者开始消费事件的时候执行，从而在每个订阅上创建新的数据流。
 
-这种冷流的行为我们可以从SafeFlow的实现中得知，在订阅的时候会执行传入的代码块：
+这种冷流的行为我们可以从`SafeFlow`的实现中得知，在订阅的时候会执行传入的代码块：
 
 ```
 private class SafeFlow<T>(private val block: suspend FlowCollector<T>.() -> Unit) : AbstractFlow<T>() {
@@ -53,11 +51,11 @@ private class SafeFlow<T>(private val block: suspend FlowCollector<T>.() -> Unit
 }
 ```
 
-而一旦消费者停止监听（例如：collect所在协程被取消了），数据流将会被自动关闭，不会再发射数据。
+而一旦消费者停止监听（例如：`collect`所在协程被取消了），数据流将会被自动关闭，不会再发射数据。
 
 1. 结构式并发；父子协程之间的关系；主从作用域、协同作用域
 2. 协程的取消
-3. UI层订阅Flow的最佳实践
+3. `UI`层订阅`Flow`的最佳实践
 
 #### Flow的创建
 ```
@@ -69,11 +67,13 @@ flow {
     }
 }
 
-public fun <T> flow(@BuilderInference block: suspend FlowCollector<T>.() -> Unit): Flow<T> = SafeFlow(block)
+public fun <T> flow(
+    @BuilderInference block: suspend FlowCollector<T>.() -> Unit
+): Flow<T> = SafeFlow(block)
 ```
 
 1. `flow`是一个高阶函数，参数是带接收者`FlowCollector`并且有`suspend`修饰符的函数类型，意味着`block`代码块中可以调用挂起函数
-2. `emit`函数不是线程安全的，不应该并发调用，所以再flow的代码块中不允许切换线程
+2. `emit`函数不是线程安全的，不应该并发调用，所以再`flow`的代码块中不允许切换线程
 
 除此之外还封装了`asFlow`、`flowOf`等函数，都是基于`flow{}`实现的，方便调用方使用
 
@@ -111,15 +111,15 @@ public interface SharedFlow<out T> : Flow<T> {
 }
 ```
 
-以广播方式在其所有Flow器之间共享发射值的热流，以便所有收集器获得所有发射值。共享流称为热流，因为它的活动实例独立于收集器的存在而存在。
+以广播方式在其所有`Flow`器之间共享发射值的热流，以便所有收集器获得所有发射值。共享流称为热流，因为它的活动实例独立于收集器的存在而存在。
 
-这与常规Flow相反，例如由flow { ... }函数定义的，它是冷的并且为每个收集器单独启动。
+这与常规`Flow`相反，例如由`flow` { ... }函数定义的，它是冷的并且为每个收集器单独启动。
 
 共享流程永远不会完成。在共享流上调用`Flow.collect`永远不会正常完成，由`Flow.launchIn`函数启动的协程也不会正常完成。共享流的活动收集器称为订阅者。
 
 #### StateFlow
 
-特殊的ShareFlow  replay = 1 对标LiveData，必须有一个默认值，因为对外提供了一个接口用于获取当前值
+特殊的`ShareFlow`  replay = 1 对标LiveData，必须有一个默认值，因为对外提供了一个接口用于获取当前值
 
 ```
 public interface StateFlow<out T> : SharedFlow<T> {
@@ -130,15 +130,15 @@ public interface StateFlow<out T> : SharedFlow<T> {
 }
 ```
 
-事件：事件是一次有效的，新订阅者不应该收到旧的事件，事件数据适合用SharedFlow(replay=0)
-状态：状态是可以恢复的，新订阅者允许收到旧的状态数据，状态数据适合用StateFlow
+事件：事件是一次有效的，新订阅者不应该收到旧的事件，事件数据适合用`SharedFlow`(replay=0)
+状态：状态是可以恢复的，新订阅者允许收到旧的状态数据，状态数据适合用`StateFlow`
 
 
-比如说ViewModel通知View显示一个弹窗提示，切后台后回来会走onStart，会重新订阅事件对应的Flow，因此会再次收到事件，而显示弹窗
+比如说`ViewModel`通知`View`显示一个弹窗提示，切后台后回来会走`onStart`，会重新订阅事件对应的`Flow`，因此会再次收到事件，而显示弹窗
 
 #### 冷流转化为热流
 
-推荐使用shareIn扩展方法 and SharingStarted.WhileSubscribed(5000) default use
+推荐使用`shareIn`扩展方法 and `SharingStarted.WhileSubscribed(5000)` default use
 
 ```
 public fun <T> Flow<T>.shareIn(
