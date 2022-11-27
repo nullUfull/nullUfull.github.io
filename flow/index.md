@@ -221,5 +221,5 @@ launch vs repeatOnLifecycle vs launchWhenX vs flowWithLifecycle
 [repeatOnLifecycle API design story](https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333)
 [A safer way to collect flows from Android UIs](https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda)
 [Flow 操作符 shareIn 和 stateIn 使用须知](https://juejin.cn/post/6998066384290709518)
-[Deep dive into Coroutine Flow 2
-](https://myungpyo.medium.com/deep-dive-into-coroutine-flow-2-d43ba0d1f45d)
+[Deep dive into Coroutine Flow 2](https://myungpyo.medium.com/deep-dive-into-coroutine-flow-2-d43ba0d1f45d)
+[Migrating from LiveData to Kotlin’s Flow](https://medium.com/androiddevelopers/migrating-from-livedata-to-kotlins-flow-379292f419fb)
