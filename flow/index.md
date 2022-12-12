@@ -5,6 +5,8 @@
 
 `Flow`是一种基于流的编程模型，可以理解在`Kotlin`协程中提供的响应式编程方式就是`Flow`
 
+![](https://developer.android.com/static/images/kotlin/flow/flow-entities.png)
+
 `Flow`的定义很简单，表示它是一个可以被订阅收集的东西
 ```
 public interface Flow<out T> {
@@ -278,8 +280,122 @@ public fun WhileSubscribed(
 
 ### 实战
 
-#### Flow实现数据拉取
+#### 简单示例
+```
+class BooksRepository{
+    val userData = flow {
+        emit(Book("1984"))
+        emit(Book("茶馆"))
+        emit(Book("一句顶一万句"))
+        emit(Book("山月记"))
+    }
+}
 
+class BookViewModel{
+     val books: StateFlow<List<BookState>> = 
+        booksRepository.userData
+            .filter { it.author == "刘震云" }
+            .stateIn(
+                scope = viewModelScope,
+                started = SharingStarted.WhileSubscribed(5_000),
+                initialValue = BooksFeedUiState.Loading
+            )
+}
+
+class BookListFragment : Fragment() {
+    ...
+    private fun initObserver() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.books.collect { adapter.submitList(it) }
+            }
+        }
+    }
+    ...
+}
+
+```
+
+#### Flow实现数据拉取
+```
+class VideoDetailRepository {
+    private val api by lazy { NetworkApi.getInstance().createApi(MovieApi::class.java) }
+
+    fun getVideoSelectData(videoSelectRequest: VideoSelectRequest): Flow<Result<VideoSelectResponse>> {
+        return api.getVideoSelect(videoSelectRequest.toStGetVideoSelectReq()).map {
+            if (it.ret == 0) {
+                Result.success(it.toVideoSelectResponse())
+            } else {
+                Result.failure(Exception(it.msg))
+            }
+        }.catch {
+            emit(Result.failure(it))
+        }
+    }
+}
+
+class ViewModel{
+    ...
+    private val store by lazyStore(::videoSelectReducer, VideoSelectState())
+    val state get() = store.state
+
+    init {
+        viewModelScope.launch(Dispatchers.IO) {
+            loadTypeFlow.transform { loadType ->
+                store.dispatch(UpdateLoadStateAndType(LoadState.LOADING, loadType))
+                repository.getVideoSelectData(
+                    createVideoSelectRequest(
+                        _curVideoSelectModel,
+                        loadType,
+                        state.value.pageState.attachInfo
+                    )
+                ).let {
+                    emitAll(it)
+                }
+            }.collect { result ->
+                Logger.i(TAG, "curVideoSelectModel = $_curVideoSelectModel")
+                result.onSuccess {
+                    Logger.i(TAG, "load data success, size = ${it.videoInfo.size}")
+                    store.dispatch(LoadDataSuccess(curVideoSelectStyle, it))
+                }.onFailure { throwable ->
+                    Logger.e(TAG, "getVideoSelectData", throwable)
+                    store.dispatch(UpdateLoadState(LoadState.ERROR))
+                }
+            }
+        }
+    }
+    ....
+}
+
+class VideoSelectFragment : Fragment(R.layout.fragment_video_select) {
+    ...
+    private fun initObserver() {
+        viewModel.state.map { it.pageState.canLoadBackward }
+            .distinctUntilChanged()
+            .launchAndCollectIn(viewLifecycleOwner) {
+                viewBinding.refreshLayout.setEnableLoadMore(it)
+            }
+        viewModel.state
+            .map { it.videoItemStates }
+            .distinctUntilChanged()
+            .launchAndCollectIn(viewLifecycleOwner) { dataList ->
+                pictureTextSelectAdapter.submitList(dataList)
+            }
+    }
+    ...
+}
+
+
+inline fun <reified T> Flow<T>.launchAndCollectIn(
+    owner: LifecycleOwner,
+    minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
+    collector: FlowCollector<T>
+) = owner.lifecycleScope.launch {
+    owner.repeatOnLifecycle(minActiveState) {
+        this@launchAndCollectIn.collect(collector)
+    }
+}
+```
 
 #### Flow版本Redux框架
 [完整代码仓库](https://github.com/nullUfull/FlowRedux)

@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/flow/" /><meta property="og:image" content="https://example.com"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-16T16:52:32+08:00" />
-<meta property="article:modified_time" content="2022-12-12T19:11:44+08:00" /><meta property="og:site_name" content="LoveIt" />
+<meta property="article:modified_time" content="2022-12-12T20:10:53+08:00" /><meta property="og:site_name" content="LoveIt" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com"/>
@@ -31,8 +31,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/flow\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine","wordcount":  2709 ,
-        "url": "https:\/\/example.com\/flow\/","datePublished": "2022-09-16T16:52:32+08:00","dateModified": "2022-12-12T19:11:44+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine","wordcount":  3127 ,
+        "url": "https:\/\/example.com\/flow\/","datePublished": "2022-09-16T16:52:32+08:00","dateModified": "2022-12-12T20:10:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -105,8 +105,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">kotlin flow</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2709 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 3127 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 7 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -142,6 +142,7 @@
         </li>
         <li><a href="#实战">实战</a>
           <ul>
+            <li><a href="#简单示例">简单示例</a></li>
             <li><a href="#flow实现数据拉取">Flow实现数据拉取</a></li>
             <li><a href="#flow版本redux框架">Flow版本Redux框架</a></li>
           </ul>
@@ -155,6 +156,14 @@
 </nav></div>
             </div><div class="content" id="content"><h2 id="基础">基础</h2>
 <p><code>Flow</code>是一种基于流的编程模型，可以理解在<code>Kotlin</code>协程中提供的响应式编程方式就是<code>Flow</code></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://developer.android.com/static/images/kotlin/flow/flow-entities.png"
+        data-srcset="https://developer.android.com/static/images/kotlin/flow/flow-entities.png, https://developer.android.com/static/images/kotlin/flow/flow-entities.png 1.5x, https://developer.android.com/static/images/kotlin/flow/flow-entities.png 2x"
+        data-sizes="auto"
+        alt="https://developer.android.com/static/images/kotlin/flow/flow-entities.png"
+        title="https://developer.android.com/static/images/kotlin/flow/flow-entities.png" /></p>
 <p><code>Flow</code>的定义很简单，表示它是一个可以被订阅收集的东西</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -580,8 +589,237 @@
 <li>可以搭配<code>repeatOnLifecycle</code>（UI层安全收集流）使用，如果应用切后台则UI层会取消对于流的<code>collect</code>（取消订阅），而这里因为配置<code>WhileSubscribed</code>策略超时后会自动停止共享，共享流会断开对上游冷流的<code>collect</code>（取消订阅），上游冷流的数据的生产也就会被<code>cancel</code>掉，避免应用处于后台时还存在数据的生产</li>
 </ol>
 <h3 id="实战">实战</h3>
-<h4 id="flow实现数据拉取">Flow实现数据拉取</h4>
-<h4 id="flow版本redux框架">Flow版本Redux框架</h4>
+<h4 id="简单示例">简单示例</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class BooksRepository{
+</span></span><span class="line"><span class="cl">    val userData = flow {
+</span></span><span class="line"><span class="cl">        emit(Book(&#34;1984&#34;))
+</span></span><span class="line"><span class="cl">        emit(Book(&#34;茶馆&#34;))
+</span></span><span class="line"><span class="cl">        emit(Book(&#34;一句顶一万句&#34;))
+</span></span><span class="line"><span class="cl">        emit(Book(&#34;山月记&#34;))
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class BookViewModel{
+</span></span><span class="line"><span class="cl">     val books: StateFlow&lt;List&lt;BookState&gt;&gt; = 
+</span></span><span class="line"><span class="cl">        booksRepository.userData
+</span></span><span class="line"><span class="cl">            .filter { it.author == &#34;刘震云&#34; }
+</span></span><span class="line"><span class="cl">            .stateIn(
+</span></span><span class="line"><span class="cl">                scope = viewModelScope,
+</span></span><span class="line"><span class="cl">                started = SharingStarted.WhileSubscribed(5_000),
+</span></span><span class="line"><span class="cl">                initialValue = BooksFeedUiState.Loading
+</span></span><span class="line"><span class="cl">            )
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class BookListFragment : Fragment() {
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">    private fun initObserver() {
+</span></span><span class="line"><span class="cl">        lifecycleScope.launch {
+</span></span><span class="line"><span class="cl">            repeatOnLifecycle(Lifecycle.State.STARTED) {
+</span></span><span class="line"><span class="cl">                viewModel.books.collect { adapter.submitList(it) }
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="flow实现数据拉取">Flow实现数据拉取</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class VideoDetailRepository {
+</span></span><span class="line"><span class="cl">    private val api by lazy { NetworkApi.getInstance().createApi(MovieApi::class.java) }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    fun getVideoSelectData(videoSelectRequest: VideoSelectRequest): Flow&lt;Result&lt;VideoSelectResponse&gt;&gt; {
+</span></span><span class="line"><span class="cl">        return api.getVideoSelect(videoSelectRequest.toStGetVideoSelectReq()).map {
+</span></span><span class="line"><span class="cl">            if (it.ret == 0) {
+</span></span><span class="line"><span class="cl">                Result.success(it.toVideoSelectResponse())
+</span></span><span class="line"><span class="cl">            } else {
+</span></span><span class="line"><span class="cl">                Result.failure(Exception(it.msg))
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">        }.catch {
+</span></span><span class="line"><span class="cl">            emit(Result.failure(it))
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class ViewModel{
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">    private val store by lazyStore(::videoSelectReducer, VideoSelectState())
+</span></span><span class="line"><span class="cl">    val state get() = store.state
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    init {
+</span></span><span class="line"><span class="cl">        viewModelScope.launch(Dispatchers.IO) {
+</span></span><span class="line"><span class="cl">            loadTypeFlow.transform { loadType -&gt;
+</span></span><span class="line"><span class="cl">                store.dispatch(UpdateLoadStateAndType(LoadState.LOADING, loadType))
+</span></span><span class="line"><span class="cl">                repository.getVideoSelectData(
+</span></span><span class="line"><span class="cl">                    createVideoSelectRequest(
+</span></span><span class="line"><span class="cl">                        _curVideoSelectModel,
+</span></span><span class="line"><span class="cl">                        loadType,
+</span></span><span class="line"><span class="cl">                        state.value.pageState.attachInfo
+</span></span><span class="line"><span class="cl">                    )
+</span></span><span class="line"><span class="cl">                ).let {
+</span></span><span class="line"><span class="cl">                    emitAll(it)
+</span></span><span class="line"><span class="cl">                }
+</span></span><span class="line"><span class="cl">            }.collect { result -&gt;
+</span></span><span class="line"><span class="cl">                Logger.i(TAG, &#34;curVideoSelectModel = $_curVideoSelectModel&#34;)
+</span></span><span class="line"><span class="cl">                result.onSuccess {
+</span></span><span class="line"><span class="cl">                    Logger.i(TAG, &#34;load data success, size = ${it.videoInfo.size}&#34;)
+</span></span><span class="line"><span class="cl">                    store.dispatch(LoadDataSuccess(curVideoSelectStyle, it))
+</span></span><span class="line"><span class="cl">                }.onFailure { throwable -&gt;
+</span></span><span class="line"><span class="cl">                    Logger.e(TAG, &#34;getVideoSelectData&#34;, throwable)
+</span></span><span class="line"><span class="cl">                    store.dispatch(UpdateLoadState(LoadState.ERROR))
+</span></span><span class="line"><span class="cl">                }
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    ....
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class VideoSelectFragment : Fragment(R.layout.fragment_video_select) {
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">    private fun initObserver() {
+</span></span><span class="line"><span class="cl">        viewModel.state.map { it.pageState.canLoadBackward }
+</span></span><span class="line"><span class="cl">            .distinctUntilChanged()
+</span></span><span class="line"><span class="cl">            .launchAndCollectIn(viewLifecycleOwner) {
+</span></span><span class="line"><span class="cl">                viewBinding.refreshLayout.setEnableLoadMore(it)
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">        viewModel.state
+</span></span><span class="line"><span class="cl">            .map { it.videoItemStates }
+</span></span><span class="line"><span class="cl">            .distinctUntilChanged()
+</span></span><span class="line"><span class="cl">            .launchAndCollectIn(viewLifecycleOwner) { dataList -&gt;
+</span></span><span class="line"><span class="cl">                pictureTextSelectAdapter.submitList(dataList)
+</span></span><span class="line"><span class="cl">            }
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">inline fun &lt;reified T&gt; Flow&lt;T&gt;.launchAndCollectIn(
+</span></span><span class="line"><span class="cl">    owner: LifecycleOwner,
+</span></span><span class="line"><span class="cl">    minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
+</span></span><span class="line"><span class="cl">    collector: FlowCollector&lt;T&gt;
+</span></span><span class="line"><span class="cl">) = owner.lifecycleScope.launch {
+</span></span><span class="line"><span class="cl">    owner.repeatOnLifecycle(minActiveState) {
+</span></span><span class="line"><span class="cl">        this@launchAndCollectIn.collect(collector)
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="flow版本redux框架">Flow版本Redux框架</h4>
 <p><a href="https://github.com/nullUfull/FlowRedux" target="_blank" rel="noopener noreffer ">完整代码仓库</a></p>
 <h2 id="进阶">进阶</h2>
 <p>look forward to</p>
@@ -599,8 +837,8 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-12-12&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/4796deac2ccc6eccd71f2c8877cea7abeab11bbc" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) 4796deac2ccc6eccd71f2c8877cea7abeab11bbc: update">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>4796dea</a></span>
+                <span>更新于 2022-12-12&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/e25c8d329dddc2352e5e9b438be2882d50ed684e" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) e25c8d329dddc2352e5e9b438be2882d50ed684e: update">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>e25c8d3</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
