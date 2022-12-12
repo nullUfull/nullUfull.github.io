@@ -3,6 +3,7 @@
 
 - [x] kotlin协程
   - [x] 《深入理解kotlin协程》
+  - [ ] 简单协程框架demo
 - [ ] flow
   - [ ] [blog撰写](/content/posts/tech/flow.md)
   - [ ] 深入理解flow

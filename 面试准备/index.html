@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  778 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1964 ,
         "url": "https:\/\/example.com\/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87\/","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
@@ -105,8 +105,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 778 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1964 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -123,23 +123,41 @@
     </li>
     <li><a href="#复习">复习</a>
       <ul>
-        <li><a href="#模块化">模块化</a></li>
+        <li><a href="#android">Android</a>
+          <ul>
+            <li><a href="#常见的框架">常见的框架</a>
+              <ul>
+                <li><a href="#glide">Glide</a></li>
+                <li><a href="#okhttp">OKHttp</a></li>
+              </ul>
+            </li>
+            <li><a href="#虚拟机">虚拟机</a></li>
+            <li><a href="#binder">Binder</a>
+              <ul>
+                <li><a href="#mmap">mmap</a></li>
+              </ul>
+            </li>
+            <li><a href="#模块化">模块化</a></li>
+          </ul>
+        </li>
         <li><a href="#java基础">Java基础</a>
           <ul>
             <li><a href="#并发">并发</a>
               <ul>
+                <li><a href="#生产者消费者">生产者消费者</a></li>
                 <li><a href="#concurrenthashmap">ConcurrentHashmap</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#android">Android</a>
+        <li><a href="#android-1">Android</a>
           <ul>
             <li><a href="#viewmodel">ViewModel</a></li>
           </ul>
         </li>
       </ul>
     </li>
+    <li><a href="#面试题目">面试题目</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="面试经历">面试经历</h1>
@@ -171,11 +189,40 @@
 <li>演变 MVI雏形，viewmodel暴露dispatch接口-&gt; 讨论架构，引入redux -&gt; 存在ViewAction和StateAction -&gt; 存在usecase层，抽出viewmodel中可复用的逻辑 -&gt; 新增ReportAction用于上报 -&gt; 引入middleware，usecase中的逻辑迁移到此 -&gt; 去除ViewAction</li>
 <li>Repository对外暴露数据的接口使用Flow承载</li>
 <li>包括为了兼容旧的业务逻辑，以前是存在很多EventBus的方式接受请求回报，统一封装在repository层，对外屏蔽EventBus，这种应该退出历史舞台</li>
+<li>View可以内部闭环的逻辑就没必要通过Viewmodel去处理了</li>
+<li>历史债：使用jce定义的数据结构，非data class，无法做数据diff</li>
+<li>为什么UiState下还要区分HasData、NoData</li>
+<li>如果列表中的Item的功能足够复杂，所以会拆分为多个区域去处理对应的UI显示以及以及业务逻辑，与此同时，对应的区域存在对应的数据去描述，而且需要处理局部刷新的问题：对比数据变化-&gt;UI变化的区域，使用payload去进行刷新，如果用户的一个操作会导致多个UI区域刷新，则需要payload多个数据到recyclerView的item，所以getChangePayload中的逻辑则是这样的：创建一个用于list用于容纳payloads，如果某个区域数据变化，则add该区域的payload数据，对应的区域处理对应的payload</li>
+<li>EventBus收归到Repository，EventBusRepository，对外提供flow</li>
+<li>copy不会导致内存爆掉吗？因为state都是用的copy的方式去描述页面状态的变化，答案当然是不会，state的变化并不是深拷贝，而是拷贝所变化的部分，也就是差异化拷贝，可以理解state是一个树状的一个结构，一般来说state树发生变化也只是叶子节点的数据发生变化，每一次的变化不会涉及到整个state的对象的深拷贝，所以内存的压力可以不用考虑</li>
 <li></li>
 </ol>
 <h3 id="heading"></h3>
 <h2 id="复习">复习</h2>
-<h3 id="模块化">模块化</h3>
+<h3 id="android">Android</h3>
+<h4 id="常见的框架">常见的框架</h4>
+<h5 id="glide">Glide</h5>
+<h5 id="okhttp">OKHttp</h5>
+<h4 id="虚拟机">虚拟机</h4>
+<p><a href="https://www.jianshu.com/p/1361d1e3a344" target="_blank" rel="noopener noreffer ">dalvik vs art</a></p>
+<h4 id="binder">Binder</h4>
+<ul>
+<li>为什么AMS和zygote进程通信不用Binder，而是socket？因为fork操作不能在多线程的环境下
+<a href="https://codeantenna.com/a/jj2VwT8qlS" target="_blank" rel="noopener noreffer ">为什么SystemServer进程与Zygote进程通讯采用Socket而不是Binder</a></li>
+</ul>
+<h5 id="mmap">mmap</h5>
+<p>mmap是一种内存映射文件的方法，它将一个文件映射到进程的地址空间中，实现文件磁盘地址和进程虚拟地址空间中一段虚拟地址的一一对映的关系。实现这样
+的映射关系后，进程就可以采用指针的方式读写操作这一段内存，而系统会自动会写脏页面到对应的文件磁盘上，即完成了对文件的操作而不必要再调用read、write等系统
+调用函数。相反，内核空间对这段内存区域的修改也直接反映用户空间，从而实现不同进程间的数据共享</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://upload-images.jianshu.io/upload_images/13774375-211e6032044be1ba?imageMogr2/auto-orient/strip%7cimageView2/2/w/682/format/webp"
+        data-srcset="https://upload-images.jianshu.io/upload_images/13774375-211e6032044be1ba?imageMogr2/auto-orient/strip%7cimageView2/2/w/682/format/webp, https://upload-images.jianshu.io/upload_images/13774375-211e6032044be1ba?imageMogr2/auto-orient/strip%7cimageView2/2/w/682/format/webp 1.5x, https://upload-images.jianshu.io/upload_images/13774375-211e6032044be1ba?imageMogr2/auto-orient/strip%7cimageView2/2/w/682/format/webp 2x"
+        data-sizes="auto"
+        alt="https://upload-images.jianshu.io/upload_images/13774375-211e6032044be1ba?imageMogr2/auto-orient/strip|imageView2/2/w/682/format/webp"
+        title="pc" /></p>
+<h4 id="模块化">模块化</h4>
 <ol>
 <li>模块之间的通信？</li>
 </ol>
@@ -187,15 +234,35 @@
 <p>api 对外暴露的类？</p>
 <h3 id="java基础">Java基础</h3>
 <h4 id="并发">并发</h4>
+<h5 id="生产者消费者">生产者消费者</h5>
+<ul>
+<li>为什么condition.signal要在lock.unlock之前，这之间的是怎么运作的？
+<a href="https://codeantenna.com/a/6YTX3qDfFG" target="_blank" rel="noopener noreffer ">ReentrantLock中Condition的wait方法、signal方法简单场景回顾</a></li>
+</ul>
 <h5 id="concurrenthashmap">ConcurrentHashmap</h5>
 <p><a href="https://segmentfault.com/a/1190000038416595" target="_blank" rel="noopener noreffer ">深入解析ConcurrentHashMap：感受并发编程智慧</a></p>
-<h3 id="android">Android</h3>
+<h3 id="android-1">Android</h3>
 <h4 id="viewmodel">ViewModel</h4>
 <ol>
 <li>生命周期是怎么样的</li>
 </ol>
 <p>2.0之前空的Fragment</p>
 <p>2.0以后，AndroidX的支持，LifecycleOwner支持</p>
+<h2 id="面试题目">面试题目</h2>
+<ul>
+<li>聊一下 Binder 的实现，如果让你 hook binder 拿到 binder 里面传输的数据你会怎么做
+<a href="https://www.zybuluo.com/TryLoveCatch/note/2287028" target="_blank" rel="noopener noreffer ">Android知识体系之Binder Hook</a></li>
+<li>MVC &amp; MVP &amp; MVVM，这么多设计模式你都用过，你觉得哪个更好，他们之前主要的差别是什么
+<a href="https://ljd1996.github.io/2022/01/11/Android%E6%9E%B6%E6%9E%84%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E4%B8%89-MVX/" target="_blank" rel="noopener noreffer ">Android架构学习之路三-MVX</a></li>
+<li>聊一下 coroutines 的底层实现</li>
+</ul>
+<p>开放性问题</p>
+<ul>
+<li>你对自己有什么规划</li>
+<li>最近在关注什么新的技术，</li>
+<li>有没有做过一下性能优化的例子，展开讲讲</li>
+<li>如果加入隐私合规，你觉得会给隐私合规团队带来什么</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
