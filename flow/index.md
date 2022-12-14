@@ -202,22 +202,20 @@ conflate
 
 ### UI收集流的最佳实践
 
-生命周期 资源浪费
+生命周期？资源浪费？
 
 launch vs launchWhenX vs repeatOnLifecycle
 
 ![](https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd)
 
-launch
+- `launch`
 和视图的生命周期同步
 
-launchWhenX
-在应用程序处于后台时接收更新可能会导致崩溃，这可以通过暂停视图中的收集来解决。然而，当应用程序在后台时，上游流量保持活跃，可能会浪费资源。
+- `launchWhenX`
+在应用程序处于后台时接收更新可能会导致崩溃，这可以通过暂停视图中的收集来解决。然而，当应用程序在后台时，上游流量保持活跃，可能会浪费资源
 
-repeatOnLifecycle
-每当生命周期处于STARED会在新的协程中启动执行代码块，并在生命周期进入STOPPED时取消协程
-
-官方推荐
+- `repeatOnLifecycle`（Best Practices）
+可以在每当生命周期处于`STARED`会在新的协程中启动执行代码块，并在生命周期进入`STOPPED`时取消协程，即取消`Flow`的收集
 
 ```
     // 创建新的协程

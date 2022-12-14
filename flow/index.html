@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/flow/" /><meta property="og:image" content="https://example.com"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-16T16:52:32+08:00" />
-<meta property="article:modified_time" content="2022-12-12T20:10:53+08:00" /><meta property="og:site_name" content="LoveIt" />
+<meta property="article:modified_time" content="2022-12-12T20:44:53+08:00" /><meta property="og:site_name" content="LoveIt" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com"/>
@@ -31,8 +31,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/flow\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine","wordcount":  3127 ,
-        "url": "https:\/\/example.com\/flow\/","datePublished": "2022-09-16T16:52:32+08:00","dateModified": "2022-12-12T20:10:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine","wordcount":  3169 ,
+        "url": "https:\/\/example.com\/flow\/","datePublished": "2022-09-16T16:52:32+08:00","dateModified": "2022-12-12T20:44:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">kotlin flow</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 3127 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 3169 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 7 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -476,7 +476,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="ui收集流的最佳实践">UI收集流的最佳实践</h3>
-<p>生命周期 资源浪费</p>
+<p>生命周期？资源浪费？</p>
 <p>launch vs launchWhenX vs repeatOnLifecycle</p>
 <p><img
         class="lazyload"
@@ -486,13 +486,20 @@
         data-sizes="auto"
         alt="https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd"
         title="https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd" /></p>
-<p>launch
+<ul>
+<li>
+<p><code>launch</code>
 和视图的生命周期同步</p>
-<p>launchWhenX
-在应用程序处于后台时接收更新可能会导致崩溃，这可以通过暂停视图中的收集来解决。然而，当应用程序在后台时，上游流量保持活跃，可能会浪费资源。</p>
-<p>repeatOnLifecycle
-每当生命周期处于STARED会在新的协程中启动执行代码块，并在生命周期进入STOPPED时取消协程</p>
-<p>官方推荐</p>
+</li>
+<li>
+<p><code>launchWhenX</code>
+在应用程序处于后台时接收更新可能会导致崩溃，这可以通过暂停视图中的收集来解决。然而，当应用程序在后台时，上游流量保持活跃，可能会浪费资源</p>
+</li>
+<li>
+<p><code>repeatOnLifecycle</code>（Best Practices）
+可以在每当生命周期处于<code>STARED</code>会在新的协程中启动执行代码块，并在生命周期进入<code>STOPPED</code>时取消协程，即取消<code>Flow</code>的收集</p>
+</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -837,8 +844,8 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-12-12&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/e25c8d329dddc2352e5e9b438be2882d50ed684e" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) e25c8d329dddc2352e5e9b438be2882d50ed684e: update">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>e25c8d3</a></span>
+                <span>更新于 2022-12-12&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/914a9cb975b3b966eaaa7d786cdfdad450f30e68" target="_blank" title="commit by alkaidwang(alkaidwang@tencent.com) 914a9cb975b3b966eaaa7d786cdfdad450f30e68: update">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>914a9cb</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>

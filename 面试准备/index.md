@@ -75,6 +75,9 @@ api 对外暴露的类？
 
 ### Java基础
 
+#### 动态代理
+[Android插件化原理解析——Hook机制之动态代理](https://weishu.me/2016/01/28/understand-plugin-framework-proxy-hook/)
+
 #### 并发
 
 ##### 生产者消费者
