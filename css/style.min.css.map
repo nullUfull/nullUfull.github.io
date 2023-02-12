@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/alkaidwang/nullUfull.github.io",
+	"sourceRoot": "/home/runner/work/nullUfull.github.io.source/nullUfull.github.io.source",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

@@ -1,492 +1,218 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <meta name="referrer" content="never">
-        <title>repeatOnLifecycle API设计故事 - FineSnow&#39;s Blog</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="repeatOnLifecycle API设计故事" />
-<meta property="og:description" content="翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" /><meta property="og:image" content="https://example.com"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-17T21:08:36+08:00" />
-<meta property="article:modified_time" content="2022-09-17T21:08:36+08:00" /><meta property="og:site_name" content="LoveIt" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com"/>
-
-<meta name="twitter:title" content="repeatOnLifecycle API设计故事"/>
-<meta name="twitter:description" content="翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布"/>
-<meta name="application-name" content="FineSnow&#39;s Blog">
-<meta name="apple-mobile-web-app-title" content="FineSnow&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" /><link rel="prev" href="https://example.com/flow/" /><link rel="next" href="https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "repeatOnLifecycle API设计故事",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/example.com\/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "kotlin, flow, coroutine, 翻译","wordcount":  5523 ,
-        "url": "https:\/\/example.com\/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B\/","datePublished": "2022-09-17T21:08:36+08:00","dateModified": "2022-09-17T21:08:36+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
-            "@type": "Organization",
-            "name": "FineSnow","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
-                "@type": "Person",
-                "name": "FineSnow"
-            },"description": ""
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="FineSnow&#39;s Blog">FineSnow&#39;s Blog</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/"> 主页 </a><a class="menu-item" href="/books"> 阅读 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/nullUfull/nullUfull.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="FineSnow&#39;s Blog">FineSnow&#39;s Blog</a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
-                    </a>
-                </div><a class="menu-item" href="/" title="">主页</a><a class="menu-item" href="/books" title="">阅读</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/nullUfull/nullUfull.github.io" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">目录</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">repeatOnLifecycle API设计故事</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>FineSnow</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E6%9C%AF/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-17">2022-09-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 5523 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 12 分钟&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>目录</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#repeatonlifecycle">repeatOnLifecycle</a></li>
-    <li><a href="#为什么它是一个挂起函数">为什么它是一个挂起函数</a></li>
-    <li><a href="#移除addrepeatingjob-api">移除addRepeatingJob API</a></li>
-    <li><a href="#repeatonlifecycle才是大赢家">repeatOnLifecycle才是大赢家</a></li>
-    <li><a href="#flowflowwithlifecycle">Flow.flowWithLifecycle</a></li>
-    <li><a href="#我们应该增加一个额外的api吗">我们应该增加一个额外的API吗？</a></li>
-    <li><a href="#命名很重要也很困难">命名很重要（也很困难）</a></li>
-    <li><a href="#一行代码收集数据流">一行代码收集数据流</a></li>
-    <li><a href="#iosched的封装函数">iosched的封装函数</a></li>
-    <li><a href="#你需要封装函数吗">你需要封装函数吗？</a></li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><blockquote>
-<p>翻译自<a href="https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333" target="_blank" rel="noopener noreffer ">repeatOnLifecycle API design story</a>，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布了<a href="https://juejin.cn/post/7001371050202103838" target="_blank" rel="noopener noreffer ">中文版本</a>，不过感受到了机翻的意思表达不那么明确，官方的中文版还OK的，正好也能对比一下，提高下英文水准。</p>
-</blockquote>
-<p>在这篇博文中，你将了解<code>Lifecycle.repeatOnLifecycle</code> API背后的设计决策，以及为什么我们删除了2.4.0版<code>lifecycle-runtime-ktx</code>库的第一个alpha版本中添加的一些辅助函数。</p>
-<p>一路走来，你会看到某些协程API在某些情况下的使用是多么危险，命名是多么困难，以及为什么我们决定在库中只保留低级别的<code>suspend</code> API。</p>
-<p>另外，你会意识到所有的API决定都需要在复杂性、可读性和API的易错性方面做出一些权衡。</p>
-<p>特别感谢Adam Powell、Wojtek Kaliciński、Ian Lake和Yigit Boyar提供的反馈和讨论这些API的形态。</p>
-<blockquote>
-<p>注意：如果您正在寻找<code>repeatOnLifecycle</code>指南，请查看博文：<a href="https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda" target="_blank" rel="noopener noreffer ">从AndroidUI收集流的更安全的方法</a>。</p>
-</blockquote>
-<h2 id="repeatonlifecycle">repeatOnLifecycle</h2>
-<p><code>Lifecycle.repeatOnLifecycle API</code>的诞生主要是为了让Android中UI层的Flow收集更加安全。它的可重启行为考虑到了UI的生命周期，使得它成为完美的默认API，只在屏幕上的UI可见时处理逻辑。</p>
-<blockquote>
-<p>注意：<code>LifecycleOwner.repeatOnLifecycle</code>也是可用的。它将功能委托给它的<code>Lifecycle</code>。有了这个，任何已经属于<code>LifecycleOwner</code>范围的代码都可以省略显式接收器。</p>
-</blockquote>
-<p><code>repeatOnLifecycle</code>是一个挂起函数。<code>repeatOnLifecycle</code>会暂停调用的协程，然后在给定的生命周期达到目标状态或更高时，在一个新的协程中运行一个你作为参数传递的给定的代码块。如果生命周期的状态低于目标值，为该块启动的协程就会被取消。最后，<code>repeatOnLifecycle</code>函数本身不会恢复调用的协程，直到生命周期处于<code>DESTROYED</code>。</p>
-<p>让我们看看这个API的作用。如果你读过我之前的博文：<a href="https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda" target="_blank" rel="noopener noreffer ">从AndroidUI收集流的更安全的方法</a>，这些对你来说应该都不是惊喜。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class LocationActivity : AppCompatActivity() {
-</span></span><span class="line"><span class="cl">    override fun onCreate(savedInstanceState: Bundle?) {
-</span></span><span class="line"><span class="cl">        super.onCreate(savedInstanceState)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        // Create a new coroutine from the lifecycleScope
-</span></span><span class="line"><span class="cl">        // since repeatOnLifecycle is a suspend function
-</span></span><span class="line"><span class="cl">        lifecycleScope.launch {
-</span></span><span class="line"><span class="cl">            // Suspend the coroutine until the lifecycle is DESTROYED.
-</span></span><span class="line"><span class="cl">            // repeatOnLifecycle launches the block in a new coroutine every time the 
-</span></span><span class="line"><span class="cl">            // lifecycle is in the STARTED state (or above) and cancels it when it&#39;s STOPPED.
-</span></span><span class="line"><span class="cl">            repeatOnLifecycle(Lifecycle.State.STARTED) {
-</span></span><span class="line"><span class="cl">                // Safely collect from locations when the lifecycle is STARTED
-</span></span><span class="line"><span class="cl">                // and stop collecting when the lifecycle is STOPPED
-</span></span><span class="line"><span class="cl">                someLocationProvider.locations.collect {
-</span></span><span class="line"><span class="cl">                    // New location! Update the map
-</span></span><span class="line"><span class="cl">                }
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">            // Note: at this point, the lifecycle is DESTROYED!
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>注意：如果你对<code>repeatOnLifecycle</code>是如何实现的感兴趣，这里有一个<a href="https://cs.android.com/androidx/platform/frameworks/support/&#43;/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/RepeatOnLifecycle.kt;l=63" target="_blank" rel="noopener noreffer ">源代码链接</a>。</p>
-</blockquote>
-<h2 id="为什么它是一个挂起函数">为什么它是一个挂起函数</h2>
-<p>由于可以保留调用上下文，所以挂起函数是执行重启行为的最佳选择。它在调用协程时遵从<code>Job</code>树。由于<code>repeatOnLifecycle</code>的内部实现是使用<code>suspendCancellableCoroutine</code>，它可以和取消操作共同运作：取消发起调用的协程的同时也会取消<code>repeatOnLifecycle</code>和它重启执行的<code>block</code>。</p>
-<p>另外，我们还可以在<code>repeatOnLifecycle</code>之上添加更多的API，比如<code>Flow.flowWithLifecycle</code>流操作符。更重要的是，如果你的项目需要它还允许你在这个API之上创建辅助函数。这就是我们试图用<code>LifecycleOwner.addRepeatingJob</code>API做的事情，我们在<code>lifecycle-runtime-ktx:2.4.0-alpha01</code>中添加了这个API，事实上，在<code>alpha02</code>中删除了它。</p>
-<h2 id="移除addrepeatingjob-api">移除addRepeatingJob API</h2>
-<p><code>LifecycleOwner.addRepeatingJob</code>API在库的第一个<code>alpha</code>版本中添加了这个功能，现在已经从库中移除，它是这样实现的。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* Copyright 2022 Google LLC.	
-</span></span><span class="line"><span class="cl">   SPDX-License-Identifier: Apache-2.0 */
-</span></span><span class="line"><span class="cl">public fun LifecycleOwner.addRepeatingJob(
-</span></span><span class="line"><span class="cl">    state: Lifecycle.State,
-</span></span><span class="line"><span class="cl">    coroutineContext: CoroutineContext = EmptyCoroutineContext,
-</span></span><span class="line"><span class="cl">    block: suspend CoroutineScope.() -&gt; Unit
-</span></span><span class="line"><span class="cl">): Job = lifecycleScope.launch(coroutineContext) {
-</span></span><span class="line"><span class="cl">    repeatOnLifecycle(state, block)
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>给定一个<code>LifecycleOwner</code>，你可以运行一个<code>suspend</code>块，每当它的生命周期进入和离开目标状态时就会重新启动。这个API使用<code>LifecycleOwner</code>的<code>lifecycleScope</code>来触发一个新的协程并在其中调用<code>repeatOnLifecycle</code>。</p>
-<p>使用<code>addRepeatingJob</code>API，上面的代码会是这样的。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class LocationActivity : AppCompatActivity() {
-</span></span><span class="line"><span class="cl">    override fun onCreate(savedInstanceState: Bundle?) {
-</span></span><span class="line"><span class="cl">        super.onCreate(savedInstanceState)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        lifecycleOwner.addRepeatingJob(Lifecycle.State.STARTED) {
-</span></span><span class="line"><span class="cl">            someLocationProvider.locations.collect {
-</span></span><span class="line"><span class="cl">                // New location! Update the map
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>乍一看，你可能认为这种代码更干净，需要的代码更少。然而，如果你不仔细注意的话，有一些隐藏的问题会让你自食其果：</p>
-<ul>
-<li>尽管<code>addRepeatingJob</code>接受一个挂起代码块，但<code>addRepeatingJob</code>不是一个挂起函数。因此，你不应该在协程中调用它！！</li>
-<li>更少的代码？你只节省了一行代码，代价是拥有一个更容易出错的API。</li>
-</ul>
-<p>第一点可能看起来很明显，但它总是让开发者上当。而且讽刺的是，实际上它是基于协程的一个最核心的概念：<a href="https://elizarov.medium.com/structured-concurrency-722d765aa952" target="_blank" rel="noopener noreffer ">结构化并发</a>。</p>
-<p><code>addRepeatingJob</code>不是一个挂起函数，因此，默认情况下不支持结构化并发（需要你注意的是你可以通过使用<code>coroutineContext</code>参数来手动使其支持）。由于<code>block</code>参数是一个挂起的lambda，你把这个API与协程联系起来，你可以很容易地写出这样的危险代码：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class LocationActivity : AppCompatActivity() {
-</span></span><span class="line"><span class="cl">    override fun onCreate(savedInstanceState: Bundle?) {
-</span></span><span class="line"><span class="cl">        super.onCreate(savedInstanceState)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        val job = lifecycleScope.launch {
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            doSomeSuspendInitWork()
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            // DANGEROUS! This API doesn&#39;t preserve the calling Context!
-</span></span><span class="line"><span class="cl">            // It won&#39;t get cancelled when the parent coroutine is cancelled!
-</span></span><span class="line"><span class="cl">            addRepeatingJob(Lifecycle.State.STARTED) {
-</span></span><span class="line"><span class="cl">                someLocationProvider.locations.collect {
-</span></span><span class="line"><span class="cl">                    // New location! Update the map
-</span></span><span class="line"><span class="cl">                }
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        // If something goes wrong, cancel the coroutine launched above
-</span></span><span class="line"><span class="cl">        try {
-</span></span><span class="line"><span class="cl">            /* ... */
-</span></span><span class="line"><span class="cl">        } catch(t: Throwable) {
-</span></span><span class="line"><span class="cl">            job.cancel()
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><code>addRepeatingJob</code>做的是协程的事情，没有什么能阻止我在协程中调用它，对吗？</p>
-<p>由于<code>addRepeatingJob</code>使用隐含在实现细节中的<code>lifecycleScope</code>创建新的协程来运行重复块，新的协程不遵从结构化的并发，也不保留调用协程的上下文。因此，当你调用<code>job.cancel()</code>时，将不会被取消。<em>这可能会导致你的应用程序中出现非常不易察觉的bug，很难调试</em>。</p>
-<h2 id="repeatonlifecycle才是大赢家">repeatOnLifecycle才是大赢家</h2>
-<p><code>addRepeatingJob</code>里面使用的隐式<code>CoroutineScope</code>是使API在某些情况下使用不安全的原因。这是一个隐藏的问题，需要特别注意才能写出正确的代码。这一点是避免在库中的 <code>repeatOnLifecycle</code>之上增加包装API的反复论证。</p>
-<p><code>suspend repeatOnLifecycle</code>API的主要好处是，它默认与结构化并发合作，而<code>addRepeatingJob</code>没有。它还能帮助你思考你希望重复的任务在哪个范围内执行。这个API是自解释的并且符合开发者的预期：</p>
-<ul>
-<li>和其他的挂起函数一样，它会将当前协程的执行中断，直到特定事件发生。比如这里是当生命周期被销毁时继续执行。</li>
-<li>没有意外惊吓! 它可以和其他的协程代码一起使用，并且会按照您的预期工作。</li>
-<li><code>repeatOnLifecycle</code>周围的代码可读性高，对新手来说是有意义的：&ldquo;首先，我启动一个跟随用户界面的生命周期的新协程。然后，我需要调用<code>repeatOnLifecycle</code>使得每当用户界面达到这个生命周期状态时启动执行这个<code>block</code>&quot;。</li>
-</ul>
-<h2 id="flowflowwithlifecycle">Flow.flowWithLifecycle</h2>
-<p><code>Flow.flowWithLifecycle</code>操作符（<a href="https://cs.android.com/androidx/platform/frameworks/support/&#43;/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/FlowExt.kt;l=87" target="_blank" rel="noopener noreffer ">实现在此</a>）是建立在<code>repeatOnLifecycle</code>之上的，只有当生命周期至少处于<code>minActiveState</code>时，才会发射上游流发送的项目。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class LocationActivity : AppCompatActivity() {
-</span></span><span class="line"><span class="cl">    override fun onCreate(savedInstanceState: Bundle?) {
-</span></span><span class="line"><span class="cl">        super.onCreate(savedInstanceState)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        lifecycleScope.launch {
-</span></span><span class="line"><span class="cl">            someLocationProvider.locations
-</span></span><span class="line"><span class="cl">                .flowWithLifecycle(lifecycle, STARTED)
-</span></span><span class="line"><span class="cl">                .collect {
-</span></span><span class="line"><span class="cl">                    // New location! Update the map
-</span></span><span class="line"><span class="cl">                }
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>尽管这个API也有一些需要注意的问题，但我们还是决定保留它，因为它作为一个Flow操作符很有用。例如，它可以<a href="https://manuelvivo.dev/coroutines-addrepeatingjob#safe-flow-collection-in-jetpack-compose" target="_blank" rel="noopener noreffer ">很容易地在Jetpack Compose中使用</a>。尽管你可以通过使用<code>produceState</code>和<code>repeatOnLifecycle</code>API在Compose中实现同样的功能，但我们还是把这个API留在库中，作为更多响应式方法的替代。</p>
-<p>正如KDoc中记录的那样，问题在于你添加<code>flowWithLifecycle</code>操作符的顺序很重要。在<code>flowWithLifecycle</code>操作符之前应用的操作符会在生命周期低于<code>minActiveState</code>时被取消。然而，在这之后应用的操作符不会被取消，即使没有项目被发送。</p>
-<p>对于最好奇的人来说，这个API名称以<code>Flow.flowOn(CoroutineContext)</code>操作符为先例，因为<code>Flow.flowWithLifecycle</code>改变了用于收集上游流的<code>CoroutineContext</code>，而使下游不受影响。</p>
-<h2 id="我们应该增加一个额外的api吗">我们应该增加一个额外的API吗？</h2>
-<p>鉴于我们已经有了<code>Lifecycle.repeatOnLifecycle</code>、<code>LifecycleOwner.repeatOnLifecycle</code>和<code>Flow.flowWithLifecycle</code>APIs。我们应该添加其他的API吗？</p>
-<p>新的API所带来的混乱与它们要解决的问题一样多。有多种方法来支持不同的用例，而最短的路径在很大程度上取决于周围的代码。可能对你的项目有用的东西，可能对其他人没有用。</p>
-<p>这就是为什么我们不想为所有可能的情况提供API，可用的API越多，对开发者来说就越混乱，不知道什么时候该用什么。因此，我们做出决定，只保留最底层的API。有时，少即是多。</p>
-<h2 id="命名很重要也很困难">命名很重要（也很困难）</h2>
-<p>这不仅关系到我们支持哪些用例，而且还关系到如何命名它们! 名称应该符合开发者的预期，并遵循Kotlin协程的约定。比如说：</p>
-<ul>
-<li>如果API使用隐式<code>CoroutineScope</code>（例如<code>addRepeatingJob</code>中隐式使用的<code>lifecycleScope</code>）启动一个新的协程，这必须反映在命名中，以避免错误的预期。在这种情况下，<code>launch</code>应该以某种方式包含在名称中。</li>
-<li><code>collect</code>是一个挂起函数。如果它不是一个挂起函数，就不要在API名称前加上<code>collect</code>。</li>
-</ul>
-<blockquote>
-<p>注意：<code>Compose</code>的<code>collectAsState</code>API是一个特殊情况，我们对它的名字没有意见。它不能与挂起函数混淆，因为在<code>Compose</code>中没有<code>@Composable suspend fun</code>这样的东西。</p>
-</blockquote>
-<p>甚至<code>LifecycleOwner.addRepeatingJob</code>的API也是一个很难命名的问题。因为它用<code>lifecycleScope</code>创建了新的协程，所以它的前缀应该是<code>launch</code>。然而，我们想消除协程在后台使用的事实，而且由于它添加了一个新的生命周期观察者，这个名字与其他<code>LifecycleOwner</code>APIs的名字更一致。</p>
-<p>这个名字也多少受到了现有<code>LifecycleCoroutineScope.launchWhenX</code>挂起API的影响。由于<code>launchWhenStarted</code>和<code>repeatOnLifecycle(STARTED)</code>提供了完全不同的功能（<code>launchWhenStarted</code>暂停了协程的执行，而<code>repeatOnLifecycle</code>取消并重新启动一个新的协程），如果新API的名称相似（例如，用<code>launchWhenever</code>来表示重启API），开发者可能会感到困惑，甚至在不知不觉中交替使用它们。</p>
-<h2 id="一行代码收集数据流">一行代码收集数据流</h2>
-<p>LiveData的observe函数具有生命周期感知，并且只在生命周期至少开始时处理排放。如果你要从LiveData迁移到Kotlin flow，你可能会认为有一个单行的替换是个好主意！你可以删除模板代码，而且迁移很直接。</p>
-<p>因此，您可以像<a href="https://twitter.com/ianhlake" target="_blank" rel="noopener noreffer ">Ian Lake</a>在他第一次开始使用<code>repeatOnLifecycle</code>API 时所做的那样。他创建了一个名为<code>collectIn</code>的便捷包装器，如下所示（为了遵循上面讨论的命名约定，我将其重命名为<code>launchAndCollectIn</code>）：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/* Copyright 2022 Google LLC.	
-</span></span><span class="line"><span class="cl">   SPDX-License-Identifier: Apache-2.0 */
-</span></span><span class="line"><span class="cl">inline fun &lt;T&gt; Flow&lt;T&gt;.launchAndCollectIn(
-</span></span><span class="line"><span class="cl">    owner: LifecycleOwner,
-</span></span><span class="line"><span class="cl">    minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
-</span></span><span class="line"><span class="cl">    crossinline action: suspend CoroutineScope.(T) -&gt; Unit
-</span></span><span class="line"><span class="cl">) = owner.lifecycleScope.launch {
-</span></span><span class="line"><span class="cl">        owner.repeatOnLifecycle(minActiveState) {
-</span></span><span class="line"><span class="cl">            collect {
-</span></span><span class="line"><span class="cl">                action(it)
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这样你就可以像这样从用户界面调用它：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class LocationActivity : AppCompatActivity() {
-</span></span><span class="line"><span class="cl">    override fun onCreate(savedInstanceState: Bundle?) {
-</span></span><span class="line"><span class="cl">        super.onCreate(savedInstanceState)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        someLocationProvider.locations.launchAndCollectIn(this, STARTED) {
-</span></span><span class="line"><span class="cl">            // New location! Update the map
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这个包装器，虽然在这个例子中看起来很好很直接，但它存在着我们前面提到的关于<code>LifecycleOwner.addRepeatingJob</code>的同样问题。它不尊重调用的上下文，在其他循环程序中使用会很危险。此外，原来的名字真的很有误导性：<code>collectIn</code>并不是一个挂起的函数 如前所述，开发者希望<code>collect</code>函数能够挂起。也许，这个封装函数的更好的名字可以是<code>Flow.launchAndCollectIn</code>，以防止不良使用。</p>
-<h2 id="iosched的封装函数">iosched的封装函数</h2>
-<p><code>repeatOnLifecycle</code>必须与Fragments中的<code>viewLifecycleOwner</code>一起使用。在开源的 Google I/O 应用程序<a href="https://github.com/google/iosched" target="_blank" rel="noopener noreffer ">iosched</a>项目中，团队决定创建一个封装函数，以避免在 Fragments 中滥用 API，其 API 名称非常明确：<a href="https://github.com/google/iosched/blob/main/mobile/src/main/java/com/google/samples/apps/iosched/util/UiUtils.kt#L60" target="_blank" rel="noopener noreffer ">Fragment.launchAndRepeatWithViewLifecycle</a>。</p>
-<blockquote>
-<p>注意：实现与<code>addRepeatingJob</code>API非常相似。当使用<code>alpha01</code>版本的库编写此代码时，在<code>alpha02</code>中添加的<code>repeatOnLifecycle</code>API lint 检查没有到位。</p>
-</blockquote>
-<h2 id="你需要封装函数吗">你需要封装函数吗？</h2>
-<p>如果你需要在<code>repeatOnLifecycle</code>API之上创建包装器，以适应你的应用程序中最常见的用例，请问你是否真的需要它，以及为什么需要它。如果你确信并想继续下去，我建议你选择一个非常明确的API名称，以明确定义包装器的行为，避免误用。同时，要非常清楚地记录它，让新来的人能够充分理解使用它的意义。</p>
-<p>我希望这篇博文能让您了解团队在决定如何处理<code>repeatOnLifecycle</code>API以及我们可以在其之上添加的潜在帮助方法时的考虑因素。</p>
-<p>再次感谢 Adam Powell、Wojtek Kaliciński、Ian Lake 和 Yigit Boyar 提供反馈并讨论这些 API 的形态。</p>
-</div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>更新于 2022-09-17</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/index.md" target="_blank">阅读原始文档</a>
-                        </span></div>
-            <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" data-title="repeatOnLifecycle API设计故事" data-hashtags="kotlin,flow,coroutine,翻译"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" data-hashtag="kotlin"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" data-title="repeatOnLifecycle API设计故事"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" data-title="repeatOnLifecycle API设计故事"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/" data-title="repeatOnLifecycle API设计故事"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/kotlin/">kotlin</a>,&nbsp;<a href="/tags/flow/">flow</a>,&nbsp;<a href="/tags/coroutine/">coroutine</a>,&nbsp;<a href="/tags/%E7%BF%BB%E8%AF%91/">翻译</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/flow/" class="prev" rel="prev" title="kotlin flow"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>kotlin flow</a>
-            <a href="/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/" class="next" rel="next" title="生活周刊 009 蛤蟆先生">生活周刊 009 蛤蟆先生<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
-</div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">FineSnow</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
-
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script><script type="text/javascript" src="/js/custom.js"></script></body>
-</html>
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta name=referrer content="never"><title>repeatOnLifecycle API设计故事 - FineSnow's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="repeatOnLifecycle API设计故事"><meta property="og:description" content="翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/"><meta property="og:image" content="https://example.com"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-09-17T21:08:36+08:00"><meta property="article:modified_time" content="2022-09-17T21:08:36+08:00"><meta property="og:site_name" content="LoveIt"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com"><meta name=twitter:title content="repeatOnLifecycle API设计故事"><meta name=twitter:description content="翻译自repeatOnLifecycle API design story，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布"><meta name=application-name content="FineSnow's Blog"><meta name=apple-mobile-web-app-title content="FineSnow's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/><link rel=prev href=https://example.com/flow/><link rel=next href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"repeatOnLifecycle API设计故事","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"kotlin, flow, coroutine, 翻译","wordcount":5523,"url":"https:\/\/example.com\/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B\/","datePublished":"2022-09-17T21:08:36+08:00","dateModified":"2022-09-17T21:08:36+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"FineSnow","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"FineSnow"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/books>阅读 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/books title>阅读</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">repeatOnLifecycle API设计故事</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>FineSnow</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E6%8A%80%E6%9C%AF/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-09-17>2022-09-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 5523 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 12 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#repeatonlifecycle>repeatOnLifecycle</a></li><li><a href=#为什么它是一个挂起函数>为什么它是一个挂起函数</a></li><li><a href=#移除addrepeatingjob-api>移除addRepeatingJob API</a></li><li><a href=#repeatonlifecycle才是大赢家>repeatOnLifecycle才是大赢家</a></li><li><a href=#flowflowwithlifecycle>Flow.flowWithLifecycle</a></li><li><a href=#我们应该增加一个额外的api吗>我们应该增加一个额外的API吗？</a></li><li><a href=#命名很重要也很困难>命名很重要（也很困难）</a></li><li><a href=#一行代码收集数据流>一行代码收集数据流</a></li><li><a href=#iosched的封装函数>iosched的封装函数</a></li><li><a href=#你需要封装函数吗>你需要封装函数吗？</a></li></ul></nav></div></div><div class=content id=content><blockquote><p>翻译自<a href=https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333 target=_blank rel="noopener noreffer">repeatOnLifecycle API design story</a>，使用Google or DeepL翻译以及人工校对，后来发现Google在各大平台已经发布了<a href=https://juejin.cn/post/7001371050202103838 target=_blank rel="noopener noreffer">中文版本</a>，不过感受到了机翻的意思表达不那么明确，官方的中文版还OK的，正好也能对比一下，提高下英文水准。</p></blockquote><p>在这篇博文中，你将了解<code>Lifecycle.repeatOnLifecycle</code> API背后的设计决策，以及为什么我们删除了2.4.0版<code>lifecycle-runtime-ktx</code>库的第一个alpha版本中添加的一些辅助函数。</p><p>一路走来，你会看到某些协程API在某些情况下的使用是多么危险，命名是多么困难，以及为什么我们决定在库中只保留低级别的<code>suspend</code> API。</p><p>另外，你会意识到所有的API决定都需要在复杂性、可读性和API的易错性方面做出一些权衡。</p><p>特别感谢Adam Powell、Wojtek Kaliciński、Ian Lake和Yigit Boyar提供的反馈和讨论这些API的形态。</p><blockquote><p>注意：如果您正在寻找<code>repeatOnLifecycle</code>指南，请查看博文：<a href=https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda target=_blank rel="noopener noreffer">从AndroidUI收集流的更安全的方法</a>。</p></blockquote><h2 id=repeatonlifecycle>repeatOnLifecycle</h2><p><code>Lifecycle.repeatOnLifecycle API</code>的诞生主要是为了让Android中UI层的Flow收集更加安全。它的可重启行为考虑到了UI的生命周期，使得它成为完美的默认API，只在屏幕上的UI可见时处理逻辑。</p><blockquote><p>注意：<code>LifecycleOwner.repeatOnLifecycle</code>也是可用的。它将功能委托给它的<code>Lifecycle</code>。有了这个，任何已经属于<code>LifecycleOwner</code>范围的代码都可以省略显式接收器。</p></blockquote><p><code>repeatOnLifecycle</code>是一个挂起函数。<code>repeatOnLifecycle</code>会暂停调用的协程，然后在给定的生命周期达到目标状态或更高时，在一个新的协程中运行一个你作为参数传递的给定的代码块。如果生命周期的状态低于目标值，为该块启动的协程就会被取消。最后，<code>repeatOnLifecycle</code>函数本身不会恢复调用的协程，直到生命周期处于<code>DESTROYED</code>。</p><p>让我们看看这个API的作用。如果你读过我之前的博文：<a href=https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda target=_blank rel="noopener noreffer">从AndroidUI收集流的更安全的方法</a>，这些对你来说应该都不是惊喜。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class LocationActivity : AppCompatActivity() {
+</span></span><span class=line><span class=cl>    override fun onCreate(savedInstanceState: Bundle?) {
+</span></span><span class=line><span class=cl>        super.onCreate(savedInstanceState)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        // Create a new coroutine from the lifecycleScope
+</span></span><span class=line><span class=cl>        // since repeatOnLifecycle is a suspend function
+</span></span><span class=line><span class=cl>        lifecycleScope.launch {
+</span></span><span class=line><span class=cl>            // Suspend the coroutine until the lifecycle is DESTROYED.
+</span></span><span class=line><span class=cl>            // repeatOnLifecycle launches the block in a new coroutine every time the 
+</span></span><span class=line><span class=cl>            // lifecycle is in the STARTED state (or above) and cancels it when it&#39;s STOPPED.
+</span></span><span class=line><span class=cl>            repeatOnLifecycle(Lifecycle.State.STARTED) {
+</span></span><span class=line><span class=cl>                // Safely collect from locations when the lifecycle is STARTED
+</span></span><span class=line><span class=cl>                // and stop collecting when the lifecycle is STOPPED
+</span></span><span class=line><span class=cl>                someLocationProvider.locations.collect {
+</span></span><span class=line><span class=cl>                    // New location! Update the map
+</span></span><span class=line><span class=cl>                }
+</span></span><span class=line><span class=cl>            }
+</span></span><span class=line><span class=cl>            // Note: at this point, the lifecycle is DESTROYED!
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>注意：如果你对<code>repeatOnLifecycle</code>是如何实现的感兴趣，这里有一个<a href="https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/RepeatOnLifecycle.kt;l=63" target=_blank rel="noopener noreffer">源代码链接</a>。</p></blockquote><h2 id=为什么它是一个挂起函数>为什么它是一个挂起函数</h2><p>由于可以保留调用上下文，所以挂起函数是执行重启行为的最佳选择。它在调用协程时遵从<code>Job</code>树。由于<code>repeatOnLifecycle</code>的内部实现是使用<code>suspendCancellableCoroutine</code>，它可以和取消操作共同运作：取消发起调用的协程的同时也会取消<code>repeatOnLifecycle</code>和它重启执行的<code>block</code>。</p><p>另外，我们还可以在<code>repeatOnLifecycle</code>之上添加更多的API，比如<code>Flow.flowWithLifecycle</code>流操作符。更重要的是，如果你的项目需要它还允许你在这个API之上创建辅助函数。这就是我们试图用<code>LifecycleOwner.addRepeatingJob</code>API做的事情，我们在<code>lifecycle-runtime-ktx:2.4.0-alpha01</code>中添加了这个API，事实上，在<code>alpha02</code>中删除了它。</p><h2 id=移除addrepeatingjob-api>移除addRepeatingJob API</h2><p><code>LifecycleOwner.addRepeatingJob</code>API在库的第一个<code>alpha</code>版本中添加了这个功能，现在已经从库中移除，它是这样实现的。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>/* Copyright 2022 Google LLC.	
+</span></span><span class=line><span class=cl>   SPDX-License-Identifier: Apache-2.0 */
+</span></span><span class=line><span class=cl>public fun LifecycleOwner.addRepeatingJob(
+</span></span><span class=line><span class=cl>    state: Lifecycle.State,
+</span></span><span class=line><span class=cl>    coroutineContext: CoroutineContext = EmptyCoroutineContext,
+</span></span><span class=line><span class=cl>    block: suspend CoroutineScope.() -&gt; Unit
+</span></span><span class=line><span class=cl>): Job = lifecycleScope.launch(coroutineContext) {
+</span></span><span class=line><span class=cl>    repeatOnLifecycle(state, block)
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p>给定一个<code>LifecycleOwner</code>，你可以运行一个<code>suspend</code>块，每当它的生命周期进入和离开目标状态时就会重新启动。这个API使用<code>LifecycleOwner</code>的<code>lifecycleScope</code>来触发一个新的协程并在其中调用<code>repeatOnLifecycle</code>。</p><p>使用<code>addRepeatingJob</code>API，上面的代码会是这样的。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class LocationActivity : AppCompatActivity() {
+</span></span><span class=line><span class=cl>    override fun onCreate(savedInstanceState: Bundle?) {
+</span></span><span class=line><span class=cl>        super.onCreate(savedInstanceState)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        lifecycleOwner.addRepeatingJob(Lifecycle.State.STARTED) {
+</span></span><span class=line><span class=cl>            someLocationProvider.locations.collect {
+</span></span><span class=line><span class=cl>                // New location! Update the map
+</span></span><span class=line><span class=cl>            }
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p>乍一看，你可能认为这种代码更干净，需要的代码更少。然而，如果你不仔细注意的话，有一些隐藏的问题会让你自食其果：</p><ul><li>尽管<code>addRepeatingJob</code>接受一个挂起代码块，但<code>addRepeatingJob</code>不是一个挂起函数。因此，你不应该在协程中调用它！！</li><li>更少的代码？你只节省了一行代码，代价是拥有一个更容易出错的API。</li></ul><p>第一点可能看起来很明显，但它总是让开发者上当。而且讽刺的是，实际上它是基于协程的一个最核心的概念：<a href=https://elizarov.medium.com/structured-concurrency-722d765aa952 target=_blank rel="noopener noreffer">结构化并发</a>。</p><p><code>addRepeatingJob</code>不是一个挂起函数，因此，默认情况下不支持结构化并发（需要你注意的是你可以通过使用<code>coroutineContext</code>参数来手动使其支持）。由于<code>block</code>参数是一个挂起的lambda，你把这个API与协程联系起来，你可以很容易地写出这样的危险代码：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class LocationActivity : AppCompatActivity() {
+</span></span><span class=line><span class=cl>    override fun onCreate(savedInstanceState: Bundle?) {
+</span></span><span class=line><span class=cl>        super.onCreate(savedInstanceState)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        val job = lifecycleScope.launch {
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            doSomeSuspendInitWork()
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            // DANGEROUS! This API doesn&#39;t preserve the calling Context!
+</span></span><span class=line><span class=cl>            // It won&#39;t get cancelled when the parent coroutine is cancelled!
+</span></span><span class=line><span class=cl>            addRepeatingJob(Lifecycle.State.STARTED) {
+</span></span><span class=line><span class=cl>                someLocationProvider.locations.collect {
+</span></span><span class=line><span class=cl>                    // New location! Update the map
+</span></span><span class=line><span class=cl>                }
+</span></span><span class=line><span class=cl>            }
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        // If something goes wrong, cancel the coroutine launched above
+</span></span><span class=line><span class=cl>        try {
+</span></span><span class=line><span class=cl>            /* ... */
+</span></span><span class=line><span class=cl>        } catch(t: Throwable) {
+</span></span><span class=line><span class=cl>            job.cancel()
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p><code>addRepeatingJob</code>做的是协程的事情，没有什么能阻止我在协程中调用它，对吗？</p><p>由于<code>addRepeatingJob</code>使用隐含在实现细节中的<code>lifecycleScope</code>创建新的协程来运行重复块，新的协程不遵从结构化的并发，也不保留调用协程的上下文。因此，当你调用<code>job.cancel()</code>时，将不会被取消。<em>这可能会导致你的应用程序中出现非常不易察觉的bug，很难调试</em>。</p><h2 id=repeatonlifecycle才是大赢家>repeatOnLifecycle才是大赢家</h2><p><code>addRepeatingJob</code>里面使用的隐式<code>CoroutineScope</code>是使API在某些情况下使用不安全的原因。这是一个隐藏的问题，需要特别注意才能写出正确的代码。这一点是避免在库中的 <code>repeatOnLifecycle</code>之上增加包装API的反复论证。</p><p><code>suspend repeatOnLifecycle</code>API的主要好处是，它默认与结构化并发合作，而<code>addRepeatingJob</code>没有。它还能帮助你思考你希望重复的任务在哪个范围内执行。这个API是自解释的并且符合开发者的预期：</p><ul><li>和其他的挂起函数一样，它会将当前协程的执行中断，直到特定事件发生。比如这里是当生命周期被销毁时继续执行。</li><li>没有意外惊吓! 它可以和其他的协程代码一起使用，并且会按照您的预期工作。</li><li><code>repeatOnLifecycle</code>周围的代码可读性高，对新手来说是有意义的：&ldquo;首先，我启动一个跟随用户界面的生命周期的新协程。然后，我需要调用<code>repeatOnLifecycle</code>使得每当用户界面达到这个生命周期状态时启动执行这个<code>block</code>"。</li></ul><h2 id=flowflowwithlifecycle>Flow.flowWithLifecycle</h2><p><code>Flow.flowWithLifecycle</code>操作符（<a href="https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:lifecycle/lifecycle-runtime-ktx/src/main/java/androidx/lifecycle/FlowExt.kt;l=87" target=_blank rel="noopener noreffer">实现在此</a>）是建立在<code>repeatOnLifecycle</code>之上的，只有当生命周期至少处于<code>minActiveState</code>时，才会发射上游流发送的项目。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class LocationActivity : AppCompatActivity() {
+</span></span><span class=line><span class=cl>    override fun onCreate(savedInstanceState: Bundle?) {
+</span></span><span class=line><span class=cl>        super.onCreate(savedInstanceState)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        lifecycleScope.launch {
+</span></span><span class=line><span class=cl>            someLocationProvider.locations
+</span></span><span class=line><span class=cl>                .flowWithLifecycle(lifecycle, STARTED)
+</span></span><span class=line><span class=cl>                .collect {
+</span></span><span class=line><span class=cl>                    // New location! Update the map
+</span></span><span class=line><span class=cl>                }
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p>尽管这个API也有一些需要注意的问题，但我们还是决定保留它，因为它作为一个Flow操作符很有用。例如，它可以<a href=https://manuelvivo.dev/coroutines-addrepeatingjob#safe-flow-collection-in-jetpack-compose target=_blank rel="noopener noreffer">很容易地在Jetpack Compose中使用</a>。尽管你可以通过使用<code>produceState</code>和<code>repeatOnLifecycle</code>API在Compose中实现同样的功能，但我们还是把这个API留在库中，作为更多响应式方法的替代。</p><p>正如KDoc中记录的那样，问题在于你添加<code>flowWithLifecycle</code>操作符的顺序很重要。在<code>flowWithLifecycle</code>操作符之前应用的操作符会在生命周期低于<code>minActiveState</code>时被取消。然而，在这之后应用的操作符不会被取消，即使没有项目被发送。</p><p>对于最好奇的人来说，这个API名称以<code>Flow.flowOn(CoroutineContext)</code>操作符为先例，因为<code>Flow.flowWithLifecycle</code>改变了用于收集上游流的<code>CoroutineContext</code>，而使下游不受影响。</p><h2 id=我们应该增加一个额外的api吗>我们应该增加一个额外的API吗？</h2><p>鉴于我们已经有了<code>Lifecycle.repeatOnLifecycle</code>、<code>LifecycleOwner.repeatOnLifecycle</code>和<code>Flow.flowWithLifecycle</code>APIs。我们应该添加其他的API吗？</p><p>新的API所带来的混乱与它们要解决的问题一样多。有多种方法来支持不同的用例，而最短的路径在很大程度上取决于周围的代码。可能对你的项目有用的东西，可能对其他人没有用。</p><p>这就是为什么我们不想为所有可能的情况提供API，可用的API越多，对开发者来说就越混乱，不知道什么时候该用什么。因此，我们做出决定，只保留最底层的API。有时，少即是多。</p><h2 id=命名很重要也很困难>命名很重要（也很困难）</h2><p>这不仅关系到我们支持哪些用例，而且还关系到如何命名它们! 名称应该符合开发者的预期，并遵循Kotlin协程的约定。比如说：</p><ul><li>如果API使用隐式<code>CoroutineScope</code>（例如<code>addRepeatingJob</code>中隐式使用的<code>lifecycleScope</code>）启动一个新的协程，这必须反映在命名中，以避免错误的预期。在这种情况下，<code>launch</code>应该以某种方式包含在名称中。</li><li><code>collect</code>是一个挂起函数。如果它不是一个挂起函数，就不要在API名称前加上<code>collect</code>。</li></ul><blockquote><p>注意：<code>Compose</code>的<code>collectAsState</code>API是一个特殊情况，我们对它的名字没有意见。它不能与挂起函数混淆，因为在<code>Compose</code>中没有<code>@Composable suspend fun</code>这样的东西。</p></blockquote><p>甚至<code>LifecycleOwner.addRepeatingJob</code>的API也是一个很难命名的问题。因为它用<code>lifecycleScope</code>创建了新的协程，所以它的前缀应该是<code>launch</code>。然而，我们想消除协程在后台使用的事实，而且由于它添加了一个新的生命周期观察者，这个名字与其他<code>LifecycleOwner</code>APIs的名字更一致。</p><p>这个名字也多少受到了现有<code>LifecycleCoroutineScope.launchWhenX</code>挂起API的影响。由于<code>launchWhenStarted</code>和<code>repeatOnLifecycle(STARTED)</code>提供了完全不同的功能（<code>launchWhenStarted</code>暂停了协程的执行，而<code>repeatOnLifecycle</code>取消并重新启动一个新的协程），如果新API的名称相似（例如，用<code>launchWhenever</code>来表示重启API），开发者可能会感到困惑，甚至在不知不觉中交替使用它们。</p><h2 id=一行代码收集数据流>一行代码收集数据流</h2><p>LiveData的observe函数具有生命周期感知，并且只在生命周期至少开始时处理排放。如果你要从LiveData迁移到Kotlin flow，你可能会认为有一个单行的替换是个好主意！你可以删除模板代码，而且迁移很直接。</p><p>因此，您可以像<a href=https://twitter.com/ianhlake target=_blank rel="noopener noreffer">Ian Lake</a>在他第一次开始使用<code>repeatOnLifecycle</code>API 时所做的那样。他创建了一个名为<code>collectIn</code>的便捷包装器，如下所示（为了遵循上面讨论的命名约定，我将其重命名为<code>launchAndCollectIn</code>）：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>/* Copyright 2022 Google LLC.	
+</span></span><span class=line><span class=cl>   SPDX-License-Identifier: Apache-2.0 */
+</span></span><span class=line><span class=cl>inline fun &lt;T&gt; Flow&lt;T&gt;.launchAndCollectIn(
+</span></span><span class=line><span class=cl>    owner: LifecycleOwner,
+</span></span><span class=line><span class=cl>    minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
+</span></span><span class=line><span class=cl>    crossinline action: suspend CoroutineScope.(T) -&gt; Unit
+</span></span><span class=line><span class=cl>) = owner.lifecycleScope.launch {
+</span></span><span class=line><span class=cl>        owner.repeatOnLifecycle(minActiveState) {
+</span></span><span class=line><span class=cl>            collect {
+</span></span><span class=line><span class=cl>                action(it)
+</span></span><span class=line><span class=cl>            }
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><p>这样你就可以像这样从用户界面调用它：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class LocationActivity : AppCompatActivity() {
+</span></span><span class=line><span class=cl>    override fun onCreate(savedInstanceState: Bundle?) {
+</span></span><span class=line><span class=cl>        super.onCreate(savedInstanceState)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        someLocationProvider.locations.launchAndCollectIn(this, STARTED) {
+</span></span><span class=line><span class=cl>            // New location! Update the map
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p>这个包装器，虽然在这个例子中看起来很好很直接，但它存在着我们前面提到的关于<code>LifecycleOwner.addRepeatingJob</code>的同样问题。它不尊重调用的上下文，在其他循环程序中使用会很危险。此外，原来的名字真的很有误导性：<code>collectIn</code>并不是一个挂起的函数 如前所述，开发者希望<code>collect</code>函数能够挂起。也许，这个封装函数的更好的名字可以是<code>Flow.launchAndCollectIn</code>，以防止不良使用。</p><h2 id=iosched的封装函数>iosched的封装函数</h2><p><code>repeatOnLifecycle</code>必须与Fragments中的<code>viewLifecycleOwner</code>一起使用。在开源的 Google I/O 应用程序<a href=https://github.com/google/iosched target=_blank rel="noopener noreffer">iosched</a>项目中，团队决定创建一个封装函数，以避免在 Fragments 中滥用 API，其 API 名称非常明确：<a href=https://github.com/google/iosched/blob/main/mobile/src/main/java/com/google/samples/apps/iosched/util/UiUtils.kt#L60 target=_blank rel="noopener noreffer">Fragment.launchAndRepeatWithViewLifecycle</a>。</p><blockquote><p>注意：实现与<code>addRepeatingJob</code>API非常相似。当使用<code>alpha01</code>版本的库编写此代码时，在<code>alpha02</code>中添加的<code>repeatOnLifecycle</code>API lint 检查没有到位。</p></blockquote><h2 id=你需要封装函数吗>你需要封装函数吗？</h2><p>如果你需要在<code>repeatOnLifecycle</code>API之上创建包装器，以适应你的应用程序中最常见的用例，请问你是否真的需要它，以及为什么需要它。如果你确信并想继续下去，我建议你选择一个非常明确的API名称，以明确定义包装器的行为，避免误用。同时，要非常清楚地记录它，让新来的人能够充分理解使用它的意义。</p><p>我希望这篇博文能让您了解团队在决定如何处理<code>repeatOnLifecycle</code>API以及我们可以在其之上添加的潜在帮助方法时的考虑因素。</p><p>再次感谢 Adam Powell、Wojtek Kaliciński、Ian Lake 和 Yigit Boyar 提供反馈并讨论这些 API 的形态。</p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2022-09-17</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ data-title="repeatOnLifecycle API设计故事" data-hashtags=kotlin,flow,coroutine,翻译><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ data-hashtag=kotlin><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ data-title="repeatOnLifecycle API设计故事"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ data-title="repeatOnLifecycle API设计故事"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ data-title="repeatOnLifecycle API设计故事"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/kotlin/>kotlin</a>,&nbsp;<a href=/tags/flow/>flow</a>,&nbsp;<a href=/tags/coroutine/>coroutine</a>,&nbsp;<a href=/tags/%E7%BF%BB%E8%AF%91/>翻译</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/flow/ class=prev rel=prev title="kotlin flow"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>kotlin flow</a>
+<a href=/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-009-%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F/ class=next rel=next title="生活周刊 009 蛤蟆先生">生活周刊 009 蛤蟆先生<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>FineSnow</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js></script><script type=text/javascript src=/js/custom.js></script></body></html>

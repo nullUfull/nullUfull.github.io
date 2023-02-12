@@ -1,16 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>实用 - 标签 - FineSnow&#39;s Blog</title>
-        <link>https://example.com/tags/%E5%AE%9E%E7%94%A8/</link>
-        <description>实用 - 标签 - FineSnow&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
-            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/%E5%AE%9E%E7%94%A8/" rel="self" type="application/rss+xml" /><item>
-    <title>Mac实用App推荐</title>
-    <link>https://example.com/mac%E5%AE%9E%E7%94%A8app%E6%8E%A8%E8%8D%90/</link>
-    <pubDate>Sat, 23 Jul 2022 00:00:00 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/mac%E5%AE%9E%E7%94%A8app%E6%8E%A8%E8%8D%90/</guid>
-    <description><![CDATA[自动切换输入法 使用电脑的时候，每次切换App，都要先切换一下中/英文，以免输入有误，就有点烦，一般来说某些App就存在一个默认的输入方式，比]]></description>
-</item>
-</channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>实用 - 标签 - FineSnow's Blog</title><link>https://example.com/tags/%E5%AE%9E%E7%94%A8/</link><description>实用 - 标签 - FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E5%AE%9E%E7%94%A8/" rel="self" type="application/rss+xml"/><item><title>Mac实用App推荐</title><link>https://example.com/mac%E5%AE%9E%E7%94%A8app%E6%8E%A8%E8%8D%90/</link><pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/mac%E5%AE%9E%E7%94%A8app%E6%8E%A8%E8%8D%90/</guid><description>自动切换输入法 使用电脑的时候，每次切换App，都要先切换一下中/英文，以免输入有误，就有点烦，一般来说某些App就存在一个默认的输入方式，比</description></item></channel></rss>

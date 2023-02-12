@@ -1,16 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>面试 - 标签 - FineSnow&#39;s Blog</title>
-        <link>https://example.com/tags/%E9%9D%A2%E8%AF%95/</link>
-        <description>面试 - 标签 - FineSnow&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor>
-            <webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
-    <title>2019年总结</title>
-    <link>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
-    <pubDate>Mon, 03 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>FineSnow</author>
-    <guid>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
-    <description><![CDATA[18年末 年后便是大三，驾照也已到手，也没其余杂事。那可要准备面试，年后就得找暑期实习了。虽说离毕业还有两年，但学校里的课程是不能再学到可用的]]></description>
-</item>
-</channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>面试 - 标签 - FineSnow's Blog</title><link>https://example.com/tags/%E9%9D%A2%E8%AF%95/</link><description>面试 - 标签 - FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml"/><item><title>2019年总结</title><link>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/2019%E5%B9%B4%E6%80%BB%E7%BB%93/</guid><description>18年末 年后便是大三，驾照也已到手，也没其余杂事。那可要准备面试，年后就得找暑期实习了。虽说离毕业还有两年，但学校里的课程是不能再学到可用的</description></item></channel></rss>
