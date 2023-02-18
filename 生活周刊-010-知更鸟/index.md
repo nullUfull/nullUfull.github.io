@@ -5,7 +5,7 @@
 
 ## 阅读
 
-<https://book.douban.com/subject/6781808/>
+{{< douban "https://book.douban.com/subject/6781808/">}}
 
 本周读了《杀死一只知更鸟》，很早就知道了这本书，但是不看简介单从书名是无法知道这本书的主要内容是什么
 

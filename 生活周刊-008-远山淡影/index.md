@@ -39,15 +39,15 @@
 {{< bilibili id=BV1pT411w7gy >}}
 
 ## 电影
-<https://movie.douban.com/subject/6893932/>
+{{< douban "https://book.douban.com/subject/6893932/">}}
 
 > 美国战狼，虽说是老套的主旋律电影，但是还是很cool，很有激情，观感很好
 
-<https://movie.douban.com/subject/35700395/>
+{{< douban "https://book.douban.com/subject/35700395/">}}
 
 > 高空恐惧症福音，最后的反转挺不错；朋友圈：如果用上IPhone14会少大半时长
 
-<https://movie.douban.com/subject/35460157/>
+{{< douban "https://book.douban.com/subject/35460157/">}}
 
 > 周末和泽敏一起看的，之前看过无剧透的电影评价，虽说的确剧情存在莫名其妙的地方（亲生母亲突然现身），但还是有好几个点会揪住我的心，是一部值得看的电影。
 
