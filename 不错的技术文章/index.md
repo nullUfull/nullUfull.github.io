@@ -67,5 +67,8 @@ in.qq.com/s/N9BiufCWTRuoh6J-QERlWQ)
 
 # java
 
+[算法动画 | 被 "废弃" 的 Java 栈，为什么还在用](https://mp.weixin.qq.com/s/TSpWaYSUpjeR_wzSclCTQA)
+起因是在于做一道关于栈相关的算法题的时候，发现用ArrayQueue、LinkedList比用Stack，耗时相对于少很多（2ms vs 7ms）
+
 ## jvm
 [你知道 JVM 的方法区是干什么用的吗？](https://zhuanlan.zhihu.com/p/166190558)
