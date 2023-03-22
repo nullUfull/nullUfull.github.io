@@ -1,4 +1,4 @@
-# study roadmap
+# Study Roadmap
 
 
 - [x] kotlin协程
@@ -13,3 +13,6 @@
   - [ ] 了解KMM
 - [ ] Compose
   - [ ] 简单入门
+- [ ] 基础
+  - [x] 操作系统导论
+  - [ ] 数据结构与算法
