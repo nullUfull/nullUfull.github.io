@@ -181,6 +181,8 @@ api 对外暴露的类？
 
 2.0以后，AndroidX的支持，LifecycleOwner支持
 
+2. Parcelable和Serializable的区别
+[每日一问 Parcelable 为什么效率高于 Serializable ？](https://www.wanandroid.com/wenda/show/9002)
 
 ## 面试题目
 
