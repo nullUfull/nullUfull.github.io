@@ -4,6 +4,8 @@
 # kotlin
 [Android-Redux-Intro](https://jayrambhia.com/blog/android-redux-intro)
 ## 协程
+[KotlinConf 2017 - Roman Elizarov深入探讨JVM上的协程](https://www.youtube.com/watch?v=YrrUCSi72E8)
+
 [Coroutines : First things first](https://mp.weixin.qq.com/s/HCjf1MBOMLvpy_SPiSr67w)
 
 [如何优雅的取消协程 ？](https://mp.weixin.qq.com/s/h8Qg_5fLkpcNDzP3IZDyqg)
@@ -19,8 +21,7 @@
 [Kotlin 协程](https://www.hiczp.com/kotlin/kotlin-xie-cheng.html) 
 谈了谈CPS变换以及状态机
 
-[硬核万字解读——Kotlin协程原理解析](https://mp.weix
-in.qq.com/s/N9BiufCWTRuoh6J-QERlWQ) 
+[硬核万字解读——Kotlin协程原理解析](https://mp.weixin.qq.com/s/N9BiufCWTRuoh6J-QERlWQ) 
 贴了比较多的源码，说得也很不错，搭配类图很直观，很硬核
 
 [Design of Kotlin Coroutines](https://proandroiddev.com/design-of-kotlin-coroutines-879bd35e0f34) 
