@@ -286,8 +286,11 @@ kotlin协程原理
 八股
 算法：实现LRUCache
 ### taptap 二面 1h
-项目
-算法：合并两个升序链表
+项目 50min
+主要就在聊MVI架构、其次问了下其他的项目，聊得比较浅。虽然说二面有三个面试官，但是并没有太大的压力
+算法 5min
+合并两个升序链表
+问答 5min
 ### taptap 三面 1h
 项目
 算法：[二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
