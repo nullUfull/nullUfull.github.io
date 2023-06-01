@@ -47,6 +47,7 @@
 。。。preview 版本
 
 反问
+
 20. 微信键盘的技术栈？有没有比较难的地方啊？有没有考虑跨端方案？有对标哪款产品吗？
 用的都是常用的技术栈
 不过网络请求框架是自己写的，不是 Android 层面的，是 c++层面，因为比较关注数据隐私问题
@@ -78,8 +79,11 @@
 2. 提供一个0 or 1随机数生成器，写一个0-5的随机数生成器；没做出来，想到一半不让想了 10min
 
 项目
+
 3. MVI
+
 八股
+
 4. View绘制流程？在onCreate中view.post 可以获取到正确的view的宽高，为什么？
 5. Glide缓存池？三级缓存？为什么需要一级的actvie cache，为什么要用弱引用实现？
 6. OkHttp的拦截器链
@@ -103,12 +107,14 @@
 ## 快手 ✅
 ### 一面（4月21日 60min）
 Java八股
+
 1. ArrayList：数据满了，如果我再add一个，会发生什么流程？扩容？用的什么函数？哪里用的深拷贝or浅拷贝
 2. HashMap；put流程？什么时候转红黑树？什么时候扩容？解决Hash冲突的方式还有什么？
 3. 锁：synchronize原理？会有几个Monitor.exit？为什么在synchronize中才能调用wait、notify、notifyAll？对比ReentrantLock？
 4. 线程池？线程有几种状态？阻塞状态又有什么子状态？
 
 Android八股
+
 1. Handler原理？Handler.post vs view.post区别？怎么获取到view的大小？为什么能获取到？为什么handler不会阻塞主线程？
 2. RecyclerView：缓存机制？item相关的接口有哪些？remove一个item会发生什么？Activity的什么周期有什么变化？RecyclerView的生命周期有什么变化？相关的缓存发生了什么变化
 3. kotlin协程：launch创建协程的参数有哪些？分别有什么作用？
@@ -149,10 +155,11 @@ MVI数据流向
 1. MVI、响应式框架
 
 Java八股
+
 2. HashMap原理？支持多线程并发吗？支持并发的容器有？
-3. 
 
 Android八股
+
 1. 绘制流程
 2. 事件分发？手指按住一个View，然后移动手指移出View的范围，再抬手，会收到哪些事件？会响应onclick吗？
 
@@ -176,12 +183,16 @@ Android八股
    3. 技术选型：为什么选择是Redux框架  1. redux是这类框架里面最流行的，使用量最多的，当然也有调研过其他的前端状态存储的框架；例如flux、vuex，是多个数据源的 2. 其次呢是我们鹅剪这边有过实践了  更符合MVI架构，单一的数据源，
    4. 技术选型：Store对外暴露的数据容器选择，是LiveData还是Flow？
    5. 是怎么一步步完善的？
+
 基础知识
-2. synchronized vs ReentrantLock
-3. View绘制流程？view卡顿怎么定位？什么工具？onDraw怎么优化？子线程能不能绘制UI？
-4. Service vs IntentService？IntentService使用场景
+
+1. synchronized vs ReentrantLock
+2. View绘制流程？view卡顿怎么定位？什么工具？onDraw怎么优化？子线程能不能绘制UI？
+3. Service vs IntentService？IntentService使用场景
+
 算法
-5. 链表的头节点和倒数第k个节点交换
+
+1. 链表的头节点和倒数第k个节点交换
 5分钟搞定，先说思路，再写代码，然后再说说每一行代码的作用，这种题目一般是要考虑好边界问题的处理；
 虽然说一遍写出来有bug，会问你再想想有没有什么问题，脑海中运行代码debug，然后快速找出问题；
 结果是有个边界没处理到，也就算了
@@ -205,7 +216,9 @@ volatile 使用场景
 2. 启动模式
 3. 绘制流程
 4. https？怎么加密的？常见的code有哪些？
+
 项目
+
 1. MVI架构
 2. 为什么要使用？
 3. 对比MVVM
