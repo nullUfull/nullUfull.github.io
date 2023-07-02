@@ -41,7 +41,9 @@
 
 ### 桂林千古情 ⭐️⭐️⭐️⭐️
 
-<img src="/images/桂林千古情.png" width = "100%"/>
+<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/%E6%A1%82%E6%9E%97%E5%8D%83%E5%8F%A4%E6%83%85.png" width = "30%"/>
+
+<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/202307021620251.jpg" width = "50%"/>
 
 一个挺不错的景区，景区内部有一系列游玩的地方，甚至还有一条小吃街，当然主要是去看表演的。推荐在闲鱼购票165/人，而美团上是310/人，同样是贵宾席，其实剧场很大，观众席很多，虽说是淡季，但还能感受到人还是挺多的，贵宾席也基本上坐满了，何为贵宾席，就是相对来说就是位于前中区域的座位罢了。
 
