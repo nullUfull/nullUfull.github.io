@@ -19,6 +19,8 @@
 ### 汕头小公园
 白天去的，感觉就挺一般的，可以理解就是步行街+汕头老城区特色，可能晚上去会好看一点，闪烁着各种街灯牌坊。
 
+试了下胶片感的滤镜，但感觉还是无滤镜的好看。
+
 <img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/202307161554216.JPG" width="50%"><img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/202307161556388.JPG" width="50%">
 
 ### 南澳岛
@@ -34,7 +36,7 @@
 
 才沿着岛环了半圈，时间就追赶上我们的步伐，很是不舍，得准备出发去高铁站了
 
-金光粼粼的海面、氛围感十足的日落
+金光粼粼的海面、氛围感十足的日落，还是可惜拍出来的感觉还是差远了，无法拍出人眼真实所看到的景
 
 <img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/202307161518165.jpg" width = "100%"/>
 
