@@ -1,12 +1,13 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta name=referrer content="never"><title>kotlin flow - FineSnow's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="kotlin flow"><meta property="og:description" content="基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow Flow的定义很简单，表示它是一个可以被订阅"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/flow/"><meta property="og:image" content="https://example.com"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-09-16T16:52:32+08:00"><meta property="article:modified_time" content="2022-12-12T20:44:53+08:00"><meta property="og:site_name" content="LoveIt"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com"><meta name=twitter:title content="kotlin flow"><meta name=twitter:description content="基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow Flow的定义很简单，表示它是一个可以被订阅"><meta name=application-name content="FineSnow's Blog"><meta name=apple-mobile-web-app-title content="FineSnow's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/flow/><link rel=stylesheet href=//cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css media=print onload='this.media="all"'><link rel=prev href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/><link rel=next href=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"kotlin flow","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/flow\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"kotlin, flow, coroutine","wordcount":3169,"url":"https:\/\/example.com\/flow\/","datePublished":"2022-09-16T16:52:32+08:00","dateModified":"2022-12-12T20:44:53+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"FineSnow","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"FineSnow"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/books>阅读 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about>关于 </a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta name=referrer content="never"><title>kotlin flow - FineSnow's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="kotlin flow">
+<meta property="og:description" content="基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow Flow的定义很简单，表示它是一个可以被订阅"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/flow/"><meta property="og:image" content="https://example.com"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-09-16T16:52:32+08:00"><meta property="article:modified_time" content="2022-12-12T20:44:53+08:00"><meta property="og:site_name" content="LoveIt"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com"><meta name=twitter:title content="kotlin flow"><meta name=twitter:description content="基础 Flow是一种基于流的编程模型，可以理解在Kotlin协程中提供的响应式编程方式就是Flow Flow的定义很简单，表示它是一个可以被订阅"><meta name=application-name content="FineSnow's Blog"><meta name=apple-mobile-web-app-title content="FineSnow's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/flow/><link rel=stylesheet href=//cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css media=print onload='this.media="all"'><link rel=prev href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/><link rel=next href=https://example.com/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"kotlin flow","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/flow\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"kotlin, flow, coroutine","wordcount":3169,"url":"https:\/\/example.com\/flow\/","datePublished":"2022-09-16T16:52:32+08:00","dateModified":"2022-12-12T20:44:53+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"FineSnow","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"FineSnow"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/books>阅读 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about>关于 </a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
-<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
-</span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
-<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/books title>阅读</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about title>关于</a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/books title>阅读</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about title>关于</a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">kotlin flow</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>FineSnow</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E6%8A%80%E6%9C%AF/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术</a></span></div><div class=post-meta-line><i class="far fa-calendar fa-fw"></i>&nbsp;<time datetime=2022-09-16>2022-09-16</time>&nbsp;<i class="far fa-calendar-plus fa-fw"></i>&nbsp;<time datetime=2022-12-12>2022-12-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 3169 字&nbsp;
 <i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 7 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#基础>基础</a><ul><li><a href=#livedata>LiveData</a></li><li><a href=#冷流>冷流</a><ul><li><a href=#flow的创建>Flow的创建</a></li></ul></li><li><a href=#热流>热流</a><ul><li><a href=#sharedflow>SharedFlow</a></li><li><a href=#stateflow>StateFlow</a></li></ul></li><li><a href=#操作符>操作符</a><ul><li><a href=#终端操作符>终端操作符</a></li><li><a href=#中间操作符>中间操作符</a></li></ul></li><li><a href=#ui收集流的最佳实践>UI收集流的最佳实践</a></li><li><a href=#冷流转化为热流>冷流转化为热流</a><ul><li><a href=#共享策略>共享策略</a></li></ul></li><li><a href=#实战>实战</a><ul><li><a href=#简单示例>简单示例</a></li><li><a href=#flow实现数据拉取>Flow实现数据拉取</a></li><li><a href=#flow版本redux框架>Flow版本Redux框架</a></li></ul></li></ul></li><li><a href=#进阶>进阶</a></li><li><a href=#qa>Q&amp;A</a></li><li><a href=#参考>参考</a></li></ul></nav></div></div><div class=content id=content><h2 id=基础>基础</h2><p><code>Flow</code>是一种基于流的编程模型，可以理解在<code>Kotlin</code>协程中提供的响应式编程方式就是<code>Flow</code></p><p><img class=lazyload src=/svg/loading.min.svg data-src=https://developer.android.com/static/images/kotlin/flow/flow-entities.png data-srcset="https://developer.android.com/static/images/kotlin/flow/flow-entities.png, https://developer.android.com/static/images/kotlin/flow/flow-entities.png 1.5x, https://developer.android.com/static/images/kotlin/flow/flow-entities.png 2x" data-sizes=auto alt=https://developer.android.com/static/images/kotlin/flow/flow-entities.png title=https://developer.android.com/static/images/kotlin/flow/flow-entities.png></p><p><code>Flow</code>的定义很简单，表示它是一个可以被订阅收集的东西</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -83,22 +84,22 @@
 </span><span class=lnt>14
 </span><span class=lnt>15
 </span><span class=lnt>16
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>public fun &lt;T&gt; Iterable&lt;T&gt;.asFlow(): Flow&lt;T&gt; = flow {
-</span></span><span class=line><span class=cl>    forEach { value -&gt;
-</span></span><span class=line><span class=cl>        emit(value)
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=n>public</span> <span class=n>fun</span> <span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=n>Iterable</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;.</span><span class=n>asFlow</span><span class=p>():</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=o>=</span> <span class=n>flow</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>forEach</span> <span class=p>{</span> <span class=n>value</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=n>emit</span><span class=p>(</span><span class=n>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>@FlowPreview
-</span></span><span class=line><span class=cl>public fun &lt;T&gt; (suspend () -&gt; T).asFlow(): Flow&lt;T&gt; = flow {
-</span></span><span class=line><span class=cl>    emit(invoke())
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=err>@</span><span class=n>FlowPreview</span>
+</span></span><span class=line><span class=cl><span class=n>public</span> <span class=n>fun</span> <span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=p>(</span><span class=n>suspend</span> <span class=p>()</span> <span class=o>-&gt;</span> <span class=n>T</span><span class=p>)</span><span class=o>.</span><span class=n>asFlow</span><span class=p>():</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=o>=</span> <span class=n>flow</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>emit</span><span class=p>(</span><span class=n>invoke</span><span class=p>())</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>public fun &lt;T&gt; flowOf(vararg elements: T): Flow&lt;T&gt; = flow {
-</span></span><span class=line><span class=cl>    for (element in elements) {
-</span></span><span class=line><span class=cl>        emit(element)
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=n>public</span> <span class=n>fun</span> <span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=n>flowOf</span><span class=p>(</span><span class=n>vararg</span> <span class=n>elements</span><span class=p>:</span> <span class=n>T</span><span class=p>):</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=o>=</span> <span class=n>flow</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=n>element</span> <span class=ow>in</span> <span class=n>elements</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>emit</span><span class=p>(</span><span class=n>element</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></td></tr></table></div></div><h3 id=热流>热流</h3><h4 id=sharedflow>SharedFlow</h4><p>共享流 1->n</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
@@ -184,50 +185,50 @@
 </span><span class=lnt>42
 </span><span class=lnt>43
 </span><span class=lnt>44
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// 回调
-</span></span><span class=line><span class=cl>onStart
-</span></span><span class=line><span class=cl>onEach
-</span></span><span class=line><span class=cl>onCompletion
-</span></span><span class=line><span class=cl>onEmpty
-</span></span><span class=line><span class=cl>onSubscription
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=o>//</span> <span class=err>回调</span>
+</span></span><span class=line><span class=cl><span class=n>onStart</span>
+</span></span><span class=line><span class=cl><span class=n>onEach</span>
+</span></span><span class=line><span class=cl><span class=n>onCompletion</span>
+</span></span><span class=line><span class=cl><span class=n>onEmpty</span>
+</span></span><span class=line><span class=cl><span class=n>onSubscription</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>// 变换
-</span></span><span class=line><span class=cl>transform // 对发出的值进行变换
-</span></span><span class=line><span class=cl>transformLatest // 当原始流发出一个新值时，前一个transform块被取消
-</span></span><span class=line><span class=cl>transformWhile // 这个变换的lambda的返回值为Boolean，如果为false则不再进行后续变换（取消订阅），为ture则继续执行
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>变换</span>
+</span></span><span class=line><span class=cl><span class=n>transform</span> <span class=o>//</span> <span class=err>对发出的值进行变换</span>
+</span></span><span class=line><span class=cl><span class=n>transformLatest</span> <span class=o>//</span> <span class=err>当原始流发出一个新值时，前一个</span><span class=n>transform块被取消</span>
+</span></span><span class=line><span class=cl><span class=n>transformWhile</span> <span class=o>//</span> <span class=err>这个变换的</span><span class=n>lambda的返回值为Boolean</span><span class=err>，如果为</span><span class=n>false则不再进行后续变换</span><span class=err>（取消订阅），为</span><span class=n>ture则继续执行</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>fun Flow&lt;DownloadProgress&gt;.completeWhenDone(): Flow&lt;DownloadProgress&gt; =
-</span></span><span class=line><span class=cl>    transformWhile { progress -&gt;
-</span></span><span class=line><span class=cl>        emit(progress) // always emit progress
-</span></span><span class=line><span class=cl>        !progress.isDone() // continue while download is not done
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=n>fun</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>DownloadProgress</span><span class=o>&gt;.</span><span class=n>completeWhenDone</span><span class=p>():</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>DownloadProgress</span><span class=o>&gt;</span> <span class=o>=</span>
+</span></span><span class=line><span class=cl>    <span class=n>transformWhile</span> <span class=p>{</span> <span class=n>progress</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=n>emit</span><span class=p>(</span><span class=n>progress</span><span class=p>)</span> <span class=o>//</span> <span class=n>always</span> <span class=n>emit</span> <span class=n>progress</span>
+</span></span><span class=line><span class=cl>        <span class=o>!</span><span class=n>progress</span><span class=o>.</span><span class=n>isDone</span><span class=p>()</span> <span class=o>//</span> <span class=k>continue</span> <span class=k>while</span> <span class=n>download</span> <span class=n>is</span> <span class=ow>not</span> <span class=n>done</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>map
-</span></span><span class=line><span class=cl>mapNotNull
-</span></span><span class=line><span class=cl>mapLatest // 当有新值发送时如果上个变换还没结束，会先取消掉
+</span></span><span class=line><span class=cl><span class=n>map</span>
+</span></span><span class=line><span class=cl><span class=n>mapNotNull</span>
+</span></span><span class=line><span class=cl><span class=n>mapLatest</span> <span class=o>//</span> <span class=err>当有新值发送时如果上个变换还没结束，会先取消掉</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>// 过滤
-</span></span><span class=line><span class=cl>filter
-</span></span><span class=line><span class=cl>filterInstance
-</span></span><span class=line><span class=cl>filterNot
-</span></span><span class=line><span class=cl>filterNotNull
-</span></span><span class=line><span class=cl>takeWhile // 返回包含满足给定predicate的第一个元素的流
-</span></span><span class=line><span class=cl>debounce // 防抖节流，指定时间内的值只接收最新的一个，其他的过滤掉。搜索联想场景适用
-</span></span><span class=line><span class=cl>sample // 采样
-</span></span><span class=line><span class=cl>distinctUntilChanged
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>过滤</span>
+</span></span><span class=line><span class=cl><span class=n>filter</span>
+</span></span><span class=line><span class=cl><span class=n>filterInstance</span>
+</span></span><span class=line><span class=cl><span class=n>filterNot</span>
+</span></span><span class=line><span class=cl><span class=n>filterNotNull</span>
+</span></span><span class=line><span class=cl><span class=n>takeWhile</span> <span class=o>//</span> <span class=err>返回包含满足给定</span><span class=n>predicate的第一个元素的流</span>
+</span></span><span class=line><span class=cl><span class=n>debounce</span> <span class=o>//</span> <span class=err>防抖节流，指定时间内的值只接收最新的一个，其他的过滤掉。搜索联想场景适用</span>
+</span></span><span class=line><span class=cl><span class=n>sample</span> <span class=o>//</span> <span class=err>采样</span>
+</span></span><span class=line><span class=cl><span class=n>distinctUntilChanged</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>// 组合
-</span></span><span class=line><span class=cl>combine
-</span></span><span class=line><span class=cl>combineTransform
-</span></span><span class=line><span class=cl>merge
-</span></span><span class=line><span class=cl>flattenConcat
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>组合</span>
+</span></span><span class=line><span class=cl><span class=n>combine</span>
+</span></span><span class=line><span class=cl><span class=n>combineTransform</span>
+</span></span><span class=line><span class=cl><span class=n>merge</span>
+</span></span><span class=line><span class=cl><span class=n>flattenConcat</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>// 功能
-</span></span><span class=line><span class=cl>merge
-</span></span><span class=line><span class=cl>catch
-</span></span><span class=line><span class=cl>buffer
-</span></span><span class=line><span class=cl>conflate
+</span></span><span class=line><span class=cl><span class=o>//</span> <span class=err>功能</span>
+</span></span><span class=line><span class=cl><span class=n>merge</span>
+</span></span><span class=line><span class=cl><span class=n>catch</span>
+</span></span><span class=line><span class=cl><span class=n>buffer</span>
+</span></span><span class=line><span class=cl><span class=n>conflate</span>
 </span></span></code></pre></td></tr></table></div></div><h3 id=ui收集流的最佳实践>UI收集流的最佳实践</h3><p>生命周期？资源浪费？</p><p>launch vs launchWhenX vs repeatOnLifecycle</p><p><img class=lazyload src=/svg/loading.min.svg data-src=https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd data-srcset="https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd, https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd 1.5x, https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd 2x" data-sizes=auto alt=https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd title=https://miro.medium.com/max/720/0*pDKnvDJ9FzaCgXCd></p><ul><li><p><code>launch</code>
 和视图的生命周期同步</p></li><li><p><code>launchWhenX</code>
 在应用程序处于后台时接收更新可能会导致崩溃，这可以通过暂停视图中的收集来解决。然而，当应用程序在后台时，上游流量保持活跃，可能会浪费资源</p></li><li><p><code>repeatOnLifecycle</code>（Best Practices）
@@ -434,84 +435,84 @@
 </span><span class=lnt>75
 </span><span class=lnt>76
 </span><span class=lnt>77
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>class VideoDetailRepository {
-</span></span><span class=line><span class=cl>    private val api by lazy { NetworkApi.getInstance().createApi(MovieApi::class.java) }
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=k>class</span> <span class=n>VideoDetailRepository</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>private</span> <span class=n>val</span> <span class=n>api</span> <span class=n>by</span> <span class=n>lazy</span> <span class=p>{</span> <span class=n>NetworkApi</span><span class=o>.</span><span class=n>getInstance</span><span class=p>()</span><span class=o>.</span><span class=n>createApi</span><span class=p>(</span><span class=n>MovieApi</span><span class=p>::</span><span class=k>class</span><span class=o>.</span><span class=n>java</span><span class=p>)</span> <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    fun getVideoSelectData(videoSelectRequest: VideoSelectRequest): Flow&lt;Result&lt;VideoSelectResponse&gt;&gt; {
-</span></span><span class=line><span class=cl>        return api.getVideoSelect(videoSelectRequest.toStGetVideoSelectReq()).map {
-</span></span><span class=line><span class=cl>            if (it.ret == 0) {
-</span></span><span class=line><span class=cl>                Result.success(it.toVideoSelectResponse())
-</span></span><span class=line><span class=cl>            } else {
-</span></span><span class=line><span class=cl>                Result.failure(Exception(it.msg))
-</span></span><span class=line><span class=cl>            }
-</span></span><span class=line><span class=cl>        }.catch {
-</span></span><span class=line><span class=cl>            emit(Result.failure(it))
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl>    <span class=n>fun</span> <span class=n>getVideoSelectData</span><span class=p>(</span><span class=n>videoSelectRequest</span><span class=p>:</span> <span class=n>VideoSelectRequest</span><span class=p>):</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>Result</span><span class=o>&lt;</span><span class=n>VideoSelectResponse</span><span class=o>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>api</span><span class=o>.</span><span class=n>getVideoSelect</span><span class=p>(</span><span class=n>videoSelectRequest</span><span class=o>.</span><span class=n>toStGetVideoSelectReq</span><span class=p>())</span><span class=o>.</span><span class=n>map</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=p>(</span><span class=n>it</span><span class=o>.</span><span class=n>ret</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>Result</span><span class=o>.</span><span class=n>success</span><span class=p>(</span><span class=n>it</span><span class=o>.</span><span class=n>toVideoSelectResponse</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>Result</span><span class=o>.</span><span class=n>failure</span><span class=p>(</span><span class=n>Exception</span><span class=p>(</span><span class=n>it</span><span class=o>.</span><span class=n>msg</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span><span class=o>.</span><span class=n>catch</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>emit</span><span class=p>(</span><span class=n>Result</span><span class=o>.</span><span class=n>failure</span><span class=p>(</span><span class=n>it</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>class ViewModel{
-</span></span><span class=line><span class=cl>    ...
-</span></span><span class=line><span class=cl>    private val store by lazyStore(::videoSelectReducer, VideoSelectState())
-</span></span><span class=line><span class=cl>    val state get() = store.state
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=n>ViewModel</span><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span><span class=line><span class=cl>    <span class=n>private</span> <span class=n>val</span> <span class=n>store</span> <span class=n>by</span> <span class=n>lazyStore</span><span class=p>(::</span><span class=n>videoSelectReducer</span><span class=p>,</span> <span class=n>VideoSelectState</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>state</span> <span class=n>get</span><span class=p>()</span> <span class=o>=</span> <span class=n>store</span><span class=o>.</span><span class=n>state</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    init {
-</span></span><span class=line><span class=cl>        viewModelScope.launch(Dispatchers.IO) {
-</span></span><span class=line><span class=cl>            loadTypeFlow.transform { loadType -&gt;
-</span></span><span class=line><span class=cl>                store.dispatch(UpdateLoadStateAndType(LoadState.LOADING, loadType))
-</span></span><span class=line><span class=cl>                repository.getVideoSelectData(
-</span></span><span class=line><span class=cl>                    createVideoSelectRequest(
-</span></span><span class=line><span class=cl>                        _curVideoSelectModel,
-</span></span><span class=line><span class=cl>                        loadType,
-</span></span><span class=line><span class=cl>                        state.value.pageState.attachInfo
-</span></span><span class=line><span class=cl>                    )
-</span></span><span class=line><span class=cl>                ).let {
-</span></span><span class=line><span class=cl>                    emitAll(it)
-</span></span><span class=line><span class=cl>                }
-</span></span><span class=line><span class=cl>            }.collect { result -&gt;
-</span></span><span class=line><span class=cl>                Logger.i(TAG, &#34;curVideoSelectModel = $_curVideoSelectModel&#34;)
-</span></span><span class=line><span class=cl>                result.onSuccess {
-</span></span><span class=line><span class=cl>                    Logger.i(TAG, &#34;load data success, size = ${it.videoInfo.size}&#34;)
-</span></span><span class=line><span class=cl>                    store.dispatch(LoadDataSuccess(curVideoSelectStyle, it))
-</span></span><span class=line><span class=cl>                }.onFailure { throwable -&gt;
-</span></span><span class=line><span class=cl>                    Logger.e(TAG, &#34;getVideoSelectData&#34;, throwable)
-</span></span><span class=line><span class=cl>                    store.dispatch(UpdateLoadState(LoadState.ERROR))
-</span></span><span class=line><span class=cl>                }
-</span></span><span class=line><span class=cl>            }
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    ....
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl>    <span class=n>init</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>viewModelScope</span><span class=o>.</span><span class=n>launch</span><span class=p>(</span><span class=n>Dispatchers</span><span class=o>.</span><span class=n>IO</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>loadTypeFlow</span><span class=o>.</span><span class=n>transform</span> <span class=p>{</span> <span class=n>loadType</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=n>store</span><span class=o>.</span><span class=n>dispatch</span><span class=p>(</span><span class=n>UpdateLoadStateAndType</span><span class=p>(</span><span class=n>LoadState</span><span class=o>.</span><span class=n>LOADING</span><span class=p>,</span> <span class=n>loadType</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>                <span class=n>repository</span><span class=o>.</span><span class=n>getVideoSelectData</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>                    <span class=n>createVideoSelectRequest</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>                        <span class=n>_curVideoSelectModel</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                        <span class=n>loadType</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                        <span class=n>state</span><span class=o>.</span><span class=n>value</span><span class=o>.</span><span class=n>pageState</span><span class=o>.</span><span class=n>attachInfo</span>
+</span></span><span class=line><span class=cl>                    <span class=p>)</span>
+</span></span><span class=line><span class=cl>                <span class=p>)</span><span class=o>.</span><span class=n>let</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=n>emitAll</span><span class=p>(</span><span class=n>it</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span><span class=o>.</span><span class=n>collect</span> <span class=p>{</span> <span class=n>result</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=n>Logger</span><span class=o>.</span><span class=n>i</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;curVideoSelectModel = $_curVideoSelectModel&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                <span class=n>result</span><span class=o>.</span><span class=n>onSuccess</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=n>Logger</span><span class=o>.</span><span class=n>i</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;load data success, size = ${it.videoInfo.size}&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                    <span class=n>store</span><span class=o>.</span><span class=n>dispatch</span><span class=p>(</span><span class=n>LoadDataSuccess</span><span class=p>(</span><span class=n>curVideoSelectStyle</span><span class=p>,</span> <span class=n>it</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>                <span class=p>}</span><span class=o>.</span><span class=n>onFailure</span> <span class=p>{</span> <span class=n>throwable</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>                    <span class=n>Logger</span><span class=o>.</span><span class=n>e</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;getVideoSelectData&#34;</span><span class=p>,</span> <span class=n>throwable</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                    <span class=n>store</span><span class=o>.</span><span class=n>dispatch</span><span class=p>(</span><span class=n>UpdateLoadState</span><span class=p>(</span><span class=n>LoadState</span><span class=o>.</span><span class=n>ERROR</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>                <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>....</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>class VideoSelectFragment : Fragment(R.layout.fragment_video_select) {
-</span></span><span class=line><span class=cl>    ...
-</span></span><span class=line><span class=cl>    private fun initObserver() {
-</span></span><span class=line><span class=cl>        viewModel.state.map { it.pageState.canLoadBackward }
-</span></span><span class=line><span class=cl>            .distinctUntilChanged()
-</span></span><span class=line><span class=cl>            .launchAndCollectIn(viewLifecycleOwner) {
-</span></span><span class=line><span class=cl>                viewBinding.refreshLayout.setEnableLoadMore(it)
-</span></span><span class=line><span class=cl>            }
-</span></span><span class=line><span class=cl>        viewModel.state
-</span></span><span class=line><span class=cl>            .map { it.videoItemStates }
-</span></span><span class=line><span class=cl>            .distinctUntilChanged()
-</span></span><span class=line><span class=cl>            .launchAndCollectIn(viewLifecycleOwner) { dataList -&gt;
-</span></span><span class=line><span class=cl>                pictureTextSelectAdapter.submitList(dataList)
-</span></span><span class=line><span class=cl>            }
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    ...
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=n>VideoSelectFragment</span> <span class=p>:</span> <span class=n>Fragment</span><span class=p>(</span><span class=n>R</span><span class=o>.</span><span class=n>layout</span><span class=o>.</span><span class=n>fragment_video_select</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span><span class=line><span class=cl>    <span class=n>private</span> <span class=n>fun</span> <span class=n>initObserver</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>viewModel</span><span class=o>.</span><span class=n>state</span><span class=o>.</span><span class=n>map</span> <span class=p>{</span> <span class=n>it</span><span class=o>.</span><span class=n>pageState</span><span class=o>.</span><span class=n>canLoadBackward</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=o>.</span><span class=n>distinctUntilChanged</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>            <span class=o>.</span><span class=n>launchAndCollectIn</span><span class=p>(</span><span class=n>viewLifecycleOwner</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>viewBinding</span><span class=o>.</span><span class=n>refreshLayout</span><span class=o>.</span><span class=n>setEnableLoadMore</span><span class=p>(</span><span class=n>it</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>viewModel</span><span class=o>.</span><span class=n>state</span>
+</span></span><span class=line><span class=cl>            <span class=o>.</span><span class=n>map</span> <span class=p>{</span> <span class=n>it</span><span class=o>.</span><span class=n>videoItemStates</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>            <span class=o>.</span><span class=n>distinctUntilChanged</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>            <span class=o>.</span><span class=n>launchAndCollectIn</span><span class=p>(</span><span class=n>viewLifecycleOwner</span><span class=p>)</span> <span class=p>{</span> <span class=n>dataList</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>                <span class=n>pictureTextSelectAdapter</span><span class=o>.</span><span class=n>submitList</span><span class=p>(</span><span class=n>dataList</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>inline fun &lt;reified T&gt; Flow&lt;T&gt;.launchAndCollectIn(
-</span></span><span class=line><span class=cl>    owner: LifecycleOwner,
-</span></span><span class=line><span class=cl>    minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
-</span></span><span class=line><span class=cl>    collector: FlowCollector&lt;T&gt;
-</span></span><span class=line><span class=cl>) = owner.lifecycleScope.launch {
-</span></span><span class=line><span class=cl>    owner.repeatOnLifecycle(minActiveState) {
-</span></span><span class=line><span class=cl>        this@launchAndCollectIn.collect(collector)
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=n>inline</span> <span class=n>fun</span> <span class=o>&lt;</span><span class=n>reified</span> <span class=n>T</span><span class=o>&gt;</span> <span class=n>Flow</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;.</span><span class=n>launchAndCollectIn</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>owner</span><span class=p>:</span> <span class=n>LifecycleOwner</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>minActiveState</span><span class=p>:</span> <span class=n>Lifecycle</span><span class=o>.</span><span class=n>State</span> <span class=o>=</span> <span class=n>Lifecycle</span><span class=o>.</span><span class=n>State</span><span class=o>.</span><span class=n>STARTED</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>collector</span><span class=p>:</span> <span class=n>FlowCollector</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>)</span> <span class=o>=</span> <span class=n>owner</span><span class=o>.</span><span class=n>lifecycleScope</span><span class=o>.</span><span class=n>launch</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>owner</span><span class=o>.</span><span class=n>repeatOnLifecycle</span><span class=p>(</span><span class=n>minActiveState</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>this</span><span class=err>@</span><span class=n>launchAndCollectIn</span><span class=o>.</span><span class=n>collect</span><span class=p>(</span><span class=n>collector</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></td></tr></table></div></div><h4 id=flow版本redux框架>Flow版本Redux框架</h4><p><a href=https://github.com/nullUfull/FlowRedux target=_blank rel="noopener noreffer">完整代码仓库</a></p><h2 id=进阶>进阶</h2><p>look forward to</p><h2 id=qa>Q&amp;A</h2><h2 id=参考>参考</h2><p><a href=https://github.com/android/nowinandroid target=_blank rel="noopener noreffer">nowinandroid</a></p><p><a href=https://juejin.cn/post/7078225994871472158 target=_blank rel="noopener noreffer">实战 | 使用 Kotlin Flow 构建数据流 &ldquo;管道&rdquo;</a></p><p><a href=https://juejin.cn/post/7001371050202103838 target=_blank rel="noopener noreffer">设计repeatOnLifecycle API 背后的故事</a></p><p><a href=https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333 target=_blank rel="noopener noreffer">repeatOnLifecycle API design story</a></p><p><a href=https://medium.com/androiddevelopers/a-safer-way-to-collect-flows-from-android-uis-23080b1f8bda target=_blank rel="noopener noreffer">A safer way to collect flows from Android UIs</a></p><p><a href=https://juejin.cn/post/6998066384290709518 target=_blank rel="noopener noreffer">Flow 操作符 shareIn 和 stateIn 使用须知</a></p><p><a href=https://myungpyo.medium.com/deep-dive-into-coroutine-flow-2-d43ba0d1f45d target=_blank rel="noopener noreffer">Deep dive into Coroutine Flow 2</a></p><p><a href=https://medium.com/androiddevelopers/migrating-from-livedata-to-kotlins-flow-379292f419fb target=_blank rel="noopener noreffer">Migrating from LiveData to Kotlin’s Flow</a></p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2022-12-12&nbsp;<a class=git-hash href=https://github.com/dillonzq/LoveIt/commit/914a9cb975b3b966eaaa7d786cdfdad450f30e68 target=_blank title="commit by alkaidwang(alkaidwang@tencent.com) 914a9cb975b3b966eaaa7d786cdfdad450f30e68: update">
 <i class="fas fa-hashtag fa-fw" aria-hidden=true></i>914a9cb</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/flow/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://example.com/flow/ data-title="kotlin flow" data-hashtags=kotlin,flow,coroutine><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://example.com/flow/ data-hashtag=kotlin><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://example.com/flow/ data-title="kotlin flow"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://example.com/flow/ data-title="kotlin flow"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://example.com/flow/ data-title="kotlin flow"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/kotlin/>kotlin</a>,&nbsp;<a href=/tags/flow/>flow</a>,&nbsp;<a href=/tags/coroutine/>coroutine</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-008-%E8%BF%9C%E5%B1%B1%E6%B7%A1%E5%BD%B1/ class=prev rel=prev title="生活周刊 008 远山淡影"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>生活周刊 008 远山淡影</a>
-<a href=/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ class=next rel=next title="repeatOnLifecycle API设计故事">repeatOnLifecycle API设计故事<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><span>Blog 共 78411 字<br>写完一本 鲁迅 的</br>《呐喊》了！</span></div></footer><footer class=footer><div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>FineSnow</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+<a href=/repeatonlifecycle-api%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B/ class=next rel=next title="repeatOnLifecycle API设计故事">repeatOnLifecycle API设计故事<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><span>Blog 共 78839 字<br>写完一本 鲁迅 的</br>《呐喊》了！</span></div></footer><footer class=footer><div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.121.1">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>FineSnow</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
 </a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js></script><script type=text/javascript src=/js/custom.js></script></body></html>

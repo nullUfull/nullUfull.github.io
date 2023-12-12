@@ -1,12 +1,13 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta name=referrer content="never"><title>Android保存图片到本地相册（兼容Android10+） - FineSnow's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Android保存图片到本地相册（兼容Android10+）"><meta property="og:description" content="背景 有收到用户反馈，存在图片保存到相册Crash以及相册中找不到到问题，看了下是因为目前App还未适配Android10以上的设备，所以一些"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/"><meta property="og:image" content="https://example.com"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-07-20T00:00:00+00:00"><meta property="article:modified_time" content="2022-07-20T00:00:00+00:00"><meta property="og:site_name" content="LoveIt"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com"><meta name=twitter:title content="Android保存图片到本地相册（兼容Android10+）"><meta name=twitter:description content="背景 有收到用户反馈，存在图片保存到相册Crash以及相册中找不到到问题，看了下是因为目前App还未适配Android10以上的设备，所以一些"><meta name=application-name content="FineSnow's Blog"><meta name=apple-mobile-web-app-title content="FineSnow's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/><link rel=stylesheet href=//cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css media=print onload='this.media="all"'><link rel=prev href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-001-%E5%A4%A9%E9%9D%92%E8%89%B2%E7%AD%89%E7%83%9F%E9%9B%A8/><link rel=next href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-002-%E5%9C%A8%E7%BB%86%E9%9B%A8%E4%B8%AD%E5%91%BC%E5%96%8A/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android保存图片到本地相册（兼容Android10+）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"kotlin, Android","wordcount":1416,"url":"https:\/\/example.com\/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-\/","datePublished":"2022-07-20T00:00:00+00:00","dateModified":"2022-07-20T00:00:00+00:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"FineSnow","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"FineSnow"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/books>阅读 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about>关于 </a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta name=referrer content="never"><title>Android保存图片到本地相册（兼容Android10+） - FineSnow's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Android保存图片到本地相册（兼容Android10+）">
+<meta property="og:description" content="背景 有收到用户反馈，存在图片保存到相册Crash以及相册中找不到到问题，看了下是因为目前App还未适配Android10以上的设备，所以一些"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/"><meta property="og:image" content="https://example.com"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-07-20T00:00:00+00:00"><meta property="article:modified_time" content="2022-07-20T00:00:00+00:00"><meta property="og:site_name" content="LoveIt"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com"><meta name=twitter:title content="Android保存图片到本地相册（兼容Android10+）"><meta name=twitter:description content="背景 有收到用户反馈，存在图片保存到相册Crash以及相册中找不到到问题，看了下是因为目前App还未适配Android10以上的设备，所以一些"><meta name=application-name content="FineSnow's Blog"><meta name=apple-mobile-web-app-title content="FineSnow's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/><link rel=stylesheet href=//cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css media=print onload='this.media="all"'><link rel=prev href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-001-%E5%A4%A9%E9%9D%92%E8%89%B2%E7%AD%89%E7%83%9F%E9%9B%A8/><link rel=next href=https://example.com/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-002-%E5%9C%A8%E7%BB%86%E9%9B%A8%E4%B8%AD%E5%91%BC%E5%96%8A/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android保存图片到本地相册（兼容Android10+）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"kotlin, Android","wordcount":1416,"url":"https:\/\/example.com\/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-\/","datePublished":"2022-07-20T00:00:00+00:00","dateModified":"2022-07-20T00:00:00+00:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"FineSnow","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"FineSnow"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/>主页 </a><a class=menu-item href=/books>阅读 </a><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/about>关于 </a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
-<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
-</span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
-<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/books title>阅读</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about title>关于</a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="FineSnow's Blog">FineSnow's Blog</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title>主页</a><a class=menu-item href=/books title>阅读</a><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about title>关于</a><a class=menu-item href=https://github.com/nullUfull/nullUfull.github.io title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw' aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Android保存图片到本地相册（兼容Android10+）</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>FineSnow</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E6%8A%80%E6%9C%AF/><i class="far fa-folder fa-fw" aria-hidden=true></i>技术</a></span></div><div class=post-meta-line><i class="far fa-calendar fa-fw"></i>&nbsp;<time datetime=2022-07-20>2022-07-20</time>&nbsp;<i class="far fa-calendar-plus fa-fw"></i>&nbsp;<time datetime=2022-07-20>2022-07-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 1416 字&nbsp;
 <i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 3 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#背景>背景</a></li><li><a href=#代码实现>代码实现</a></li><li><a href=#参考>参考</a></li></ul></nav></div></div><div class=content id=content><h2 id=背景>背景</h2><p>有收到用户反馈，存在图片保存到相册Crash以及相册中找不到到问题，看了下是因为目前App还未适配Android10以上的设备，所以一些Api在一些厂商Android10以上的设备会存在一些问题。</p><p>为了能够使用到新的Api来实现保存到相册的逻辑，为了迅速修复保存相册的问题我们可以先升级compileApi到30，以至于我们代码中可以正常访问到新的Api，而targetApi可以先不升，如果升了不做充分的兼容性测试肯定是会存在大大小小的一些问题的。</p><h2 id=代码实现>代码实现</h2><p>具体的实现可以看以下代码，看目前网上的代码实现可能会存在一些缺陷，这份代码主要是参考Google官方文档以及结合网上的一些文章，并且通过了一些主流设备的兼容性测试的。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
@@ -203,201 +204,201 @@
 </span><span class=lnt>192
 </span><span class=lnt>193
 </span><span class=lnt>194
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>import android.content.ContentResolver
-</span></span><span class=line><span class=cl>import android.content.ContentUris
-</span></span><span class=line><span class=cl>import android.content.ContentValues
-</span></span><span class=line><span class=cl>import android.content.Context
-</span></span><span class=line><span class=cl>import android.content.Intent
-</span></span><span class=line><span class=cl>import android.graphics.Bitmap
-</span></span><span class=line><span class=cl>import android.net.Uri
-</span></span><span class=line><span class=cl>import android.os.Build
-</span></span><span class=line><span class=cl>import android.os.Environment
-</span></span><span class=line><span class=cl>import android.provider.MediaStore
-</span></span><span class=line><span class=cl>import com.tencent.videocut.utils.log.Logger
-</span></span><span class=line><span class=cl>import java.io.File
-</span></span><span class=line><span class=cl>import java.io.FileNotFoundException
-</span></span><span class=line><span class=cl>import java.io.OutputStream
-</span></span><span class=line><span class=cl>import java.util.Locale
-</span></span><span class=line><span class=cl>import java.util.concurrent.TimeUnit
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>ContentResolver</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>ContentUris</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>ContentValues</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>Context</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>Intent</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>graphics</span><span class=o>.</span><span class=n>Bitmap</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>net</span><span class=o>.</span><span class=n>Uri</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>os</span><span class=o>.</span><span class=n>Build</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>os</span><span class=o>.</span><span class=n>Environment</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>android</span><span class=o>.</span><span class=n>provider</span><span class=o>.</span><span class=n>MediaStore</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>com</span><span class=o>.</span><span class=n>tencent</span><span class=o>.</span><span class=n>videocut</span><span class=o>.</span><span class=n>utils</span><span class=o>.</span><span class=n>log</span><span class=o>.</span><span class=n>Logger</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>java</span><span class=o>.</span><span class=n>io</span><span class=o>.</span><span class=n>File</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>java</span><span class=o>.</span><span class=n>io</span><span class=o>.</span><span class=n>FileNotFoundException</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>java</span><span class=o>.</span><span class=n>io</span><span class=o>.</span><span class=n>OutputStream</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>java</span><span class=o>.</span><span class=n>util</span><span class=o>.</span><span class=n>Locale</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>java</span><span class=o>.</span><span class=n>util</span><span class=o>.</span><span class=n>concurrent</span><span class=o>.</span><span class=n>TimeUnit</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>private const val TAG = &#34;ImageExt&#34;
-</span></span><span class=line><span class=cl>private const val SUFFIX_JPEG = &#34;.jpeg&#34;
-</span></span><span class=line><span class=cl>private const val SUFFIX_JPG = &#34;.jpg&#34;
-</span></span><span class=line><span class=cl>private const val SUFFIX_PNG = &#34;.png&#34;
-</span></span><span class=line><span class=cl>private const val SUFFIX_WEBP = &#34;.webp&#34;
-</span></span><span class=line><span class=cl>private const val MIME_TYPE_JPEG = &#34;image/jpeg&#34;
-</span></span><span class=line><span class=cl>private const val MIME_TYPE_PNG = &#34;image/png&#34;
-</span></span><span class=line><span class=cl>private const val MIME_TYPE_WEBP = &#34;image/webp&#34;
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>TAG</span> <span class=o>=</span> <span class=s2>&#34;ImageExt&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>SUFFIX_JPEG</span> <span class=o>=</span> <span class=s2>&#34;.jpeg&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>SUFFIX_JPG</span> <span class=o>=</span> <span class=s2>&#34;.jpg&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>SUFFIX_PNG</span> <span class=o>=</span> <span class=s2>&#34;.png&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>SUFFIX_WEBP</span> <span class=o>=</span> <span class=s2>&#34;.webp&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>MIME_TYPE_JPEG</span> <span class=o>=</span> <span class=s2>&#34;image/jpeg&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>MIME_TYPE_PNG</span> <span class=o>=</span> <span class=s2>&#34;image/png&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=k>const</span> <span class=n>val</span> <span class=n>MIME_TYPE_WEBP</span> <span class=o>=</span> <span class=s2>&#34;image/webp&#34;</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>private data class InsertResult(
-</span></span><span class=line><span class=cl>    val uri: Uri, // 插入的Uri
-</span></span><span class=line><span class=cl>    val file: File?,// 插入的文件，Android Q以下需要用于获取文件名
-</span></span><span class=line><span class=cl>)
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>data</span> <span class=k>class</span> <span class=n>InsertResult</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>uri</span><span class=p>:</span> <span class=n>Uri</span><span class=p>,</span> <span class=o>//</span> <span class=err>插入的</span><span class=n>Uri</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>file</span><span class=p>:</span> <span class=ne>File</span><span class=err>?</span><span class=p>,</span><span class=o>//</span> <span class=err>插入的文件，</span><span class=n>Android</span> <span class=n>Q以下需要用于获取文件名</span>
+</span></span><span class=line><span class=cl><span class=p>)</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>/**
-</span></span><span class=line><span class=cl> * 保存Bitmap到相册的Pictures文件夹
-</span></span><span class=line><span class=cl> *
-</span></span><span class=line><span class=cl> * 参考：https://developer.android.google.cn/training/data-storage/shared/media
-</span></span><span class=line><span class=cl> *
-</span></span><span class=line><span class=cl> * @param context 上下文
-</span></span><span class=line><span class=cl> * @param fileName 文件名，需要携带后缀
-</span></span><span class=line><span class=cl> * @param quality 图片压缩质量
-</span></span><span class=line><span class=cl> * @return 本地图片的Uri，返回null则代表保存失败，否则成功
-</span></span><span class=line><span class=cl> */
-</span></span><span class=line><span class=cl>suspend fun Bitmap.saveToAlbum(
-</span></span><span class=line><span class=cl>    context: Context,
-</span></span><span class=line><span class=cl>    fileName: String,
-</span></span><span class=line><span class=cl>    quality: Int = 75,
-</span></span><span class=line><span class=cl>): Uri? {
-</span></span><span class=line><span class=cl>    // 插入图片信息
-</span></span><span class=line><span class=cl>    val insertResult = context.contentResolver.insertMediaImage(fileName)
-</span></span><span class=line><span class=cl>    if (insertResult == null) {
-</span></span><span class=line><span class=cl>        Logger.e(TAG, &#34;[saveToAlbum] insert media image fail&#34;)
-</span></span><span class=line><span class=cl>        return null
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    // 保存图片并压缩
-</span></span><span class=line><span class=cl>    val outputStream = insertResult.uri.outputStream(context.contentResolver)
-</span></span><span class=line><span class=cl>    if (outputStream == null) {
-</span></span><span class=line><span class=cl>        Logger.e(TAG, &#34;[saveToAlbum] outputStream is null&#34;)
-</span></span><span class=line><span class=cl>        return null
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    outputStream.use { compress(fileName.getBitmapFormat(), quality, it) }
-</span></span><span class=line><span class=cl>    // 同步到相册
-</span></span><span class=line><span class=cl>    insertResult.syncToAlbum(context)
-</span></span><span class=line><span class=cl>    return insertResult.uri
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=o>/**</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>保存</span><span class=n>Bitmap到相册的Pictures文件夹</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>参考：</span><span class=n>https</span><span class=p>:</span><span class=o>//</span><span class=n>developer</span><span class=o>.</span><span class=n>android</span><span class=o>.</span><span class=n>google</span><span class=o>.</span><span class=n>cn</span><span class=o>/</span><span class=n>training</span><span class=o>/</span><span class=n>data</span><span class=o>-</span><span class=n>storage</span><span class=o>/</span><span class=n>shared</span><span class=o>/</span><span class=n>media</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>@</span><span class=n>param</span> <span class=n>context</span> <span class=err>上下文</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>@</span><span class=n>param</span> <span class=n>fileName</span> <span class=err>文件名，需要携带后缀</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>@</span><span class=n>param</span> <span class=n>quality</span> <span class=err>图片压缩质量</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>@</span><span class=k>return</span> <span class=err>本地图片的</span><span class=n>Uri</span><span class=err>，返回</span><span class=n>null则代表保存失败</span><span class=err>，否则成功</span>
+</span></span><span class=line><span class=cl> <span class=o>*/</span>
+</span></span><span class=line><span class=cl><span class=n>suspend</span> <span class=n>fun</span> <span class=n>Bitmap</span><span class=o>.</span><span class=n>saveToAlbum</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>context</span><span class=p>:</span> <span class=n>Context</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>fileName</span><span class=p>:</span> <span class=ne>String</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=n>quality</span><span class=p>:</span> <span class=n>Int</span> <span class=o>=</span> <span class=mi>75</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>):</span> <span class=n>Uri</span><span class=err>?</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=o>//</span> <span class=err>插入图片信息</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>insertResult</span> <span class=o>=</span> <span class=n>context</span><span class=o>.</span><span class=n>contentResolver</span><span class=o>.</span><span class=n>insertMediaImage</span><span class=p>(</span><span class=n>fileName</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>insertResult</span> <span class=o>==</span> <span class=n>null</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Logger</span><span class=o>.</span><span class=n>e</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[saveToAlbum] insert media image fail&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>//</span> <span class=err>保存图片并压缩</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>outputStream</span> <span class=o>=</span> <span class=n>insertResult</span><span class=o>.</span><span class=n>uri</span><span class=o>.</span><span class=n>outputStream</span><span class=p>(</span><span class=n>context</span><span class=o>.</span><span class=n>contentResolver</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>outputStream</span> <span class=o>==</span> <span class=n>null</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Logger</span><span class=o>.</span><span class=n>e</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[saveToAlbum] outputStream is null&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>outputStream</span><span class=o>.</span><span class=n>use</span> <span class=p>{</span> <span class=n>compress</span><span class=p>(</span><span class=n>fileName</span><span class=o>.</span><span class=n>getBitmapFormat</span><span class=p>(),</span> <span class=n>quality</span><span class=p>,</span> <span class=n>it</span><span class=p>)</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>//</span> <span class=err>同步到相册</span>
+</span></span><span class=line><span class=cl>    <span class=n>insertResult</span><span class=o>.</span><span class=n>syncToAlbum</span><span class=p>(</span><span class=n>context</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>insertResult</span><span class=o>.</span><span class=n>uri</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>private fun String.getBitmapFormat(): Bitmap.CompressFormat {
-</span></span><span class=line><span class=cl>    val fileName = toLowerCase(Locale.getDefault())
-</span></span><span class=line><span class=cl>    return when {
-</span></span><span class=line><span class=cl>        fileName.endsWith(SUFFIX_PNG) -&gt; Bitmap.CompressFormat.PNG
-</span></span><span class=line><span class=cl>        fileName.endsWith(SUFFIX_JPG) || fileName.endsWith(SUFFIX_JPEG) -&gt; Bitmap.CompressFormat.JPEG
-</span></span><span class=line><span class=cl>        fileName.endsWith(SUFFIX_WEBP) -&gt; Bitmap.CompressFormat.WEBP
-</span></span><span class=line><span class=cl>        else -&gt; Bitmap.CompressFormat.PNG
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>fun</span> <span class=ne>String</span><span class=o>.</span><span class=n>getBitmapFormat</span><span class=p>():</span> <span class=n>Bitmap</span><span class=o>.</span><span class=n>CompressFormat</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>fileName</span> <span class=o>=</span> <span class=n>toLowerCase</span><span class=p>(</span><span class=n>Locale</span><span class=o>.</span><span class=n>getDefault</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>when</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_PNG</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Bitmap</span><span class=o>.</span><span class=n>CompressFormat</span><span class=o>.</span><span class=n>PNG</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_JPG</span><span class=p>)</span> <span class=o>||</span> <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_JPEG</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Bitmap</span><span class=o>.</span><span class=n>CompressFormat</span><span class=o>.</span><span class=n>JPEG</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_WEBP</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>Bitmap</span><span class=o>.</span><span class=n>CompressFormat</span><span class=o>.</span><span class=n>WEBP</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=o>-&gt;</span> <span class=n>Bitmap</span><span class=o>.</span><span class=n>CompressFormat</span><span class=o>.</span><span class=n>PNG</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>private fun Uri.outputStream(resolver: ContentResolver): OutputStream? {
-</span></span><span class=line><span class=cl>    return try {
-</span></span><span class=line><span class=cl>        resolver.openOutputStream(this)
-</span></span><span class=line><span class=cl>    } catch (e: FileNotFoundException) {
-</span></span><span class=line><span class=cl>        Logger.e(TAG, &#34;[outputStream]&#34;, e)
-</span></span><span class=line><span class=cl>        null
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>fun</span> <span class=n>Uri</span><span class=o>.</span><span class=n>outputStream</span><span class=p>(</span><span class=n>resolver</span><span class=p>:</span> <span class=n>ContentResolver</span><span class=p>):</span> <span class=n>OutputStream</span><span class=err>?</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>resolver</span><span class=o>.</span><span class=n>openOutputStream</span><span class=p>(</span><span class=n>this</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=n>catch</span> <span class=p>(</span><span class=n>e</span><span class=p>:</span> <span class=n>FileNotFoundException</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Logger</span><span class=o>.</span><span class=n>e</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[outputStream]&#34;</span><span class=p>,</span> <span class=n>e</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>@Suppress(&#34;DEPRECATION&#34;)
-</span></span><span class=line><span class=cl>private fun InsertResult.syncToAlbum(context: Context) {
-</span></span><span class=line><span class=cl>    if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.Q) {
-</span></span><span class=line><span class=cl>        val imageValues = ContentValues()
-</span></span><span class=line><span class=cl>        // 写入文件大小
-</span></span><span class=line><span class=cl>        file?.let { imageValues.put(MediaStore.Images.Media.SIZE, it.length()) }
-</span></span><span class=line><span class=cl>        context.contentResolver.update(uri, imageValues, null, null)
-</span></span><span class=line><span class=cl>        // 通知媒体库更新
-</span></span><span class=line><span class=cl>        context.sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri))
-</span></span><span class=line><span class=cl>    } else {
-</span></span><span class=line><span class=cl>        val imageValues = ContentValues()
-</span></span><span class=line><span class=cl>        // Android Q添加了IS_PENDING状态，为0时其他应用才可见
-</span></span><span class=line><span class=cl>        imageValues.put(MediaStore.Images.Media.IS_PENDING, 0)
-</span></span><span class=line><span class=cl>        context.contentResolver.update(uri, imageValues, null, null)
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=err>@</span><span class=n>Suppress</span><span class=p>(</span><span class=s2>&#34;DEPRECATION&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>fun</span> <span class=n>InsertResult</span><span class=o>.</span><span class=n>syncToAlbum</span><span class=p>(</span><span class=n>context</span><span class=p>:</span> <span class=n>Context</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>Build</span><span class=o>.</span><span class=n>VERSION</span><span class=o>.</span><span class=n>SDK_INT</span> <span class=o>&lt;</span> <span class=n>Build</span><span class=o>.</span><span class=n>VERSION_CODES</span><span class=o>.</span><span class=n>Q</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>val</span> <span class=n>imageValues</span> <span class=o>=</span> <span class=n>ContentValues</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=err>写入文件大小</span>
+</span></span><span class=line><span class=cl>        <span class=n>file</span><span class=err>?</span><span class=o>.</span><span class=n>let</span> <span class=p>{</span> <span class=n>imageValues</span><span class=o>.</span><span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>SIZE</span><span class=p>,</span> <span class=n>it</span><span class=o>.</span><span class=n>length</span><span class=p>())</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>context</span><span class=o>.</span><span class=n>contentResolver</span><span class=o>.</span><span class=n>update</span><span class=p>(</span><span class=n>uri</span><span class=p>,</span> <span class=n>imageValues</span><span class=p>,</span> <span class=n>null</span><span class=p>,</span> <span class=n>null</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=err>通知媒体库更新</span>
+</span></span><span class=line><span class=cl>        <span class=n>context</span><span class=o>.</span><span class=n>sendBroadcast</span><span class=p>(</span><span class=n>Intent</span><span class=p>(</span><span class=n>Intent</span><span class=o>.</span><span class=n>ACTION_MEDIA_SCANNER_SCAN_FILE</span><span class=p>,</span> <span class=n>uri</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>val</span> <span class=n>imageValues</span> <span class=o>=</span> <span class=n>ContentValues</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=n>Android</span> <span class=n>Q添加了IS_PENDING状态</span><span class=err>，为</span><span class=mi>0</span><span class=err>时其他应用才可见</span>
+</span></span><span class=line><span class=cl>        <span class=n>imageValues</span><span class=o>.</span><span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>IS_PENDING</span><span class=p>,</span> <span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>context</span><span class=o>.</span><span class=n>contentResolver</span><span class=o>.</span><span class=n>update</span><span class=p>(</span><span class=n>uri</span><span class=p>,</span> <span class=n>imageValues</span><span class=p>,</span> <span class=n>null</span><span class=p>,</span> <span class=n>null</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>private fun String.getMimeType(): String? {
-</span></span><span class=line><span class=cl>    val fileName = toLowerCase(Locale.getDefault())
-</span></span><span class=line><span class=cl>    return when {
-</span></span><span class=line><span class=cl>        fileName.endsWith(SUFFIX_PNG) -&gt; MIME_TYPE_PNG
-</span></span><span class=line><span class=cl>        fileName.endsWith(SUFFIX_JPG) || fileName.endsWith(SUFFIX_JPEG) -&gt; MIME_TYPE_JPEG
-</span></span><span class=line><span class=cl>        fileName.endsWith(SUFFIX_WEBP) -&gt; MIME_TYPE_WEBP
-</span></span><span class=line><span class=cl>        else -&gt; null
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>fun</span> <span class=ne>String</span><span class=o>.</span><span class=n>getMimeType</span><span class=p>():</span> <span class=ne>String</span><span class=err>?</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>fileName</span> <span class=o>=</span> <span class=n>toLowerCase</span><span class=p>(</span><span class=n>Locale</span><span class=o>.</span><span class=n>getDefault</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>when</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_PNG</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>MIME_TYPE_PNG</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_JPG</span><span class=p>)</span> <span class=o>||</span> <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_JPEG</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>MIME_TYPE_JPEG</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>endsWith</span><span class=p>(</span><span class=n>SUFFIX_WEBP</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>MIME_TYPE_WEBP</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=o>-&gt;</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>/**
-</span></span><span class=line><span class=cl> * 插入图片到媒体库
-</span></span><span class=line><span class=cl> */
-</span></span><span class=line><span class=cl>@Suppress(&#34;DEPRECATION&#34;)
-</span></span><span class=line><span class=cl>private fun ContentResolver.insertMediaImage(fileName: String): InsertResult? {
-</span></span><span class=line><span class=cl>    val imageValues = ContentValues().apply {
-</span></span><span class=line><span class=cl>        fileName.getMimeType()?.let {
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.MIME_TYPE, it)
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>        TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()).let {
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.DATE_ADDED, it)
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.DATE_MODIFIED, it)
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    val collection: Uri
-</span></span><span class=line><span class=cl>    var file: File? = null
-</span></span><span class=line><span class=cl>    if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.Q) {
-</span></span><span class=line><span class=cl>        imageValues.apply {
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.DISPLAY_NAME, fileName)
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES)
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.IS_PENDING, 1)
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>        // 高版本直接插入，会自动重命名；但是自动重命名有数量限制超过32张会抛异常，当然外部传入就加上时间戳更好，内部实现也可以兼容下这种情况 // todo 兼容
-</span></span><span class=line><span class=cl>        collection = MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
-</span></span><span class=line><span class=cl>    } else {
-</span></span><span class=line><span class=cl>        val pictureDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-</span></span><span class=line><span class=cl>        if (!pictureDir.exists() &amp;&amp; !pictureDir.mkdirs()) {
-</span></span><span class=line><span class=cl>            Logger.e(TAG, &#34;[insertMediaImage] can&#39;t create Pictures directory&#34;)
-</span></span><span class=line><span class=cl>            return null
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>        // 文件路径查重，重复的话在文件名后拼接数字
-</span></span><span class=line><span class=cl>        var imageFile = File(pictureDir, fileName)
-</span></span><span class=line><span class=cl>        var queryUri = queryMediaImageAboveQ(imageFile.absolutePath)
-</span></span><span class=line><span class=cl>        var suffix = 1
-</span></span><span class=line><span class=cl>        while (queryUri != null) {
-</span></span><span class=line><span class=cl>            val newName = imageFile.nameWithoutExtension + &#34;(${suffix++}).&#34; + imageFile.extension
-</span></span><span class=line><span class=cl>            imageFile = File(pictureDir, newName)
-</span></span><span class=line><span class=cl>            queryUri = queryMediaImageAboveQ(imageFile.absolutePath)
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>        imageValues.apply {
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.DISPLAY_NAME, imageFile.name)
-</span></span><span class=line><span class=cl>            put(MediaStore.Images.Media.DATA, imageFile.absolutePath)
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>        file = imageFile
-</span></span><span class=line><span class=cl>        collection = MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    val insertUrl = insert(collection, imageValues)
-</span></span><span class=line><span class=cl>    if (insertUrl == null) {
-</span></span><span class=line><span class=cl>        Logger.e(TAG, &#34;[insertMediaImage] insert error.collection = $collection, imageValues = $imageValues&#34;)
-</span></span><span class=line><span class=cl>        return null
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    return InsertResult(insertUrl, file)
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=o>/**</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>插入图片到媒体库</span>
+</span></span><span class=line><span class=cl> <span class=o>*/</span>
+</span></span><span class=line><span class=cl><span class=err>@</span><span class=n>Suppress</span><span class=p>(</span><span class=s2>&#34;DEPRECATION&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>fun</span> <span class=n>ContentResolver</span><span class=o>.</span><span class=n>insertMediaImage</span><span class=p>(</span><span class=n>fileName</span><span class=p>:</span> <span class=ne>String</span><span class=p>):</span> <span class=n>InsertResult</span><span class=err>?</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>imageValues</span> <span class=o>=</span> <span class=n>ContentValues</span><span class=p>()</span><span class=o>.</span><span class=n>apply</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>fileName</span><span class=o>.</span><span class=n>getMimeType</span><span class=p>()</span><span class=err>?</span><span class=o>.</span><span class=n>let</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>MIME_TYPE</span><span class=p>,</span> <span class=n>it</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>TimeUnit</span><span class=o>.</span><span class=n>MILLISECONDS</span><span class=o>.</span><span class=n>toSeconds</span><span class=p>(</span><span class=n>System</span><span class=o>.</span><span class=n>currentTimeMillis</span><span class=p>())</span><span class=o>.</span><span class=n>let</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>DATE_ADDED</span><span class=p>,</span> <span class=n>it</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>DATE_MODIFIED</span><span class=p>,</span> <span class=n>it</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>collection</span><span class=p>:</span> <span class=n>Uri</span>
+</span></span><span class=line><span class=cl>    <span class=k>var</span> <span class=n>file</span><span class=p>:</span> <span class=ne>File</span><span class=err>?</span> <span class=o>=</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>Build</span><span class=o>.</span><span class=n>VERSION</span><span class=o>.</span><span class=n>SDK_INT</span> <span class=o>&gt;=</span> <span class=n>Build</span><span class=o>.</span><span class=n>VERSION_CODES</span><span class=o>.</span><span class=n>Q</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>imageValues</span><span class=o>.</span><span class=n>apply</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>DISPLAY_NAME</span><span class=p>,</span> <span class=n>fileName</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>RELATIVE_PATH</span><span class=p>,</span> <span class=ne>Environment</span><span class=o>.</span><span class=n>DIRECTORY_PICTURES</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>IS_PENDING</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=err>高版本直接插入，会自动重命名；但是自动重命名有数量限制超过</span><span class=mi>32</span><span class=err>张会抛异常，当然外部传入就加上时间戳更好，内部实现也可以兼容下这种情况</span> <span class=o>//</span> <span class=n>todo</span> <span class=err>兼容</span>
+</span></span><span class=line><span class=cl>        <span class=n>collection</span> <span class=o>=</span> <span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>getContentUri</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>VOLUME_EXTERNAL_PRIMARY</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>val</span> <span class=n>pictureDir</span> <span class=o>=</span> <span class=ne>Environment</span><span class=o>.</span><span class=n>getExternalStoragePublicDirectory</span><span class=p>(</span><span class=ne>Environment</span><span class=o>.</span><span class=n>DIRECTORY_PICTURES</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=n>pictureDir</span><span class=o>.</span><span class=n>exists</span><span class=p>()</span> <span class=o>&amp;&amp;</span> <span class=o>!</span><span class=n>pictureDir</span><span class=o>.</span><span class=n>mkdirs</span><span class=p>())</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>Logger</span><span class=o>.</span><span class=n>e</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[insertMediaImage] can&#39;t create Pictures directory&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=o>//</span> <span class=err>文件路径查重，重复的话在文件名后拼接数字</span>
+</span></span><span class=line><span class=cl>        <span class=k>var</span> <span class=n>imageFile</span> <span class=o>=</span> <span class=ne>File</span><span class=p>(</span><span class=n>pictureDir</span><span class=p>,</span> <span class=n>fileName</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>var</span> <span class=n>queryUri</span> <span class=o>=</span> <span class=n>queryMediaImageAboveQ</span><span class=p>(</span><span class=n>imageFile</span><span class=o>.</span><span class=n>absolutePath</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>var</span> <span class=n>suffix</span> <span class=o>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>        <span class=k>while</span> <span class=p>(</span><span class=n>queryUri</span> <span class=o>!=</span> <span class=n>null</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>val</span> <span class=n>newName</span> <span class=o>=</span> <span class=n>imageFile</span><span class=o>.</span><span class=n>nameWithoutExtension</span> <span class=o>+</span> <span class=s2>&#34;(${suffix++}).&#34;</span> <span class=o>+</span> <span class=n>imageFile</span><span class=o>.</span><span class=n>extension</span>
+</span></span><span class=line><span class=cl>            <span class=n>imageFile</span> <span class=o>=</span> <span class=ne>File</span><span class=p>(</span><span class=n>pictureDir</span><span class=p>,</span> <span class=n>newName</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>queryUri</span> <span class=o>=</span> <span class=n>queryMediaImageAboveQ</span><span class=p>(</span><span class=n>imageFile</span><span class=o>.</span><span class=n>absolutePath</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>imageValues</span><span class=o>.</span><span class=n>apply</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>DISPLAY_NAME</span><span class=p>,</span> <span class=n>imageFile</span><span class=o>.</span><span class=n>name</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>put</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>DATA</span><span class=p>,</span> <span class=n>imageFile</span><span class=o>.</span><span class=n>absolutePath</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>file</span> <span class=o>=</span> <span class=n>imageFile</span>
+</span></span><span class=line><span class=cl>        <span class=n>collection</span> <span class=o>=</span> <span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>EXTERNAL_CONTENT_URI</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>insertUrl</span> <span class=o>=</span> <span class=n>insert</span><span class=p>(</span><span class=n>collection</span><span class=p>,</span> <span class=n>imageValues</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>insertUrl</span> <span class=o>==</span> <span class=n>null</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Logger</span><span class=o>.</span><span class=n>e</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[insertMediaImage] insert error.collection = $collection, imageValues = $imageValues&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>InsertResult</span><span class=p>(</span><span class=n>insertUrl</span><span class=p>,</span> <span class=n>file</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>/**
-</span></span><span class=line><span class=cl> * Android Q以下版本，查询媒体库中当前路径是否存在
-</span></span><span class=line><span class=cl> * @return Uri 返回null时说明不存在，可以进行图片插入逻辑
-</span></span><span class=line><span class=cl> */
-</span></span><span class=line><span class=cl>@Suppress(&#34;DEPRECATION&#34;)
-</span></span><span class=line><span class=cl>private fun ContentResolver.queryMediaImageAboveQ(imagePath: String): Uri? {
-</span></span><span class=line><span class=cl>    if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.Q) return null
-</span></span><span class=line><span class=cl>    val imageFile = File(imagePath)
-</span></span><span class=line><span class=cl>    if (imageFile.canRead() &amp;&amp; imageFile.exists()) {
-</span></span><span class=line><span class=cl>        Logger.i(TAG, &#34;[queryMediaImageAboveQ] path: $imagePath exists&#34;)
-</span></span><span class=line><span class=cl>        return Uri.fromFile(imageFile)
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    val collection = MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-</span></span><span class=line><span class=cl>    query(
-</span></span><span class=line><span class=cl>        collection,
-</span></span><span class=line><span class=cl>        arrayOf(MediaStore.Images.Media._ID, MediaStore.Images.Media.DATA),
-</span></span><span class=line><span class=cl>        &#34;${MediaStore.Images.Media.DATA} == ?&#34;,
-</span></span><span class=line><span class=cl>        arrayOf(imagePath),
-</span></span><span class=line><span class=cl>        null
-</span></span><span class=line><span class=cl>    )?.use { cursor -&gt;
-</span></span><span class=line><span class=cl>        while (cursor.moveToNext()) {
-</span></span><span class=line><span class=cl>            val idColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media._ID)
-</span></span><span class=line><span class=cl>            val id = cursor.getLong(idColumn)
-</span></span><span class=line><span class=cl>            return ContentUris.withAppendedId(collection, id).also {
-</span></span><span class=line><span class=cl>                Logger.i(TAG, &#34;[queryMediaImageAboveQ] $imagePath exists uri: $it&#34;)
-</span></span><span class=line><span class=cl>            }
-</span></span><span class=line><span class=cl>        }
-</span></span><span class=line><span class=cl>    }
-</span></span><span class=line><span class=cl>    return null
-</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl><span class=o>/**</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=n>Android</span> <span class=n>Q以下版本</span><span class=err>，查询媒体库中当前路径是否存在</span>
+</span></span><span class=line><span class=cl> <span class=o>*</span> <span class=err>@</span><span class=k>return</span> <span class=n>Uri</span> <span class=err>返回</span><span class=n>null时说明不存在</span><span class=err>，可以进行图片插入逻辑</span>
+</span></span><span class=line><span class=cl> <span class=o>*/</span>
+</span></span><span class=line><span class=cl><span class=err>@</span><span class=n>Suppress</span><span class=p>(</span><span class=s2>&#34;DEPRECATION&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>private</span> <span class=n>fun</span> <span class=n>ContentResolver</span><span class=o>.</span><span class=n>queryMediaImageAboveQ</span><span class=p>(</span><span class=n>imagePath</span><span class=p>:</span> <span class=ne>String</span><span class=p>):</span> <span class=n>Uri</span><span class=err>?</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>Build</span><span class=o>.</span><span class=n>VERSION</span><span class=o>.</span><span class=n>SDK_INT</span> <span class=o>&gt;=</span> <span class=n>Build</span><span class=o>.</span><span class=n>VERSION_CODES</span><span class=o>.</span><span class=n>Q</span><span class=p>)</span> <span class=k>return</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>imageFile</span> <span class=o>=</span> <span class=ne>File</span><span class=p>(</span><span class=n>imagePath</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>imageFile</span><span class=o>.</span><span class=n>canRead</span><span class=p>()</span> <span class=o>&amp;&amp;</span> <span class=n>imageFile</span><span class=o>.</span><span class=n>exists</span><span class=p>())</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Logger</span><span class=o>.</span><span class=n>i</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[queryMediaImageAboveQ] path: $imagePath exists&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>Uri</span><span class=o>.</span><span class=n>fromFile</span><span class=p>(</span><span class=n>imageFile</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=n>val</span> <span class=n>collection</span> <span class=o>=</span> <span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>EXTERNAL_CONTENT_URI</span>
+</span></span><span class=line><span class=cl>    <span class=n>query</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=n>collection</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>arrayOf</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>_ID</span><span class=p>,</span> <span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>DATA</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;${MediaStore.Images.Media.DATA} == ?&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=n>arrayOf</span><span class=p>(</span><span class=n>imagePath</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>        <span class=n>null</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span><span class=err>?</span><span class=o>.</span><span class=n>use</span> <span class=p>{</span> <span class=n>cursor</span> <span class=o>-&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=k>while</span> <span class=p>(</span><span class=n>cursor</span><span class=o>.</span><span class=n>moveToNext</span><span class=p>())</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>val</span> <span class=n>idColumn</span> <span class=o>=</span> <span class=n>cursor</span><span class=o>.</span><span class=n>getColumnIndexOrThrow</span><span class=p>(</span><span class=n>MediaStore</span><span class=o>.</span><span class=n>Images</span><span class=o>.</span><span class=n>Media</span><span class=o>.</span><span class=n>_ID</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>val</span> <span class=n>id</span> <span class=o>=</span> <span class=n>cursor</span><span class=o>.</span><span class=n>getLong</span><span class=p>(</span><span class=n>idColumn</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>ContentUris</span><span class=o>.</span><span class=n>withAppendedId</span><span class=p>(</span><span class=n>collection</span><span class=p>,</span> <span class=n>id</span><span class=p>)</span><span class=o>.</span><span class=n>also</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=n>Logger</span><span class=o>.</span><span class=n>i</span><span class=p>(</span><span class=n>TAG</span><span class=p>,</span> <span class=s2>&#34;[queryMediaImageAboveQ] $imagePath exists uri: $it&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>null</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></td></tr></table></div></div><h2 id=参考>参考</h2><p><a href=https://developer.android.google.cn/training/data-storage/shared/media target=_blank rel="noopener noreffer">Access media files from shared storage</a>
 <a href=https://blog.csdn.net/flycatdeng/article/details/106794828 target=_blank rel="noopener noreffer">java.lang.IllegalStateException:Failed to build unique file:</a></p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2022-07-20</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/index.md target=_blank>阅读原始文档</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/ data-title=Android保存图片到本地相册（兼容Android10+） data-hashtags=kotlin,Android><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/ data-hashtag=kotlin><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/ data-title=Android保存图片到本地相册（兼容Android10+）><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/ data-title=Android保存图片到本地相册（兼容Android10+）><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://example.com/android%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%86%8C%E5%85%BC%E5%AE%B9android10-/ data-title=Android保存图片到本地相册（兼容Android10+）><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/kotlin/>kotlin</a>,&nbsp;<a href=/tags/android/>Android</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-001-%E5%A4%A9%E9%9D%92%E8%89%B2%E7%AD%89%E7%83%9F%E9%9B%A8/ class=prev rel=prev title="生活周刊 001 天青色等烟雨"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>生活周刊 001 天青色等烟雨</a>
-<a href=/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-002-%E5%9C%A8%E7%BB%86%E9%9B%A8%E4%B8%AD%E5%91%BC%E5%96%8A/ class=next rel=next title="生活周刊 002 在细雨中呼喊">生活周刊 002 在细雨中呼喊<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><span>Blog 共 78411 字<br>写完一本 鲁迅 的</br>《呐喊》了！</span></div></footer><footer class=footer><div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>FineSnow</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+<a href=/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-002-%E5%9C%A8%E7%BB%86%E9%9B%A8%E4%B8%AD%E5%91%BC%E5%96%8A/ class=next rel=next title="生活周刊 002 在细雨中呼喊">生活周刊 002 在细雨中呼喊<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><span>Blog 共 78839 字<br>写完一本 鲁迅 的</br>《呐喊》了！</span></div></footer><footer class=footer><div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.121.1">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>FineSnow</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
 </a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js></script><script type=text/javascript src=/js/custom.js></script></body></html>
