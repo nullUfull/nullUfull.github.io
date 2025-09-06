@@ -1,1 +1,122 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - FineSnow's Blog</title><link>https://example.com/posts/</link><description>所有文章 | FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Dec 2023 11:11:29 +0800</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml"/><item><title>踩坑日记</title><link>https://example.com/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2023 19:17:14 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/</guid><description>12.9 背景：有一个面板Fragment，内部有一个ViewPager2，ViewPager2下面又有3个Fragment 问题：当我打开这个面板，</description></item><item><title>那些记忆</title><link>https://example.com/%E9%82%A3%E4%BA%9B%E8%AE%B0%E5%BF%86/</link><pubDate>Sat, 12 Aug 2023 11:54:00 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E9%82%A3%E4%BA%9B%E8%AE%B0%E5%BF%86/</guid><description>记忆是很重要的，对于活着的人来说可以是慰籍，是幸福，是宝藏，对于逝去的人来说意义更大，意味着他还活在大家的心中。 上初中 上初中，是我爷爷送我上</description></item><item><title>JNI开发</title><link>https://example.com/jni%E5%BC%80%E5%8F%91/</link><pubDate>Sun, 16 Jul 2023 12:27:14 +0000</pubDate><author>FineSnow</author><guid>https://example.com/jni%E5%BC%80%E5%8F%91/</guid><description>常用 GetIntArrayElements &amp;amp; ReleaseIntArrayElements GetIntArrayElements是JNI提供的避免数组拷贝,直接在native代码中操作Java数组的高效方法。正确使用可以</description></item><item><title>Life 002 疫</title><link>https://example.com/life-002-%E7%96%AB/</link><pubDate>Mon, 05 Jun 2023 23:57:01 +0800</pubDate><author>FineSnow</author><guid>https://example.com/life-002-%E7%96%AB/</guid><description>享受生活，热爱生活，发现生活中的美 阅读 鼠疫 疫情之后，再看加缪的《鼠疫》，才知道原来很多事情无非是历史的重演，事件如此，人性还是如此，你说世界</description></item><item><title>那些思绪</title><link>https://example.com/%E9%82%A3%E4%BA%9B%E6%80%9D%E7%BB%AA/</link><pubDate>Fri, 02 Jun 2023 22:50:27 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E9%82%A3%E4%BA%9B%E6%80%9D%E7%BB%AA/</guid><description>思绪如潮水，不找个地方接住难以成江海 选择agin 日子过得很快，不一会儿，就在剪映商业化部门待了半年了。 获奖人 不久前，莫名其妙地给我颁了个剪映</description></item><item><title>汕头游记</title><link>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</link><pubDate>Thu, 01 Jun 2023 18:35:21 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</guid><description>年初就约朋友周末一起去汕头玩一玩了，可惜朋友这周末要搬家，所以就只能小两口自个去了 交通 早上十点半从深圳北站出发前往汕头站，到达快一点左右，提</description></item><item><title>桂林游记</title><link>https://example.com/%E6%A1%82%E6%9E%97%E6%B8%B8%E8%AE%B0/</link><pubDate>Wed, 24 May 2023 11:11:29 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E6%A1%82%E6%9E%97%E6%B8%B8%E8%AE%B0/</guid><description>前言 去年就和姑姑、奶奶提了一嘴，有时间一起去桂林玩一圈，大家都挺期待，但由于疫情的原因最终没去成，而如今疫情放开，我这边工作也找到，本来就计</description></item><item><title>面试经历-2023</title><link>https://example.com/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86-2023/</link><pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86-2023/</guid><description>面试情况一览 公司 结果 难度 体验 微信键盘 ❌ ⭐️⭐️⭐️⭐️ ⭐️⭐️⭐️ 得物 ❌ ⭐️⭐️ ⭐️⭐️ 华盛通 ✅ ⭐️⭐️ ⭐️⭐️⭐️ 最右 ✅ ⭐️⭐️⭐️ ⭐️⭐</description></item><item><title>Life 001 人生</title><link>https://example.com/life-001-%E4%BA%BA%E7%94%9F/</link><pubDate>Tue, 21 Mar 2023 21:35:59 +0800</pubDate><author>FineSnow</author><guid>https://example.com/life-001-%E4%BA%BA%E7%94%9F/</guid><description>享受生活，热爱生活，发现生活中的美 阅读 人生 人生 8.5 《人生》是路遥的一部中篇小说，发表于1982年，它以改革时期陕北高原的城乡生活为时空背景，叙</description></item><item><title>面试准备-2023</title><link>https://example.com/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87-2023/</link><pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87-2023/</guid><description>好久不面试，突然准备面试，其实是挺难受的，就简历这一环节可能都整整花费了我一周的时间去思考、修改。 简历：耗时1周，写简历是一件很苦恼的一件事</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - FineSnow's Blog</title><link>https://example.com/posts/</link><description>所有文章 | FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/posts/" rel="self" type="application/rss+xml"/><item><title>北疆之旅</title><link>https://example.com/%E5%8C%97%E7%96%86%E4%B9%8B%E6%97%85/</link><pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://example.com/%E5%8C%97%E7%96%86%E4%B9%8B%E6%97%85/</guid><description>&lt;h2 id="筹备">筹备&lt;/h2>
+&lt;p>一开始查机票时，两个人往返要1万出头（人均5300+），这个价格着实让人肉疼。更别提节假日期间景区住宿价格疯涨，粗略一算，这趟新疆之旅，两个人至少需要2.3万——包括需要添置的冲锋衣、大黄靴、保暖衣、羽绒内胆等御寒装备。&lt;/p></description></item><item><title>踩坑日记</title><link>https://example.com/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2023 19:17:14 +0000</pubDate><author>xxxx</author><guid>https://example.com/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/</guid><description>&lt;h2 id="129">12.9&lt;/h2>
+&lt;p>背景：有一个面板Fragment，内部有一个ViewPager2，ViewPager2下面又有3个Fragment
+问题：当我打开这个面板，我想选中第二个Fragment，于是调用ViewPager的setCurrentItem(1)接口，会发现第三个Fragment的onCreateView被调用了，意味着Fragment被提前加载了。&lt;/p></description></item><item><title>那些记忆</title><link>https://example.com/%E9%82%A3%E4%BA%9B%E8%AE%B0%E5%BF%86/</link><pubDate>Sat, 12 Aug 2023 11:54:00 +0800</pubDate><author>xxxx</author><guid>https://example.com/%E9%82%A3%E4%BA%9B%E8%AE%B0%E5%BF%86/</guid><description><![CDATA[<blockquote>
+<p>记忆是很重要的，对于活着的人来说可以是慰籍，是幸福，是宝藏，对于逝去的人来说意义更大，意味着他还活在大家的心中。</p></blockquote>
+<h1 id="上初中">上初中</h1>
+<p>上初中，是我爷爷送我上学的，他帮我拾掇完快要离开时，眼睛就进了沙子，使劲忍住，眼神飘忽，躲躲藏藏。</p>]]></description></item><item><title>JNI开发</title><link>https://example.com/jni%E5%BC%80%E5%8F%91/</link><pubDate>Sun, 16 Jul 2023 12:27:14 +0000</pubDate><author>xxxx</author><guid>https://example.com/jni%E5%BC%80%E5%8F%91/</guid><description><![CDATA[<h1 id="常用">常用</h1>
+<h2 id="getintarrayelements--releaseintarrayelements">GetIntArrayElements &amp; ReleaseIntArrayElements</h2>
+<p>GetIntArrayElements是JNI提供的避免数组拷贝,直接在native代码中操作Java数组的高效方法。正确使用可以优化传递数组参数的性能。使用后需要调用ReleaseIntArrayElements释放本地数组,否则可能会内存泄漏。Get和Release需要配对使用。</p>]]></description></item><item><title>Life 002 疫</title><link>https://example.com/life-002-%E7%96%AB/</link><pubDate>Mon, 05 Jun 2023 23:57:01 +0800</pubDate><author>xxxx</author><guid>https://example.com/life-002-%E7%96%AB/</guid><description><![CDATA[<blockquote>
+<p>享受生活，热爱生活，发现生活中的美</p></blockquote>
+<h2 id="阅读">阅读</h2>
+<h3 id="鼠疫">鼠疫</h3>
+
+
+
+
+
+    
+    
+    
+
+
+
+<p>疫情之后，再看加缪的《鼠疫》，才知道原来很多事情无非是历史的重演，事件如此，人性还是如此，你说世界在发展，一直在变，可是人性似乎难变。</p>]]></description></item><item><title>那些思绪</title><link>https://example.com/%E9%82%A3%E4%BA%9B%E6%80%9D%E7%BB%AA/</link><pubDate>Fri, 02 Jun 2023 22:50:27 +0800</pubDate><author>xxxx</author><guid>https://example.com/%E9%82%A3%E4%BA%9B%E6%80%9D%E7%BB%AA/</guid><description><![CDATA[<blockquote>
+<p>思绪如潮水，不找个地方接住难以成江海 —— me</p></blockquote>
+<blockquote>
+<p>保持这种勇气和坚韧，在前行的路上，记得对自己温柔一些 —— Claude</p></blockquote>
+<h2 id="怎么成为一个温暖的人">怎么成为一个温暖的人</h2>
+<h2 id="什么是爱">什么是爱</h2>
+<p>什么是爱？这个疑问，在我的脑海中已经很久了，一直没有勇气去面对它。</p>]]></description></item><item><title>汕头游记</title><link>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</link><pubDate>Thu, 01 Jun 2023 18:35:21 +0800</pubDate><author>xxxx</author><guid>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</guid><description><![CDATA[<p>年初就约朋友周末一起去汕头玩一玩了，可惜朋友这周末要搬家，所以就只能小两口自个去了</p>
+<h2 id="交通">交通</h2>
+<p>早上十点半从深圳北站出发前往汕头站，到达快一点左右，提前在<strong>哈啰租车</strong>上面租了一辆代步车，开车到酒店，酒店定在汕头市区，准备头天在周边玩一玩，听酒店老板建议骑楼下的<strong>共享电动车</strong>出行，相对来说更方便。小车也就稳稳当当地停在停车场等待第二天的光临，浪费一天的租车费。</p>]]></description></item><item><title>桂林游记</title><link>https://example.com/%E6%A1%82%E6%9E%97%E6%B8%B8%E8%AE%B0/</link><pubDate>Wed, 24 May 2023 11:11:29 +0800</pubDate><author>xxxx</author><guid>https://example.com/%E6%A1%82%E6%9E%97%E6%B8%B8%E8%AE%B0/</guid><description><![CDATA[<h2 id="前言">前言</h2>
+<p>去年就和姑姑、奶奶<a href="/%e7%94%9f%e6%b4%bb%e5%91%a8%e5%88%8a-006-%e5%b1%b1%e6%b0%b4%e4%b9%8b%e9%97%b4/" rel="">提了一嘴</a>，有时间一起去桂林玩一圈，大家都挺期待，但由于疫情的原因最终没去成，而如今疫情放开，我这边工作也找到，本来就计划好等找到工作以后好好去旅行，于是便趁着告诉家人我换工作的事情（先前没有告诉家人我这边工作发生了变动，主要怕她们无意义地担心），提议周末一起去桂林旅游。</p>
+<p>难得的是，这真就是一场说走就走的旅行，周三晚上告知她们，周五早上就出发，行动力满满！不像我朋友所说的，想组织一场家庭旅行太难了，老是聚不齐去不了。</p>]]></description></item><item><title>面试经历-2023</title><link>https://example.com/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86-2023/</link><pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://example.com/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86-2023/</guid><description><![CDATA[<h2 id="面试情况一览">面试情况一览</h2>
+<table>
+  <thead>
+      <tr>
+          <th>公司</th>
+          <th>结果</th>
+          <th>难度</th>
+          <th>体验</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>微信键盘</td>
+          <td>❌</td>
+          <td>⭐️⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>得物</td>
+          <td>❌</td>
+          <td>⭐️⭐️</td>
+          <td>⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>华盛通</td>
+          <td>✅</td>
+          <td>⭐️⭐️</td>
+          <td>⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>最右</td>
+          <td>✅</td>
+          <td>⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>快手</td>
+          <td>✅</td>
+          <td>⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>拼多多</td>
+          <td>❌</td>
+          <td>⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>剪映</td>
+          <td>❌</td>
+          <td>⭐️⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>百度</td>
+          <td>✅</td>
+          <td>⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️⭐️</td>
+      </tr>
+      <tr>
+          <td>taptap</td>
+          <td>✅</td>
+          <td>⭐️⭐️⭐️</td>
+          <td>⭐️⭐️⭐️⭐️</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="准备工作">准备工作</h2>
+<h2 id="微信键盘-">微信键盘 ❌</h2>
+<h3 id="一面4月13日-1h30min">一面（4月13日 1h30min）</h3>
+<p>开局问项目介绍项目</p>]]></description></item><item><title>Life 001 人生</title><link>https://example.com/life-001-%E4%BA%BA%E7%94%9F/</link><pubDate>Tue, 21 Mar 2023 21:35:59 +0800</pubDate><author>xxxx</author><guid>https://example.com/life-001-%E4%BA%BA%E7%94%9F/</guid><description><![CDATA[<blockquote>
+<p>享受生活，热爱生活，发现生活中的美</p></blockquote>
+<h2 id="阅读">阅读</h2>
+<h3 id="人生">人生</h3>
+
+
+
+
+
+    
+    
+    
+
+
+
+<p>《人生》这本书很好看，目前的年度最佳，对我还是有一定的影响的</p>
+<p>仿佛看见了自己，那种内心的挣扎</p>
+<blockquote>
+<p>“人生的道路虽然漫长，但紧要处常常只有几步，特别是当人年轻的时候。”</p>]]></description></item></channel></rss>

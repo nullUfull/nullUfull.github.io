@@ -1,1 +1,102 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gradle - 标签 - FineSnow's Blog</title><link>https://example.com/tags/gradle/</link><description>Gradle - 标签 - FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Apr 2021 18:27:14 +0000</lastBuildDate><atom:link href="https://example.com/tags/gradle/" rel="self" type="application/rss+xml"/><item><title>gradle.properties中定义变量</title><link>https://example.com/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</link><pubDate>Thu, 29 Apr 2021 18:27:14 +0000</pubDate><author>FineSnow</author><guid>https://example.com/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</guid><description>gradle.properties中定义变量 1 light_sdk_version = 2.2.5.14 build.gradle中使用 现在gradle中定义一个函数 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gradle - 标签 - FineSnow's Blog</title><link>https://example.com/tags/gradle/</link><description>Gradle - 标签 - FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Apr 2021 18:27:14 +0000</lastBuildDate><atom:link href="https://example.com/tags/gradle/" rel="self" type="application/rss+xml"/><item><title>gradle.properties中定义变量</title><link>https://example.com/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</link><pubDate>Thu, 29 Apr 2021 18:27:14 +0000</pubDate><author>xxxx</author><guid>https://example.com/gradle.properties%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F/</guid><description><![CDATA[<h1 id="gradleproperties中定义变量">gradle.properties中定义变量</h1>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">light_sdk_version = 2.2.5.14</span></span></code></pre></div></div>
+<h2 id="buildgradle中使用">build.gradle中使用</h2>
+<ol>
+<li>现在gradle中定义一个函数</li>
+</ol>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">getProperty</span><span class="p">(</span><span class="ne">String</span> <span class="n">filename</span><span class="p">,</span> <span class="ne">String</span> <span class="n">propName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">propsFile</span> <span class="o">=</span> <span class="n">rootProject</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">propsFile</span><span class="o">.</span><span class="n">exists</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">props</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Properties</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">props</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">new</span> <span class="n">FileInputStream</span><span class="p">(</span><span class="n">propsFile</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">props</span><span class="p">[</span><span class="n">propName</span><span class="p">]</span> <span class="o">!=</span> <span class="n">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">props</span><span class="p">[</span><span class="n">propName</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;No such property &#34;</span> <span class="o">+</span> <span class="n">propName</span> <span class="o">+</span> <span class="s2">&#34; in file &#34;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">filename</span> <span class="o">+</span> <span class="s2">&#34; does not exist!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+<ol start="2">
+<li>使用</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lightsdk        : &#34;com.tencent.light-withoutso:lightsdk:${getProperty(&#34;gradle.properties&#34;, &#34;light_sdk_version&#34;)}&#34;</span></span></code></pre></div></div>
+<h2 id="代码中使用">代码中使用</h2>
+<ol>
+<li>在build.gradle中定义</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> defaultConfig {
+</span></span><span class="line"><span class="cl">    buildConfigField &#34;String&#34;, &#34;LIGHT_SDK_VERSION&#34;, &#34;${light_sdk_version}&#34;
+</span></span><span class="line"><span class="cl"> }</span></span></code></pre></div></div>
+<ol start="2">
+<li>使用</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">BuildConfig.LIGHT_SDK_VERSION</span></span></code></pre></div></div>
+<h1 id="buildgradle中定义变量">build.gradle中定义变量</h1>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ext {
+</span></span><span class="line"><span class="cl">    light_sdk_version = &#34;2.2.5.14&#34;
+</span></span><span class="line"><span class="cl">    light_sdk_component_level = &#34;78&#34;
+</span></span><span class="line"><span class="cl">    pag_sdk_version = &#34;3.3.0.138&#34;
+</span></span><span class="line"><span class="cl">    pag_sdk_tag_level=&#34;3&#34;
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div></div>
+<h2 id="buildgradle中使用-1">build.gradle中使用</h2>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> defaultConfig {
+</span></span><span class="line"><span class="cl">    buildConfigField &#34;String&#34;, &#34;LIGHT_SDK_VERSION&#34;, &#34;\&#34;${project.light_sdk_version}\&#34;&#34;
+</span></span><span class="line"><span class="cl"> }</span></span></code></pre></div></div>
+<h2 id="代码中使用-1">代码中使用</h2>
+<ol>
+<li>在build.gradle中定义</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> defaultConfig {
+</span></span><span class="line"><span class="cl">    buildConfigField &#34;String&#34;, &#34;LIGHT_SDK_VERSION&#34;, &#34;\&#34;${project.light_sdk_version}\&#34;&#34;
+</span></span><span class="line"><span class="cl"> }</span></span></code></pre></div></div>
+<ol start="2">
+<li>使用</li>
+</ol>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">BuildConfig.LIGHT_SDK_VERSION</span></span></code></pre></div></div>]]></description></item></channel></rss>

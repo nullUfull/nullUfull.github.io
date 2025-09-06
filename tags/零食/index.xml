@@ -1,1 +1,74 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>零食 - 标签 - FineSnow's Blog</title><link>https://example.com/tags/%E9%9B%B6%E9%A3%9F/</link><description>零食 - 标签 - FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E9%9B%B6%E9%A3%9F/" rel="self" type="application/rss+xml"/><item><title>一些零食推荐</title><link>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</link><pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</guid><description>零食 百草味 商品名 推荐指数 满300-200 价格 菠萝干 100g ★★★★ 25.50 ￥8.73 泡椒凤爪 160g ★★★★★ 26.90 ￥9.21 脆冬枣 35g ★★★ 10.90 ￥3.73 椰丝球 210g ★</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>零食 - 标签 - FineSnow's Blog</title><link>https://example.com/tags/%E9%9B%B6%E9%A3%9F/</link><description>零食 - 标签 - FineSnow's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E9%9B%B6%E9%A3%9F/" rel="self" type="application/rss+xml"/><item><title>一些零食推荐</title><link>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</link><pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://example.com/%E4%B8%80%E4%BA%9B%E9%9B%B6%E9%A3%9F%E6%8E%A8%E8%8D%90/</guid><description><![CDATA[<h1 id="零食">零食</h1>
+<h2 id="百草味">百草味</h2>
+<table>
+  <thead>
+      <tr>
+          <th>商品名</th>
+          <th>推荐指数</th>
+          <th>满300-200 价格</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>菠萝干 100g</td>
+          <td>★★★★</td>
+          <td><del>25.50</del> ￥8.73</td>
+      </tr>
+      <tr>
+          <td>泡椒凤爪 160g</td>
+          <td>★★★★★</td>
+          <td><del>26.90</del>  ￥9.21</td>
+      </tr>
+      <tr>
+          <td>脆冬枣 35g</td>
+          <td>★★★</td>
+          <td><del>10.90</del> ￥3.73</td>
+      </tr>
+      <tr>
+          <td>椰丝球 210g</td>
+          <td>★★★</td>
+          <td><del>32.50</del> ￥11.13</td>
+      </tr>
+      <tr>
+          <td>夏威夷果 100g</td>
+          <td>★★★★</td>
+          <td><del>29.50</del> ￥10.11</td>
+      </tr>
+      <tr>
+          <td>猪肉脯（白芝麻味） 100g</td>
+          <td>★★★★</td>
+          <td><del>29.50</del> ￥10.11</td>
+      </tr>
+      <tr>
+          <td>手撕鱿鱼条 80g</td>
+          <td>★★★★</td>
+          <td><del>32.50</del> ￥11.13</td>
+      </tr>
+      <tr>
+          <td>一字豆干（五香味） 200g</td>
+          <td>★★★</td>
+          <td><del>25.90</del> ￥8.87</td>
+      </tr>
+      <tr>
+          <td>卤鹌鹑蛋（五香味） 135g</td>
+          <td>★★★★</td>
+          <td><del>26.90</del> ￥9.21</td>
+      </tr>
+      <tr>
+          <td>牛肉条 50g</td>
+          <td>★★★★</td>
+          <td><del>32.50</del> ￥11.13</td>
+      </tr>
+      <tr>
+          <td>碧根果仁 56g</td>
+          <td>★★★★★</td>
+          <td><del>31.50</del> ￥10.78</td>
+      </tr>
+      <tr>
+          <td>麻辣植物牛肉 100g</td>
+          <td>★★★★★</td>
+          <td><del>25.90</del> ￥8.60</td>
+      </tr>
+  </tbody>
+</table>
+<p>满300减200 买了<code>12</code>包共<code>104.10</code>元，谁知过不到几天，就有满300减210的活动了（这个应该是最划算的了）</p>]]></description></item></channel></rss>
