@@ -1,4 +1,5 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>FineSnow's Blog</title><link>https://example.com/</link><description>Hugo theme - LoveIt</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>北疆之旅</title><link>https://example.com/%E5%8C%97%E7%96%86%E4%B9%8B%E6%97%85/</link><pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E5%8C%97%E7%96%86%E4%B9%8B%E6%97%85/</guid><description>&lt;h2 id="筹备">筹备&lt;/h2>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>FineSnow's Blog</title><link>https://example.com/</link><description>Hugo theme - LoveIt</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1737619321@qq.com (FineSnow)</managingEditor><webMaster>1737619321@qq.com (FineSnow)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>长白山之旅</title><link>https://example.com/%E9%95%BF%E7%99%BD%E5%B1%B1%E4%B9%8B%E6%97%85/</link><pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E9%95%BF%E7%99%BD%E5%B1%B1%E4%B9%8B%E6%97%85/</guid><description>&lt;h2 id="筹备">筹备&lt;/h2>
+&lt;p>又是一年国庆，这次提前一个多月就开始规划了。起初打算去青甘大环线转一圈，收集各种色卡。简单了解了一下，发现海拔相对较高，行程强度可能比较大，基本上每天都要开很久的车，而我还没有热爱自驾到这种地步，于是转而考虑其他目的地。&lt;/p></description></item><item><title>北疆之旅</title><link>https://example.com/%E5%8C%97%E7%96%86%E4%B9%8B%E6%97%85/</link><pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E5%8C%97%E7%96%86%E4%B9%8B%E6%97%85/</guid><description>&lt;h2 id="筹备">筹备&lt;/h2>
 &lt;p>一开始查机票时，两个人往返要1万出头（人均5300+），这个价格着实让人肉疼。更别提节假日期间景区住宿价格疯涨，粗略一算，这趟新疆之旅，两个人至少需要2.3万——包括需要添置的冲锋衣、大黄靴、保暖衣、羽绒内胆等御寒装备。&lt;/p></description></item><item><title>踩坑日记</title><link>https://example.com/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/</link><pubDate>Sat, 09 Dec 2023 19:17:14 +0000</pubDate><author>FineSnow</author><guid>https://example.com/%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/</guid><description>&lt;h2 id="129">12.9&lt;/h2>
 &lt;p>背景：有一个面板Fragment，内部有一个ViewPager2，ViewPager2下面又有3个Fragment
 问题：当我打开这个面板，我想选中第二个Fragment，于是调用ViewPager的setCurrentItem(1)接口，会发现第三个Fragment的onCreateView被调用了，意味着Fragment被提前加载了。&lt;/p></description></item><item><title>那些记忆</title><link>https://example.com/%E9%82%A3%E4%BA%9B%E8%AE%B0%E5%BF%86/</link><pubDate>Sat, 12 Aug 2023 11:54:00 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E9%82%A3%E4%BA%9B%E8%AE%B0%E5%BF%86/</guid><description><![CDATA[<blockquote>
@@ -25,9 +26,8 @@
 <p>思绪如潮水，不找个地方接住难以成江海 —— me</p></blockquote>
 <blockquote>
 <p>保持这种勇气和坚韧，在前行的路上，记得对自己温柔一些 —— Claude</p></blockquote>
-<h2 id="怎么成为一个温暖的人">怎么成为一个温暖的人</h2>
-<h2 id="什么是爱">什么是爱</h2>
-<p>什么是爱？这个疑问，在我的脑海中已经很久了，一直没有勇气去面对它。</p>]]></description></item><item><title>汕头游记</title><link>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</link><pubDate>Thu, 01 Jun 2023 18:35:21 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</guid><description><![CDATA[<p>年初就约朋友周末一起去汕头玩一玩了，可惜朋友这周末要搬家，所以就只能小两口自个去了</p>
+<h2 id="理财-筑基期">理财-筑基期</h2>
+<p>这两年，可算把疫情那几年在基金理财这里交的3万元学费都挣回来了。</p>]]></description></item><item><title>汕头游记</title><link>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</link><pubDate>Thu, 01 Jun 2023 18:35:21 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E6%B1%95%E5%A4%B4%E6%B8%B8%E8%AE%B0/</guid><description><![CDATA[<p>年初就约朋友周末一起去汕头玩一玩了，可惜朋友这周末要搬家，所以就只能小两口自个去了</p>
 <h2 id="交通">交通</h2>
 <p>早上十点半从深圳北站出发前往汕头站，到达快一点左右，提前在<strong>哈啰租车</strong>上面租了一辆代步车，开车到酒店，酒店定在汕头市区，准备头天在周边玩一玩，听酒店老板建议骑楼下的<strong>共享电动车</strong>出行，相对来说更方便。小车也就稳稳当当地停在停车场等待第二天的光临，浪费一天的租车费。</p>]]></description></item><item><title>桂林游记</title><link>https://example.com/%E6%A1%82%E6%9E%97%E6%B8%B8%E8%AE%B0/</link><pubDate>Wed, 24 May 2023 11:11:29 +0800</pubDate><author>FineSnow</author><guid>https://example.com/%E6%A1%82%E6%9E%97%E6%B8%B8%E8%AE%B0/</guid><description><![CDATA[<h2 id="前言">前言</h2>
 <p>去年就和姑姑、奶奶<a href="/%e7%94%9f%e6%b4%bb%e5%91%a8%e5%88%8a-006-%e5%b1%b1%e6%b0%b4%e4%b9%8b%e9%97%b4/" rel="">提了一嘴</a>，有时间一起去桂林玩一圈，大家都挺期待，但由于疫情的原因最终没去成，而如今疫情放开，我这边工作也找到，本来就计划好等找到工作以后好好去旅行，于是便趁着告诉家人我换工作的事情（先前没有告诉家人我这边工作发生了变动，主要怕她们无意义地担心），提议周末一起去桂林旅游。</p>
@@ -101,22 +101,4 @@
 <h2 id="准备工作">准备工作</h2>
 <h2 id="微信键盘-">微信键盘 ❌</h2>
 <h3 id="一面4月13日-1h30min">一面（4月13日 1h30min）</h3>
-<p>开局问项目介绍项目</p>]]></description></item><item><title>Life 001 人生</title><link>https://example.com/life-001-%E4%BA%BA%E7%94%9F/</link><pubDate>Tue, 21 Mar 2023 21:35:59 +0800</pubDate><author>FineSnow</author><guid>https://example.com/life-001-%E4%BA%BA%E7%94%9F/</guid><description><![CDATA[<blockquote>
-<p>享受生活，热爱生活，发现生活中的美</p></blockquote>
-<h2 id="阅读">阅读</h2>
-<h3 id="人生">人生</h3>
-
-
-
-
-
-    
-    
-    
-
-
-
-<p>《人生》这本书很好看，目前的年度最佳，对我还是有一定的影响的</p>
-<p>仿佛看见了自己，那种内心的挣扎</p>
-<blockquote>
-<p>“人生的道路虽然漫长，但紧要处常常只有几步，特别是当人年轻的时候。”</p>]]></description></item></channel></rss>
+<p>开局问项目介绍项目</p>]]></description></item></channel></rss>
