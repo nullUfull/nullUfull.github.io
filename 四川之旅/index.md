@@ -21,7 +21,7 @@
 
 回想起来在新疆禾木村看日出那会，当随着时间的推移，阳光一点点打亮山头，当秋季的山头再笼罩上一层金色，呈现出的那山的纹理和阴影足以让我喜爱，虽然不是雪山，但也很美。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDI1YTIyNTZhZDcyZjAzMGU2YzRkYTgyZTQxNGUxNzhfNjJjNzFjMmYyYWNjMzJlNjk3Mjk2ZTVmYTdkN2M3YjlfSUQ6NzYxMTA3MjE3MjU1MTUyMzI4MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![2D9A1634\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/2D9A1634.JPG)
 
 而如果是雪山，黑白的对比度会更高，山体的纹理和阴影无疑会更加分明。
 
@@ -59,7 +59,7 @@
 
 出发前，和妹妹两个人一起在海底捞吃了一顿简单的年夜饭，也算是过年了。打车前往机场的路上收到了妈妈、奶奶、姑姑的压岁钱。我努力用最积极向上的情绪一一回复，给她们送上最真挚的祝福。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTNlYmNiMDM5MDQzMDMwODhhNDNlMjhjN2I2ODhhYzZfNTAyNDdiYjYyYzFlZTk0NDU3OTczNzg5ZWU0MDhhMzBfSUQ6NzYxMjI4MjcwOTU0OTA0Mjg5M18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260301214228\_36\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260301214228_36_163.jpg)
 
 时间正好，赶上了今年最后一个日落时分，甚是美丽。航站楼巨大的穹顶向外延伸，那种线条流畅的延伸感和傍晚的沉静搭配得刚刚好。
 
@@ -95,7 +95,7 @@
 
 可我这趟旅行本就希望独处，多一个人可能还有点不自由不自在，于是我想了想就直接拒绝了。老板特意翻看了下那位客人的微信性别，然后为我惋惜如果是妹子就好了。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2RmYTJkNDM5YjAwNGQyNTJlNjM2YzEzM2JjZmY1MGJfZWM3MjY4MGNjOGQyYzE4Y2I3MTM5MzU0NWMxYmQ1ZDFfSUQ6NzYxNDc3MzY2MzYxNDk5NTY2Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![f9f2e5e30efedd290ef2fdd034deda75\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/f9f2e5e30efedd290ef2fdd034deda75.jpg)
 
 九寨沟景区的游览路线呈一个Y字形，按照我之前的攻略，计划第一天走右线和左线，第二天再玩中线。
 
@@ -105,33 +105,33 @@
 
 冬天，右线的原始森林和天鹅海没有开放，便在箭竹海下了车。幸运的是，今天的天气非常好，完全不像前些天预报的那样令人沮丧。箭竹海比较一般，就是一副寻常的山湖泊的样子，天气够好，湖水够蓝，走在旁边倒也令人神清气爽。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDYyYjY5YmEzNWY4OWZlYThlNTY4M2E1YjY3NjQwZmFfMmM0ZjY0Y2JiMjk5MGIzNzI0ZGQwOTU4YWEwNTNiZDRfSUQ6NzYxNDc3NzAyMTc4NDI4MDAzMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4740\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4740.JPG)
 
 箭竹海边还有不少野鸭子，我这镜头虽然打不了鸟，但对付这些笨鸭还是绰绰有余的，顺手来了几张。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjkwNjU0YWQ5ZmE0YTBjMzAwYzQyM2FmNDA2MTI1NWVfNjUxNDc5MWZlMzRlZjUxZDkwN2IyMDkyNmIyOGE3MzFfSUQ6NzYxNDc3ODEwNTIxOTEyNDQwNF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4742\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4742.JPG)
 
 沿着栈道一路往下走，途中遇到了一个妹子拦住我，想借我手机打下电话，说是和家人走散了。我皱了下眉，犹豫了下还是答应了她。从通话里得知，她手机在男朋友身上，结果这会儿找不到人了，女生显得有些生气。
 
 往下走就来到了箭竹海瀑布，这里的落差挺小的，岸边的树木都一副残枝败叶，但远远望去，一片粉白色装饰着，与碧绿的湖水形成的反差，倒是有一股美感，更耐看了。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjkzYmEyZjk4MTY4MDIxYTU5N2RlMGY5MDBhYmNhN2VfZWEzNjE5ZjljOTQ1NmYzNzk1ZjJjMWQ1NDYxM2JlMjNfSUQ6NzYxNDc4MjQ2Nzk3NDgyNzIzMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4758\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4758.JPG)
 
 ## 熊猫海
 
 来到熊猫海，这算是我这趟旅程最钟情的地方之一。最迷人的是那截**被冰层封印的断木**，冰面不是平整光滑的，也不是单调的纯白，而是带着磨砂质感和如瓷裂般的细腻肌理。除了这些，还有透着湖色的窗口，半隐半现，像盖了一层薄薄的冰霜，又是磨砂的透明玻璃。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjkyMDM2YzQ0ZmQ4MmViZjk5MTk3MDQ4ZmMxMjkwYWZfMTE1MzhmNDA3Yjg5YWM0OGE4YWM5MmUwYTgzMTMyODNfSUQ6NzYxNDc4NzQ5MzI5NjIyOTMxNV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4774\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4774.JPG)
 
 这一张s湾也很喜欢，天然的曲线把动与静分开，一半是磨砂质感的厚重冰面，一半是深邃通透的碧绿湖水。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWUwZTY3ZDdkN2U0MTRmN2ZhZTEzY2E5MjY5MTQyMDBfM2MwNzkxYWMwNDYwZmRjOTkwZWI2NTcwZDMxNzFmZDJfSUQ6NzYxNDc4Nzg2NDE0NDEyMDc3NF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4784\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4784.JPG)
 
 走过这块未冰冻区域的过后，湖面又呈现出一种微冻的质感。它不是前面那种白茫茫的厚重冰霜感，而是一种尽情展现湖色的磨砂玻璃感。特别是靠近岸边的位置，水质透彻得仿佛冰面不存在一般，但又明显区别于未冰冻的湖面，它不会有微风吹拂的褶皱感。
 
 这种感觉，**老诱使我扔出一颗石子，看是否能打破这份静谧**，但想想似乎不太可能，也有些不舍，当然更不想当显眼包。大部分冰层感觉还挺厚的，或许唯有那些透着湖色的窗口才是最薄的。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTY5YjhiODQyM2VlOGE4YzUxYmE4MGExODkwY2EzMWRfZDdkOTg0ZjRjMDJmZDYxYjg0ODdhM2VjZjdiYTBlY2ZfSUQ6NzYxNDgzNDIxNzcyMTAwNzA2MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4796\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4796.JPG)
 
 ## 五花海
 
@@ -139,21 +139,21 @@
 
 这趟旅行最遗憾的一点，莫过于专门为九寨沟准备的CPL滤镜，居然被我忘在了家里，此刻它还在深圳过年。没了它的加持，拍出来的照片带着很明显的镜面反光，没法像预想中那样彻底看穿水底。一路上因为这个点念叨了很多次，这种万事俱备却丢了关键件的痛心感，很是折磨人。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDViZmY5ZjIyNjEyZjgwYzAwZmRiZTY0YjRmNDRlNDRfN2RhOGIxNDliMmMyNmRhNmI3YTM2M2NlOTY0NmE4OWFfSUQ6NzYxNTI2ODQ4MTcyMTc4MTQ0OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4803\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4803.JPG)
 
 这会儿风很大，本想再拍一组湖面通透的照片，湖面满是波澜，等了好一会都没能等到风止的那一刻，只好继续往前走。本来以为也就这样了，没想到后面还藏着个很是得我心的景，芦苇作为前景为整个海子增添不少生机，在这个场景，风却成了讨喜的，它带给了芦苇生命力，芦苇在我面前随风摇曳着，很是舒适，虽然在高海拔地区，气温不高，但是终究有太阳
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzhlZmY3ODM2YWQwNGU0NGI4OGYzZTU1ZjU2NzE2ZWNfNjVkODMzZjJkNjE1YzAzMmM5YTI2YjNiZWQyZDkxYjZfSUQ6NzYxNTI2ODEwNTI2MjA1ODQ0NV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4831\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4831.JPG)
 
 这一张照片我也很喜欢。这里是从五花海往长海方向的那段景色，相比前面宏大的湖面，我倒觉得这段栈道深植林间的幽静最为醉人。最绝的是这种光影的对比：人立于林间暗处，视线越过参差的枝干，眺望那片被阳光彻底“充能”的海子。那一抹耀眼的碧蓝湖水，清澈得可以直接看穿到底部的沉木与碎石，这种‘从幽暗窥见极致色彩’的视感，确实极美。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjgyMzRmY2M0MDlmODMxNTM0NGI0NzVlYmI2ZjE1NDBfZDUxZDE1OWFkMWRlZDNkMGRlMDRlYTQ1M2FiZDBkMWFfSUQ6NzYxOTU2Mzk2MDQ0MTk0OTM5MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4837\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4837.JPG)
 
 ## 镜海
 
 可惜没有看到山川倒映在海子里面的景色，今天的长海湖面的风太大了，根本没有镜面效果，甚是一般，走到镜海已经有点累了，时间也来到了下午3点，坐了会便前往左线的长海。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjM1YzQxZThjMTU1MGRjNGU2ZDE5ZDY2ZGRkYzg4MWNfNzExZDA3YjI0Y2EwYTY1ODcwNDM5YTZhNGZhNDE1YjlfSUQ6NzYxOTY4OTk4NTU0MDk4Mzk5OV8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_4807\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4807.JPG)
 
 ## 长海
 
@@ -161,17 +161,17 @@
 
 可能有人觉得整片海子被冻上了便没什么好看的，但我恰恰很喜欢这种被封印的宏大。在这块用自拍杆拍了不少照片，坐在栈道楼梯上休整，补充了点零食，也是在静静欣赏这片美景。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmZkYjk4NTBkYTUyMTU3YjViZWFjYjc4M2M3NmRmMWFfNjZlNDFkYWQyZGVjM2NiYWFiMDIyNzQ3NmMxN2I4YWZfSUQ6NzYxOTk2MjY0NDI5NjA1OTg2Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4863\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4863.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTExYzQwYjg5YmNhYzcwNDFlZWQyOGZmOWEzOTAyNThfNGViNjAzYTFmOTkzNWY0Mzg5NDk4NGZiZTVkMWFjNWFfSUQ6NzYxOTk2Mjg4MzI5MTY5NjMyMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4876\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4876.JPG)
 
 ## 五彩池
 
 到达五彩池已快五点，太阳正准备下山，光线很柔和。五彩池不愧是九寨最顶级的海子，即便正值枯水期，水域只余小小一簇，却依然凭那浓郁而丰富的色彩让人瞬间折服。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzYzMzRhZjU5ZjQ4NjhiMmQzNDM0ZmZlMzA3ZDRkZWNfMzVhZWNkOTZmNjlkNWZhYzUxYWU3ODZhMmRmMWIxZmZfSUQ6NzYxOTk2NTc4OTg0MzgwMzA3Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4902\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4902.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDVkNzRjYTYzMjJlMTQzZGY3OGQ3MDQwNTQwYmZhNGZfZjY1M2JiYjg2NzliYWVhYmM3MmNkOGM1ZTUwZDMwZjlfSUQ6NzYxOTk2NjI2NDY5MzQ3NjU3NF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4894\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4894.JPG)
 
 ## 住宿
 
@@ -187,7 +187,7 @@
 
 虽然是四菜一汤，看似丰富，但并没有太大的食欲，简单吃了点辣椒炒肉和包菜。那盘酱大骨十分干硬，吃了两口感觉像是隔夜的，难以入口。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDNjYzIwZTliMjQxZmM2MmM4ZGI1ZTNlNzY3MmQwYTZfYzY4ZWQyOWZiM2M3ZTA3ZGYwNjAzMWQ1ZDhhYTM0ZjlfSUQ6NzYyMjcwOTQ3Nzg5MjAzMzQ3OV8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![82604d44198d07a051543e79636fbec7\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/82604d44198d07a051543e79636fbec7.jpg)
 
 ## 诺日朗瀑布
 
@@ -197,9 +197,9 @@
 
 没呆多久就前往下一个目的地了，一开始还以为是西游记取景地，详细查了下并不是。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDg4ZGM5ZWE0Y2QxYjVkYWM2ZmI0YWE4NmFhOTYxOGNfMGZkYTRjMzA0YzIwMTNlNmQ3Y2ZjYTUzMWU5NmY2YmVfSUQ6NzYyMzQzNDEwMjM5Nzc2NjYxMF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4933\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4933.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWZiMTRmZmFmYjk2ZmI0OTc3YmQ4NjEwYmY0N2ZiNjJfNGI3MzM0Y2IzMGE4OWY3OTQ5NTllZWUxOWQ3MjBiYWRfSUQ6NzYyMzQzNTEwMjQ0OTg0NzI0NF8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_4936\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4936.JPG)
 
 ## 五彩池again
 
@@ -207,35 +207,35 @@
 
 路过五彩池，还是又去转了半圈，完美的镜面反光完美地击溃了我，只想哭。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGZlZDg2Njk1Mjc0NjMxZThhNmE5M2Y4Mzg0OTZhODZfYTdlZjkyMTczZjhmZDk5YzdhMWNlODNkOTkwNjY0YmFfSUQ6NzYyMzQzNTc5MTg1OTE1Nzk4MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4952\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4952.JPG)
 
 ## 珍珠滩瀑布
 
 赶紧跑路到珍珠滩瀑布，这才是所谓的86版西游记取景地！依旧水量较小，没有想象中那么恢弘壮观。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGQ0MjY5MDZiNmI1NzVjZGJjNzMwZjUzNjgyMzRlNGNfYTBhMTQyMWM3MTMyNGI4MWQ0OGU3MzA2YTNhZWM4MTFfSUQ6NzYyMzQzNjM5NjU3NzExNTM0Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_4985\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_4985.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjI5Y2U3YzcyMTdmN2NkZTliNzVmYzQyN2Q0NWM3NjBfZTg1MjU4ZWE5MzNlNmE3NDgwMGYzZTQ4N2E3ZTY3YTJfSUQ6NzYyMzQzNjg1MDcxMTE1Mzg3MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![image\.png](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/image.png)
 
 沿着瀑布下的河流徒步，虽然上流瀑布水量不大，但是河流水流挺湍急，水质特别清澈，透着青蓝，实际观感好极了。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2YxOTI0ZGI3NTYxZjI0Njc5ZDE5NmE5NGMxOTgzOTRfOTdhMTY2NzE2ZDdhNGE0MmEyZjZmNWUxZDkwMWM2N2NfSUQ6NzYyMzQzNzY0MTEzMjExNzE4MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5018\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5018.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDA2NzU2MDA0NTVjZjg5ZmNlZDkzMGJhNjBiYTIyNWVfZWRiZWIzZDViOGNkNjkwZjEzMjU5OWNmYjdhNjQwMjRfSUQ6NzYyMzQzNzQ2ODA0MTI4NDU2OV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5013\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5013.JPG)
 
 ## 犀牛海、老虎海
 
 中线的海子连缀成片。虽然大同小异，色彩间却仍旧藏着些许差别。相比昨日所见，这片海子的色调要明亮许多，透着一股沁人的清新感。于是乎，趁着这会人少，拿出自拍杆拍了好一会。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGMwYjk1NDdhODVhNjhiZjExZDNhNzc2NTZhOGMyYzlfNjhjMWU0ZWEwNTU3NGIzOGU4MzM5ZjA3ZTA3YWYwMjdfSUQ6NzYzNDU0NzgwNzAzMDAyMTMyMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5037\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5037.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2MxYWNkMDM5MDUxOGNkYWRlNmU0M2UyODBkMzQyZmJfM2M5MmYzYjU3MzQyNTdiNTI4NmEyOTg0NjUzNDRkYzVfSUQ6NzYzNDU0NzczNDYzMjI1NDQwMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260430214356\_55\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260430214356_55_163.jpg)
 
 没有沿着外面主干道走，而是走在里面挨着山体的小栈道，这里人就更少了，很享受这种无人之境，找了个长椅坐了一会，静静欣赏眼前这片美景。
 
 找了好一会角度，还是无法避免会拍到这些枯枝败叶，但还是具有一种美感。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzU3ZGY0MmI1ZGYxYTQyOGZmZDFmZGNlNDUwZjU5ZGRfYmIxMTI5M2Q4NDZhMzZiMmI3YjdiZjdjYzJhYzRkODlfSUQ6NzYzNDU0OTAyNDAwMzExNjIyNV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5046\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5046.JPG)
 
 ## 树正群海
 
@@ -243,13 +243,13 @@
 
 来到了树正寨，想买根烤肠补充下体力。很巧，这会又遇到了昨天的那位一起拼桌吃饭的大哥，索性决定结伴同行，一起前往树正的观景台。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTcwMjA2NmY3ZGVmMzUxMjVlYTE4NTRjOThlOWQ0NzRfMGFiMjdhNjQyYzBlNTg2NzFjZDZlOWNhNTNkM2Y3NmNfSUQ6NzYzNDc3MTc0NDkxNzczNjYzM18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5062\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5062.JPG)
 
 花了十分钟，也算是气喘吁吁爬上了观景台，高海拔地区爬山着实有点阻碍。
 
 昨天看惯了单片海子的美腻，好了，今天这树正群海再次冲击着我的视觉感观，当我站在观景台眺望这群互相连接但又似乎并不相连的海子时，那种自然构建出的层次感，不禁让我不断哇塞哇塞。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTQyZDdmODg2Mjc1ZmI1ZTBmMWZiNThhYTBjYjI0MTdfZmE2Njc3ZTU0NGM0OGUwNjk5NjNhYmYxYWY5ZjE0MmFfSUQ6NzYzNDU1NDc4NTI0NDQ5OTEzN18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5064\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5064.JPG)
 
 ## 火花海
 
@@ -259,15 +259,15 @@
 
 到达火花海快下午3点了，可惜已经没了太阳。而所谓的火花海的火花正是太阳的极致产物，没了太阳，虽然有一点火花的样式，但是终究没有那么热烈。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTY2ZTQxY2ZjOTVmOTI2YmYwMTg2NGJjMmQ4N2FjYWJfZmY2ZTc2YzU2ZmMwMzgyOTdiOGIxNzIxZGM3YmNlYmVfSUQ6NzYzNDc3OTY0NzE2NDE3MzUyMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5087\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5087.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWNjMWNkZmY3YjU1NzcyMzM0OWRlODljZGEwOTZmZDhfNDIyODBhMzRlZTI3YWM1NmUwYTkzNjJjOWQyY2IyYmZfSUQ6NzYzNDc3OTY4NTE0MTk3Mzk3N18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5090\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5090.JPG)
 
 既然没什么大看点，于是打算往回走一段，去寻回刚才在车窗里匆匆一瞥的那些景致。
 
 ## 卧龙海
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTA3YTQxYTlmYzk0OWYyM2RmZWQ2Y2YwZDJkNDFjMmNfNDgwMTE0MDg0N2YzYzM5MjEwYzljOGMxMTI2OWM3NDRfSUQ6NzYzNDU1NTExNDkxNjgwOTk1Ml8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5079\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5079.JPG)
 
 ## 芦苇海
 
@@ -277,23 +277,23 @@
 
 我不禁在想，这是否是因为水流的冲击将原本深邃的色彩撞开了，才在飞溅的浪花间显现出这种极致纯净的亮蓝色？
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDI5YWIyYTRjZjU0YmE2N2E1NWMyMGYxZGQ5ZGNhNmVfM2MyZTYyMDA0ZDhhNTlkYWViOTUzMmZmNWQ3NDRkMDhfSUQ6NzYzNDc4Mjc4NTUyNTM3MDA1M18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260501125351\_56\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260501125351_56_163.jpg)
 
 走了没多久便真正进入了芦苇海。芦苇风吹摇曳芦苇的感觉，只感觉特别巴适，不管是微风吹在芦苇上，还是吹在我的脸上，视觉和触觉都是那么令人满意。飞书文档似乎不能上传live photo，否则感觉会更好，能感受所谓的风吹摇曳。
 
 没想到芦苇和海子能够这么搭。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTdkMWZlNDlkYTcxNDViOTcxZjNhYTJjZmI0MTJiOWNfNDQxNDFhYzQyNTgyMTM1ZDkzZmY4MjExNjUwMTU0MzJfSUQ6NzYzNDg4NjI1NDM0MTA0OTUzM18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5136\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5136.JPG)
 
 经典s弯必须得来一张，枯枝是真的没办法避免，倒也成为了季节限定哈。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWQ1OThhYmMyOWI2N2ZkOTUzMzUwOTk4YzAzZDZlMzhfYTE5MzYwZDM4YzAzOWE1NTBjZGNhZTNhMGJkYTZkY2VfSUQ6NzYzNDg4NjM2ODAzMTc4ODI1N18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5141\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5141.JPG)
 
 快四点钟了，山谷里暮色渐沉，太阳早已不见踪影，沿着栈道走了走走停停了二十分钟，路上游客也算比较少了，在这段静谧的尾声里，这趟旅程也算圆满落幕。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjIyOTljYjFjZGJjNThjZTIxODBlOTQ5ZDNlZGI5OWZfZjIyZmUwN2ExMGU5MTlhZWEwMzhjZmM4MzY2ZjkzMGFfSUQ6NzYzNDg4NzUwMDQ4MTQ5ODA2Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5159\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5159.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjRmYTM3NTI1ZDEzMzdhZjM2MGVmMTMyNDViZDM3ZTVfMzU4ZWYzNDBiNGU0NzkzMGViOGZjNzk2MmQ5NDQ2OTBfSUQ6NzYzNDg4NjU1MzY3NTg0NDU0MF8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5145\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5145.JPG)
 
 ## 小众点评
 
@@ -346,41 +346,41 @@
 
 真正来到这片 4A 景区，才发现其核心体验全都在海拔 4800 米的雪山之巅。从景区门口到索道上行处，都要坐快一个小时的景区公交，期间途经的每个站点都不得不配合下车。然而一圈走下来，这些中转点其实并没什么太值得驻足的必要。
 
-路上有个站点聚集了不少野生猴子，倒是一分乐趣。
+路上有个站点聚集了不少野生猴子，倒是一份乐趣。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2JhZjU3OGFkN2EzNTU4OWRhYjYyMzk5MWFmZmYyOTNfMzc2YzhiNTMwMWQ3MTEzMWJlYWViMDQ4NTM0NzgwMjRfSUQ6NzY0MDUwNjgyMzE5MTA4ODM1Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5183\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5183.JPG)
 
 最后一个站点则是一个网红打卡路面，所谓的最美雪山公路。有一说一，远处的雪山确实可以。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWI3Zjc0YTg0Njg4YTAxNjQ1NjViNmUxYzA0ZjUxZTdfOWNkZTUwNmUxMWE0N2U4YmUwMGQyMjE2MGViMzBmNTlfSUQ6NzY0MDUwNzYxNjUzOTUxMTc2NF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5203\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5203.JPG)
 
 旁边是一个彻底封冻的湖，可以玩一些冰面项目，但实在没看出来可玩的点是啥？Gemini跟我说冰面驾驶的核心乐趣在于低摩擦力带来的失控感和漂移感，但看起来这个这个湖面和ATV的轮胎的摩擦力还挺大的，驾驶反馈可能和平常地面开车没有太大的区别吧。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDNmZmFkNWE2N2VhN2UxYzc0ZWZhMDMxNWQ5YTU2ZGJfZGNmNTExZGU1NzJiZmEyY2I1YWE1NTFhMjI1MDM4ZTdfSUQ6NzY0MDUwNzk0MDI3Njk5NzMxNl8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5213\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5213.JPG)
 
 达古冰川没有冰川，放眼望去只有无尽的冰雪。高海拔地区，还顶着大太阳，光线极具穿透力，如果不带墨镜会很感觉到整个世界都很刺眼。但是路上还是有一些人居然都没有带墨镜，心里实打实的佩服。
 
 有块刻着4680海拔的石头打卡点，居然排起了长龙，对我而言，但凡花一秒钟纠结要不要排队就是我的问题，拍了张空镜，转身就离开了，还不如花时间好好欣赏这高海拔的雪景来的实在。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjJjMTgyZTFkYTY3MzkyNGRlYzUxMTBmY2M0MGQxMTRfNGQ4NDc0Zjc1ZDIzNTFmZjYyMWE2YzU1NjYyMmFkMjFfSUQ6NzY0MDUxNDY1MTkxODMwNjQ5Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5230\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5230.JPG)
 
 缆车上上下下，背景特近的雪山，挺好看的，咔擦了几张。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjUzNjA2ZTgwOGUxNTY5MDQ0NGRjZWZiYzkxMDgyODhfOTFlOWQyODVmY2E4NzNhYTNmZWNiMmU4NWU0MmZmOGRfSUQ6NzY0MDUyMDQ4NjkwODMwMDUxMF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5235\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5235.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDliMGEzZDg4NzgxZmEwMWY2ODNkNjNiZjU5ODg3NThfNDMyODJhZjBlYTU2NDFkZDM0MGMxYjA0ODZlMDMyMjBfSUQ6NzY0MDUxNTA4MzAxMzAwMDM4Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5245\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5245.JPG)
 
 顺着一处斜坡向下，脚下这双大黄靴扎实的抓地力让我深感稳妥，果然很值！
 
 顶着大太阳和狂风在这个冰天雪地逛着。这里的雪质特别细且绵密，大风刮过时，空中会卷起阵阵雪雾，白茫茫一片。冰凉的雪花拍打在裸露的皮肤上冷得很，赶忙停下来带上冷帽、口罩和手套，将御寒值拉满。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2Q2MmMzYzEzMjljM2Y0NGIwMmJjY2ViYWMzMGYxMGJfM2RhNWVlNjc2MTVkMTk0YmY1NGY5OWFhNTMwYWUzY2FfSUQ6NzY0MDUxNTM1MzE0MzAzNjg5Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5247\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5247.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2ZjNGQ4ZTY2NjJkMTQ0OTViYzQ0MjExY2JmYzA0OWZfYWIyZDlhYmVlNmI2NWQ2YjY3NjExOWRmNjc5NDE3ZWNfSUQ6NzY0MDc0MTEzNzc5NTQxOTMzNl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_124939\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_124939.jpg)
 
 这里转一圈则是需要沿着栈道走下去再爬上来，本来这里有个琥珀
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTgwMWE0N2VhNzRmYTQzNGVkNGNmZDZjNWM4MmJiNjFfZDdiNTQ1YzUxNDVhMmVmNDk3ODYxNWU0YzQ1ZDY0ZDlfSUQ6NzY0MDc0MDc1MzczNjUwMjQ2MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_124310\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_124310.jpg)
 
 用自拍杆拍了不少照片，随后遇到一位同样独行的小哥，两人互相给对方拍了几张照片。有点尴尬的是，小哥的手机在在强光暴晒下屏幕亮度很低，我几乎看不清，只能凭感觉给他盲拍了几张。
 
@@ -388,53 +388,53 @@
 
 不过他起初的机位有点微妙，画面里的人像被截断得略显突兀，于是我又请他帮忙重新调整角度来了几张。至少比前面的要好了，但是构图还是有点不是很得劲，后面AI帮我调整了一下，这个效果会更符合我的预期。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzE0Y2Q1NDI2MDUyODQ4ZTdhZTY5NjJlNDBkZWEzYzlfM2FjMDQyNzk2YWU2MTQzY2VkNDBhMTc3ZmYwZDUyNmNfSUQ6NzY0MDc0MDYxNDA0NDMzOTQwNV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_123802\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_123802.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzVjMmVhZTMxNjFiZGNiYTk5OWVlZDZhMDQwMDAwNzBfMjkxNTYzYzBiM2VlZjFmYjQxYmNmNDQ2YzI3OTI3ZDBfSUQ6NzY0MDc0NTczNzk5MjI3Njk2MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_125702\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_125702.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmI2OTE4M2E1NGYyZTJjMGJlYjQzYWIyMzUxY2I2ODFfNzQ4MzNjMWM5YjFjZGI3ZTVlZWQzYjc3MWQxNzk0YzZfSUQ6NzY0MDc0MjA0NDQ0ODc3MTAyOF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_125307\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_125307.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDMzYjA3MDk5NjVkNDZjYTJlMGQwNjQ4ZDM4NGYzMjhfMTA4NWFiZDM4ZGE0ZDRiZGY4ZmNkZDIxN2Q0OTdiZDFfSUQ6NzY0MDc0MTQxNDAxOTY5NzYzM18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_125338\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_125338.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NThiODhlMjI0Y2U5YmZlNGVlNTYxZGIwNTZhMTdhNjdfYzdkM2E5YzA3MTc2ZTVhMmY0MzBjM2MzNzA3YjczYzJfSUQ6NzY0MDc0MzEwMDM0Nzk5MzI4Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![Gemini\_Generated\_Image\_cew2c0cew2c0cew2\.png](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/Gemini_Generated_Image_cew2c0cew2c0cew2.png)
 
 转了一圈，准备上去了，看着不是很远，但是在这高海拔地区，走得特别慢，没爬几步就要停下来吸吸氧。记得途中我的血氧来到了85，赶紧吸了一会氧，又重返98。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTIwMmEzY2FkMTQyNDA0OTM2OTlhMDI1N2QxZDliNDVfNjdmMGI0MjViNThiYzlhYTY1MjZmNDlkM2RiYzhjNTdfSUQ6NzY0MDUxOTUxOTU0NjY1Nzc0M18xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5258\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5258.JPG)
 
 挺遗憾的一个体验就是没能像经常看到的视频中的人，整个身子向后倒下去躺在厚厚的雪地上，这种体验应该会很好玩吧，不过要有人一起可能才好玩，嗯玩雪都是这样吧，一个人提不起这份兴致来。
 
 站在群山之巅眺望远方，那种广阔天地的浩瀚感特别强烈。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWZlMTYyYmQxYmE5YjUzZmQ3ODlmYjlmNWE5Nzk3ZGZfMTdlODVkNGQxYThiZWEyMmFjODQ2ZjMzODQyZGE1ZGRfSUQ6NzY0MDUyMDkyNjE0ODM5ODA1Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5277\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5277.JPG)
 
 从山顶下来后，路边还偶遇了一组向日葵冰块，挺好玩的。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDhmODVmZTc4NTE2YzI2YmI5ZGJmYTI2ZjY0MDJhMTJfOTkxNGQ1OWRlZmY2OGU2ZTlmN2JlNDZhYTA3ZGYyNzJfSUQ6NzY0MDUyMDMxMTI4MDE0MzU2NV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5283\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5283.JPG)
 
 刚下来一会，包车师傅就在催出去了，真是令人有点无语。明明都已经花了大价钱全款包车了，却硬生生被催出了跟人拼车的局促感，让人不免感觉这钱花得有点不是特别值。压下心头的无语，我安抚师傅说已经下山了，等吃完饭就走。
 
 在游客中心搞了个茶叶蛋和一碗杂酱面，算是中饭了，味道却还挺好的。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTM2YmYwY2RjZTc3OTY3ZGY5MWQ3ODE0NDQyMThkMTdfZmUwMmE5ZjAxZWIxNjUwZjYwZmYyMWVkY2IzMTk2MDFfSUQ6NzY0MDg3NDAyNjM5NDQ4Nzc3OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260219\_141246\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260219_141246.jpg)
 
 好在，前往毕棚沟的路上，司机的表现总算让包车的价值重新体现了出来。沿途随处可见的雪山，遇到好看的，师傅都主动地靠边停车让我拍几张，一路上聊了不少，心情还是很愉悦的。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDI2ZTZlNmM0ZDkyZGU0OTZkNzA0NTFjOTliNzEwMzNfMjY4OWM3YWM1YTZiNTlhZGE3ZDVhZDIxNGM2OTlmNGVfSUQ6NzY0MDUyMzM2NTcxMDgyNjcxOF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5289\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5289.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzdhYWFkMjdmNjQ1YjUyZGJlZDg3NTdlYjZiYWZmZmVfMjJhNjM3Y2UyN2YzMDVlOTk0YjYzMmViMzdhOWFmMzdfSUQ6NzY0MDUyMzY4NDk5Nzg2MDU1MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5299\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5299.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTM0MTk5ZjFkZDIxNmE5ZThiNjJjOGEzZjA3NjZhYmZfMTEyY2Y2MWI5ZmQwYmViMmZiNWU4MTk5NmVmZWM4MTBfSUQ6NzY0MDUyNDIwNjI4Mjc3MTQyMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5304\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5304.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTBhYzZjYTNhYjFlM2NhNDYyNzJiNzU5NWIxNWI5ODBfMzdlZWY1MzkwNTBiYjAzNmZlNWQ2ZDYxZTUxZGMzOWVfSUQ6NzY0MDUyMzkwMjY4MjM1Mjg2MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5305\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5305.JPG)
 
 中途有一片连绵的雪山群极其壮阔，可惜画面被横穿的电线挡了个正着。在高速上飞驰的时候，连绵一片明亮的雪山赫然出现在眼前两座阴暗的山体之间，师傅比我还兴奋，一直连声催着快拍，抓拍下来的那张，效果倒也确实不错。
 
 一路上和师傅也聊了很多。他顺嘴给我普及了不少当地的历史和风俗，比如以前很多人其实是住在高山顶上，而不是山下。一是为了防土匪，二是山谷深处两边都是峭壁大山，太阳根本晒不进来，没光照就种不了庄稼。突然觉得这次包车还算行，好歹多了一层本地人文的信息量，先前那点肉疼感顿时消散了不少。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmM4N2I2OGZlZWI0YTg1ZjlmMjVmNjYzMzM0ZTAzN2JfMGU5MWI1YmRjNzZlNDg4OGIxZmJiMDU2NWZlM2ZmYTFfSUQ6NzY0MDUyNDM0NTI5NDU1NjExM18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5309\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5309.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzQ1MDc0YjQ5ZTMxYmI3YjU3NjUxZjQ0ZWE1ZTQ3YmNfYThmMTUxNTI2YWU5NTVlYzAxMDUwYzE1NzJmODBiZDRfSUQ6NzY0MDUyNDcxMTcyNTg2MjA2Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5312\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5312.JPG)
 
 当晚下榻的酒店位于毕棚沟附近的小县城边缘。这里虽然远离县城中心有点不太方便，但好在离景区近，本身晚上也没有出去闲逛的诉求，倒也合适。
 
@@ -458,13 +458,13 @@
 
 毕棚沟是个 4A 景区，也挺大的，搭乘景区的公交车到最后的景点也得花上快一个小时。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2NmZWIyODRhYzBhY2I3M2YyOTI3NzRjMjUzZmM5MGJfNzk1NDBjNGI0MGQ3NTRhNDEzZDlmODUzODVjZjMzOWVfSUQ6NzY0MzAzMTE5MjMyNTAzMzE0MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5320\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5320.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODUxNGQ5YzlmNGYyMTk5YTMzODJkYmRlZjhhZTU3MTdfMTc3ZTY2YTAzZTc3YTU0MTJmYmQ3MGQ1ZWRlM2Y5YzZfSUQ6NzY0MzAzMTI4MDY2OTQ5NDI0MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5324\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5324.JPG)
 
 清晨的群山，交织着雪的白与山的黑灰。当日头升起，金色的阳光洒在山上，随着时间推移，那抹光线慢慢从山的一处逐渐覆盖到山的正面，金光铺在白雪之上，笼罩出一层淡淡的金色晕影。对于没有白雪覆盖的黑灰色的岩壁，则显示出一层很高级的色彩，黑灰色多而金色少，淡淡的高级黑金。相相比之下，暂时未被光线触及的地方，则维持着沉稳低调的暗调。日出那一刻的光影极其丰富，没有光的地方沉稳低调，所谓暗调如此。而打到光的地方又是那么祥和美好，倒有些新生的意味。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWIwMjI3ZjA4YjQxNTFlMzJiMzYzNTFlMTcwZTMwMzZfZTI5MGQ1NGI3NDAyOTZiMDVlYjQyYzk0NWExZTA5NWRfSUQ6NzYxMTEyNDE0OTc2MjkxOTM4OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5337\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5337.JPG)
 
 在毕棚沟体验了一把滑雪，雪场离背后的雪山极近。场内人很多，教练资源相对紧缺。一个小时 338 元的价格确实有些贵，但当旁边的人还在犹豫盘算时，这次我倒是难得爽快，没有丝毫纠结就直接定下了一位。
 
@@ -472,29 +472,29 @@
 
 然而，等真正站上顶端的起点往下滑时，速度很快，开局便狠狠跌了一跤。这一摔直接让身体紧绷起来，随后的下滑过程中因为紧张，动作开始严重变形，滑得一次比一次难评。最终，还是没能成功从最高处滑下来，算是一个小小的遗憾。不过至少下次就不用请教练了，怎么说也是一种进步。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2UzZmE3ZDc3NDQ2NjkyNjE2OWVmZjdlNTY0MTUyYTZfOTA1OGYwNGE5ZmUzMTVmYzQ2ZDkwZDUxZjRkZGNlMWRfSUQ6NzY0MDc0NzQ3MzE3MTU0OTE0OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5370\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5370.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjRhNTBiOWUzZmU5YTQ2OTBmMjc3ZmRlODMyNzMxMjFfM2E2OWY5NmFiMzMwMmY5NjgwZTI5N2U2M2VkNjFjY2NfSUQ6NzY0MDc0NzI1MDgyMTcxMjgzOV8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![MVIMG\_20260220\_113854\_1771560260211edit\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260220_113854_1771560260211edit.jpg)
 
 之前在达古冰川一直戴着墨镜，视线里的强光被过滤掉了，倒一直没发现一个细节。这会才注意到，大太阳底下的绵密积雪其实是一闪一闪的，颇为有趣。特别大大拉低了曝光，才有了这么一张。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODVhNTQ1ZWRiOGFmMDNlYzhlMGQ2YWJkMzFiZmNiOTlfNTk0NjBjNDc5Yzk3Zjc2MmU4MzlkMWE5MGY2OTM2MzhfSUQ6NzY0MzAzMjUyNzg4MzUwNDYwNl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5365\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5365.JPG)
 
 到达毕棚沟的终点燕子岩，这里是一片非常开阔的高山草甸，周围则是好几座巍峨的雪山。站在好几座雪山脚下，那种感觉无法言说，就感觉从来没有这么近距离去看雪山。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDZiNzllZGU2NzE3Yjc2NDMzODg1ZTExODdmYjg4NGNfNTVlY2YwMmVhOTU5ZDFkZTExOGJhNzcyODdiNjVkYzRfSUQ6NzY0MzQ4MDc1MjQ2NTg1NzQ5M18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5439\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5439.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWVhODg0YTJmNTQzYTJmN2JkNzk1ZTg2YTMyZjM4YWJfOWRkZWU5NDVmNzAyM2QzMzRkMWJmYmEyYjYyNjI5ZTFfSUQ6NzY0MzQ3OTMzMTg4NDMyMTczNF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5391\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5391.JPG)
 
 有趣的一点是，四姑娘山景区，其实就是在这几座雪山的另一边。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzJmMGUzNjM1NGZjNDM3NjgyNTM4MDcyMzU4NWY3M2FfNzgyYTg3N2U5ZmIwNTFkODlhOThkM2JhMGFlZDkzNmZfSUQ6NzY0MzQ3OTEyODE0NjE4NTE4M18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5411\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5411.JPG)
 
 
 
 走到末端爬上一个观景台，视野更为开阔起来了。居高临下看去，下方雪地上的人影都缩得小小的，可见这块区域还是挺大的。从人数上来说，还不少，但被巨大的空间稀释后，依然维持在一个颇为舒适的区间，让人能清静地享受这片天地。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTkwN2JjYTkzNzllOTdmMjkxNjE0NjY2M2M5YzdiYzNfMTFhZjFhMjhlN2JlNWM1MWIxMWE1NmJkMmZlYWEyYjhfSUQ6NzY0MzQ3NzI5MzMyMjU1NDM0MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5418\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5418.JPG)
 
 在这块天地呆了挺久的，和雪山也自拍了不少照片，属实把挺久之前买的自拍杆，在这次都狠狠地用起来了。
 
@@ -508,13 +508,13 @@
 
 尝了口梨子还挺甜的，也就来了两个，有点小贵。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDJkZDBhNjg5ODE0Yzk2ZGI2MzllN2JhMDZlMWE2NTlfMTU3Y2U5MTk1NzdjYTAyNTE0OThkOWY2NzZmMzA1MmVfSUQ6NzY0MzQ4MTI5ODg4NzI5ODIzOV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260220\_160856\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260220_160856.jpg)
 
 到达都江堰已经快八点了，本打算找家靠谱的川菜馆吃一顿好的。无奈正值高峰，店里全是人，根本没有空座。
 
 折腾了一圈，最后只能返回酒店，直接在楼下的餐馆解决。简单点了一个盐菜回锅肉和一盘炒青菜，肉质有些偏肥，但好在整体口味还算不错。就这么两道家常炒菜，算是这几天来吃的最好的一餐了吧。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODJhNjdiMDdkYzk2ZTdlMGUwOTY2ZDY5ZDkyNTAwMjNfZDI3OTRmYTU2YTVmYmU2ODNkMDI4MTNkYTRlZGIyNWZfSUQ6NzY0MDg4NDA2MTM4MDE2ODY1NF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260220\_200440\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260220_200440.jpg)
 
 # 都江堰
 
@@ -522,9 +522,9 @@
 
 整个系统完全是利用自然地形和流体力学来达到治水目的。站在江心，可以清晰地看到内外江分流的设计。目前正值枯水期，水位较低，水流自然更多地流向外江；而一旦到了丰水期，暴涨的江水则会自动向内江与外江进行动态分流。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWQ4NzA1NDA4N2ZmNjkyOGRkNGVlYzA1YWU3M2U2ZjZfNmNmYmU4MThkMDExZDBjZTQwZWU5NmNiMTQ0YjkyNmNfSUQ6NzY0ODY2Mjg5MTg2NDA1MDY0OV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5484\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5484.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTA1OGE5NTRhMThlZGY4YTJmYjFmZmVjNTc4NmUxYjZfNmM2M2FlNDM0OTc3YmRmMTE2Mzk5MmMxZTk2M2M1ZGNfSUQ6NzY0ODY2Mjc4OTE5NTc0NjI2NV8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5488\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5488.JPG)
 
 没想到这么早赶来，人流依然多得离谱，成了这几天行程里最拥挤的一个景点，毕竟在成都市区，价格也不贵吧。光是过一座索桥，就在人潮里生生排了半个多小时。
 
@@ -534,9 +534,9 @@
 
 在酒店附近找了个黑豆花火锅，算是当地一种特色了吧。黑豆花配上蘸水味道绝了，酱料辣味很足、非常过瘾，而且价格极其实惠，团购只需 40 元。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODA5YWYzYjdiMzM4ODAzZGE0ZDBkODY2NGIyMGZmYzJfYmU0NDE4ODk1MWViNmU0YWQ2MmU4MTUwMzk4OGFlMjZfSUQ6NzY0MDg4NjE0OTQ0MzA3OTM2OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260221\_121613\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260221_121613.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2UxMzNiZDNjZDRjNjI0ZDZiY2U2NmQ2MDk4N2U1ODlfYzIzOTMyNzM2M2VhOTBkYjMzNjg3NjIyZTQ4YmU1NWZfSUQ6NzY0MDg4NjE0Nzg0OTQ1NjgyOV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260221\_122308\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260221_122308.jpg)
 
 吃完又去干了碗鸡蛋红糖醪糟，还挺普通的，和在深圳吃的没啥区别。
 
@@ -548,11 +548,11 @@
 
 来到四川，才知道所谓的红油是怎么个回事，之前只是一味觉得，红油有什么好吃的，那么油，可谓是见识浅薄了！
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2E5ZTFiNDI3NDMyNDU5YjQ1MTkwY2Y1YjBhZDk4YmFfNGNhNWEzMDJmMGY0ZDA3ZDMzNmY5NGYxZTIzNzg3YzZfSUQ6NzY1MTE0Mzc3NTExMjMwMTU1Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614150459\_58\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614150459_58_163.jpg)
 
 晚上打算去成都市区转转，便去了春熙路。结果来回走了两圈，好像也没有太特别的，甚至有点无聊。无非就是一些商圈打卡地标，比如爬墙熊猫、裸眼 3D 熊猫之类。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWMzNTE2YTU5MDZkYzViZjM0ODA0N2Y0ODUwYzIyNDZfNDBlYTg4OTQyNzNjY2FkZWM0MDIyNGJiMTMwZTA3YzhfSUQ6NzY1MTE0NDQ4MjQyMzA0OTE4OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614150622\_61\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614150622_61_163.jpg)
 
 倒是发现旁边有一辆观光车，大概会沿着成都几个比较出名的景点绕一圈，顺便看看夜景。票价倒是不贵，才 19\.9 元。可整体坐下来，并没有达到我的预期，甚至还是有点无聊。所谓夜景，无非也是人很多、灯很多、车很多。或许还真不如自己 city walk 来得好玩。
 
@@ -560,9 +560,9 @@
 
 转了一圈下来，也九点多了，肚子有点饿，便去吃了碗肥肠粉，味道特别不错！吃得还有点不过瘾，又额外加了份肥肠。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGY1Y2ZmYzJiZGE3MTc4ZGNhOTI0MTVlZjZhOGQzMDVfMjg5ZmIzYmY5YTQ4MzViZjNmNWYxM2E0ZmZmOTU5NDBfSUQ6NzY1MTE0NDExMzgwNjY1ODc4MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614150624\_63\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614150624_63_163.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2M1ZjFkNGNjZjVlZWM2ZmY4NzMwODFkZjEyZWYzYWZfOGYwY2U2YzlhOTg3NGQ4ZmQ2NDIxNTdkZmVkYWEwMGJfSUQ6NzY1MTE0NDExNzQzMDQ1NTUxM18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614150623\_62\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614150623_62_163.jpg)
 
 回到酒店已经十点了，洗个澡准备睡觉。结果暴击我的来了，是酒店的花洒特别脏，不知道多久没更换和清洗了，上面全是黑乎乎的水垢，看得我当场有点退缩。
 
@@ -582,9 +582,9 @@
 
 这种伤害，不大，但很精准。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2M5Yjk1MjkwOTA5NGIxOTAxOWRlZTM4YzlhNTVhMmFfOGFiYTgzNzI1ODZhN2Q1YmMyZmVmNzFhYmI3YzJhNGZfSUQ6NzY1MTE0NjA4NzQ0MDY5ODMxMF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614151333\_64\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614151333_64_163.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjBhZTU3NzY5YWFjM2JmNjQyNjc4ZWIyMzg4NTFjMGZfNmU0MWI2MGU0ZjZkMDkxMjRkZjY0ZDQ3YjExZTM1YmJfSUQ6NzY1MTE0NjA4OTk0MDI0MTYxOF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614151334\_65\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614151334_65_163.jpg)
 
 依旧是团了个人工讲解。武侯祠本身不算大，半个多小时就已经讲解完了，之后便随处晃悠。
 
@@ -596,15 +596,15 @@
 
 虽然武侯祠里面也设了刘备、张飞等人的庙堂，但逛下来会发现，真正有人气的还是诸葛亮和关羽。其他人物不是不重要，只是放在景区里，多少有点像陪衬，更多是为了把武侯祠这个地方撑得更丰满一些。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGY2ZjU4MmRhZjIzODVjMjRiZTI3ODE2YTU5ODE4OGFfNjIzOWM0MWE4ODkwMTQ5ZmI4MjBjZDc0YTkwOGU0OTFfSUQ6NzY1MTE1MDc1NDkzODk5Nzk2Ml8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614152919\_69\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614152919_69_163.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzkyM2FhMjYwM2VkNGM3Y2YyMzIzYTJlMjJmZmQyMmNfNWMxYmY0MGY0ZmJiNTM5Y2ZiYWM5OTdmY2FhODAyY2RfSUQ6NzY1MTE1MDc0MTM4NTU3OTc0OF8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![微信图片\_20260614152916\_66\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614152916_66_163.jpg)
 
 这一片红墙也是一个打卡点，红墙配翠竹，颜色冲击确实很好看。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzNhZDk4ZWNmMDVkZTM5NTQyM2I0OTA4MTgxNWJiMDhfNzYyMzA1YmJiM2RiYjVmZjk0ZDQ2ZGIyN2I4MTJhMDFfSUQ6NzY1MTE1MDgzNTEyODMwNjY0MV8xNzgxNDUwNzYwOjE3ODE1MzcxNjBfVjM)
+![微信图片\_20260614152918\_68\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614152918_68_163.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjZiOTc3ZWFkMjU4YjY4YmZmN2FmZGVjNWE2YTQ1YmRfYjQ1MjAxYTVlODFlNTNjM2FlYmQxOWNjMzYzYTUxMzNfSUQ6NzY1MTE1MTQ1MTc0MTQ0MDk5MF8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![微信图片\_20260614153500\_71\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614153500_71_163.jpg)
 
 才一个小时，我就从武侯祠出来了。
 
@@ -612,9 +612,9 @@
 
 倒是买了份三大炮，糯叽叽的团子裹着黄豆粉，再浇上一层红糖汁，吃起来香甜软糯，不黏牙，意外之喜。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGVhZThlMzQ5NWJlNThkODRhMjcwYmM0NTM0OTFmZWJfZDEwYmViOGViMDQxMWMxMTAxZTgyYjRkNzgwNDEwNjNfSUQ6NzY1MTE1NTQ2MDc1Nzg1MTEwNF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614154914\_72\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614154914_72_163.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2Q4MzFlZTRkODdjZjhhM2M5NjgyNzg1ZTBkMzEwZTVfMTRhY2ZhNzA0MTljYTQ4OTljZDdjY2Q5YTVlMWZlMGJfSUQ6NzY1MTE1NjA5MzAyMTM5MTgzOV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![微信图片\_20260614155300\_73\_163\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260614155300_73_163.jpg)
 
 没走多久，就从锦里出来了。时间还早，也不急着吃饭，便直接前往杜甫草堂。
 
@@ -630,9 +630,9 @@
 
 这座被几种颜色的花簇拥着的小塔还挺好看的呢！
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDY2NjZlZDM0MTE5Y2I5ZTIwZTU3OGVjZDI2OTMzYzJfNzI1ZjU4MjZjODM3NGY5ZTQyZGQ4NDgwYzZiZjdhOTBfSUQ6NzY1MTE1ODIxMDkyOTQ0NjA2N18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5559\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5559.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTU2MDk3MTBhN2RmZmJlOWJjOTY1OGJhMDBiNTcyOThfMWZhZTg5YzhlODFlNjU2NDljNjM4Mzk2NTg3ZTViOTFfSUQ6NzY1MTE1ODU0MjQ3NjU0NDk4Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5574\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5574.JPG)
 
 走着走着，来到了一块盆栽园。
 
@@ -640,19 +640,19 @@
 
 这地方一下子把我的兴趣拉了回来。相比前面那些讲解和庙堂，我反而更愿意在这里多停留一会，慢慢找角度，拍拍这些花草和果子。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDBkYjA0NTRjODkyYmE0NThmZTkzYWIzZTYyMWFkYWJfNzQ5ODIzNWZhMzYwOTc4YTg3YjBmZDQ0MDEwYzdjMzBfSUQ6NzY1MTE2MDcxMjg4MjA4MDczMV8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5582\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5582.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmUwMTVmYzNlMTNiMjlkZDhjYzk5NTJjMmQ0MDAzNGZfY2M2ZDk1MjkyYjM5NDBiOGIzNGE5MWI4NmU2ZmQ1MDZfSUQ6NzY1MTE2MDczNzUxMjc1NDM1NV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5583\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5583.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2Y2MjM3OTlmMTA1ZGRlOWNhOTIyNzY4NzFlMGZjZTlfZWQ2MTlmNDZjYzkyN2Y3ZjZlNGJhMGU3ZmRlMDZkZjVfSUQ6NzY1MTE2MTI0NTcyNjY1Nzc0NV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5605\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5605.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjhhY2ExYWMyNjdiNGZjMWZiOGNjN2UwODNhOTAwNDFfZWQyZTQwYmJhMGI4YTkyMGRmOTkxMmZkY2QwYjViMDhfSUQ6NzY1MTE2MTI2NzUyMDAxNTMyMV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5607\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5607.JPG)
 
 在盆栽园里，还偶遇了一位老法师正在拍蜜蜂，我也跟着凑过去拍了几张。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjEwZjJlZGUyMWU0Mjc4MzdkOTBmNWJiMTdmZGRhM2FfNDEzMjdiNTg5ZjhiYmE4MzE5MGE5YWE4M2IyOGRkYmVfSUQ6NzY1MTE2MjI4MDc0NjM3MjAzOF8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5615\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5615.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzdhNzI1MWIzMzkyMzE2ZmQzYTU3ZWIxYmJkMTIzYWFfODEyNDljYTRiYTgyYmJlNzczODliOWNmMDM1OGNjMDFfSUQ6NzY1MTE2MjYwODM1OTUwODk1MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5619\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5619.JPG)
 
 更有意思的是，后来看到他举着相机认真拍照，旁边的阿姨则站在花前，像模像样地配合他摆姿势。两个人没有什么夸张的亲密举动，只是一个负责拍，一个负责被拍，却莫名有种很自然的恩爱感。
 
@@ -660,33 +660,33 @@
 
 照片背后的陪伴感，比照片本身还要动人。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGJmOTRiMDZmZTgyYmQ5ZjJiNDAzMGFlNDE3OTk1OGFfZDk3OGE5ODAyZTc4NWI3ODNjYWQxZWQ4YmM2NGY4ZWRfSUQ6NzY1MTE2MTUwOTcwOTIzNzE3Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5618\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5618.JPG)
 
 转到一座小亭子，池塘里有很多小鲤鱼。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjY4MWE2Y2Y0ZWI1MjRhZDU1NTRjMDY2ZjZkMTY0YzlfZDQ2MWI5NjNlODlhMTk4NzczZGJlZTg1YmY4NzhmZmNfSUQ6NzY1MTE2NjY1ODY5ODA3MDk5OF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5627\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5627.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTFmNWU3ZjI1YmQwMTU2N2Q4MTJlZDRhY2FhZjkwYjdfMjFmMmIxZGEyMWI3MzZiMDk3OWFiMGEyMjE2ODRlZDZfSUQ6NzY1MTE2NjIyMzkwMzk1MjA3MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5634\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5634.JPG)
 
 这座园子里，廊子里摆放着不少艺术盆栽，可惜光线有点暗，拍出的效果不咋地。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWYwYzFkNjcyZGJlMTZkNGI2ZWUxNWUyODFmZmFhZDBfM2M4MjVjNTFjZDU1NzNjNmVjMmI5OGQzODYyMzNiODRfSUQ6NzY1MTE2NjQzMTc2MzAwODQ4MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5643\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5643.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Mjg5ZDZmMDA0Y2Q0MTZjMjI2MTU4Njc2NWYyNGYzOTBfMjkyNGMwMDc0ZmZlMTBkZWY2YjAxOGQ3YTI2OTg0MjVfSUQ6NzY1MTE2NzU4MDgwMzUwMTI5OV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5653\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5653.JPG)
 
 偶遇到一个小姐姐在拍汉服写真，服饰还是很有感觉的。这种我的想象是，在江南烟雨中，石板路，撑把油纸伞的那种感觉，或许杜甫草堂那边也挺合适，有池塘、有石板路、有茅草屋、有竹林，雨天会很有感觉吧。
 
 后面遇到一个楼还挺有视觉冲击力。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWE0ZmYwNzQ1MDYzYmFkYWEzOWMxYTdkYjMyNDg2ZWFfNDY5NDFkYTY5OTkxYzEwMjRkZTVhOTcyNmNkOTVhZjdfSUQ6NzY1MTE2NzIxMTU1Nzg1MDA3M18xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5661\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5661.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTA5OWIzM2M5ZTBiYzNiYmMwYTg5NzdhMmNmNTIxYTZfNDBlZDhjNTU0MjFlOTFhOGMyMDBmOGU1MDA0Y2Q1NDdfSUQ6NzY1MTE2NzA3NDIxNTM2NTYwMV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5674\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5674.JPG)
 
 从杜甫草堂出来，沿着旁边的浣花溪公园走了一段。这会梅花开得正艳，据说是宫粉梅，一片一片的特别吸引人，可惜拍不出来那种感觉，而特写拍起来效果还不错。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmYxYzk0MTQzMGEwYmQ2OTBiMjkzMzVjODUwOGNkODlfMGIxNDY1OTE1Y2NhN2M5OTQ4YzZiNjQ5MTFkMmMxYzZfSUQ6NzY1MTE2OTE4MzEzNjUwMDkzNl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5682\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5682.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWEzYmE4OGQxODI2YTk0MjJjN2Y2MjIwYzdjMzI4NjBfYWViNWNhODY0Y2NlYWU4NmExMjAyMjUxNTA5ZjUwNmFfSUQ6NzY1MTE2OTIwMTYyMDgzMTQ2MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5683\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5683.JPG)
 
 逛完也差不多到了饭点，便继续以成都特色美食为目标找吃的。刚好附近有一家老妈蹄花，距离不远，直接步行过去。
 
@@ -696,13 +696,15 @@
 
 额外点了个兔头试试，上桌后先观摩了一番，看起来有点丑。平时我本来就不太喜欢吃动物头，包括鸭头、鱼头啥的，但试了下兔头确实还很不错，主要是兔头的咬肌很发达，特别好吃。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2Q2NWU2MjU5YWEyYjJmY2IzNjg2NzIyNTUyY2RjMGNfMmEyZmVlNjhkNjMwMTk1ZmYzZWM4N2ZkYTg2ODU3MTJfSUQ6NzY1MTIyNTg3NDQ5NDE4MDMxNl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260222\_134122\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260222_134122.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzRlMDIyYjQyMGRlZDNlOTRjNGM0Mzg4YmI3N2FmMTdfNjc2MDBlNGRmN2ViNmM5ZmE2Yzk2MDE0MjBhODE4MmJfSUQ6NzY1MTIyNTkxNTExMzYwNjA5NF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260222\_134244\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260222_134244.jpg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdhODNiZDBlZWEwM2EwZWI4MmZlOGE2NjFlNjJkNzJfZTUzNTVhZWMxNDM0NWVlYzM5OTM2MDQ4ODg2NDUyNTNfSUQ6NzY1MTIyNjMwODEwMTQxMDAyN18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![MVIMG\_20260222\_135235\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260222_135235.jpg)
 
 吃完，时间还早，距离下午前往自贡的高铁还有一段空档。之前本来有意向去人民公园喝喝茶的，但算了算时间又不太够，便退而求其次，选了离我最近的望江楼公园。也能喝茶，但喝不喝得上就看天意了。
+
+今天地铁上人还是很少，看来和深圳差别真的挺大。
 
 下地铁，还得沿着江边步行一段。刚出站没多久，就看到江边围了不少老法师，长枪短炮都架起来了。凑过去一看，原来是在拍江上的苍鹭。
 
@@ -710,29 +712,89 @@
 
 当然这是苍鹭，也是后来才知道的，习性所在，但也成了人们观赏的一种乐趣所在。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjQ4NjczOGE3MzhmYzg5MjIwZDZlODFmZGIwYTg5NzJfYjM2YzhiNmMwZjk1NDY0OThlMGFlMTk3MTdkYzJkYWVfSUQ6NzY1MTIzMzM0MjE3NTY5Mzc3MV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5748\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5748.JPG)
 
 刚好还拍到两只白鹭抢吃的。前一秒画面还很安静，一瞬间另一只白鹭就冲进了画面，结果是没抢到的，倒是让我抓到了一张不错的动态瞬间。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2E5MzEzMTkxMjU1MmRiODkxMjk2ZmM0ZWQwNWEyNTVfNWU4OWU0NDc3YTU1ODEzM2Y3MmM5NWY0OTI4MjVmMzVfSUQ6NzY1MTIzMzAyNjgwMjAyNzczMl8xNzgxNDUwNzYyOjE3ODE1MzcxNjJfVjM)
+![DSC\_5711\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5711.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjlkZjA4ZjRmZjA2NmU5YWEzNmZlYzA4YWRiMjFkODRfOWUwZTE1ZTQzNGU3YzNlYjM2MTQ0YmYwNmQwZTY5YTdfSUQ6NzY1MTIzMzA0NzYzOTQ3NzQ1NV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5712\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5712.JPG)
 
 转头一看，才发现这里原来是川大的门口。原本只是去另外一个目的地，没想到顺手又路过了一个地标，也算是一个随机小彩蛋了。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YThmNTUzZjRkYTZlZDlkYzQyMjA3YTZlYmNlNjgzMzFfNWQ1OGU1NzBiYjIzNGI4YTYzZWI0NzdmNWEzNTAyY2ZfSUQ6NzY1MTIzMzE0NDc4MzM0MjU3NV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5725\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5725.JPG)
 
 ## 大熊猫繁育基地
 
-大熊猫，值得一看，园区特别大，时间不够了，没有全部游览完毕，如果时间充足肯定得看完的，值得多留点时间逛逛，虽然熊猫都大差不差，但是感觉还是有新鲜一点的东西没逛到
+![DSC\_5895\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5895.JPG)
 
-因为下午要赶着去看三星堆
+![DSC\_5935\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5935.JPG)
+
+![DSC\_5939\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5939.JPG)
+
+![DSC\_5986\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5986.JPG)
+
+![DSC\_5999\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5999.JPG)
+
+大熊猫确实很值得一看，不过园区特别大。这次因为时间不够，没有都逛一遍过去。如果时间充足，是值得多留点时间逛逛的。虽然熊猫看起来都大差不差，但是感觉还是有些新鲜一点的地方没逛到，比如在月亮产房就没看到熊猫。
+
+没办法，因为下午赶着要去广汉看三星堆，只能先撤了。
+
+## 吃吃吃
+
+从广汉三星堆回来，美团上点了份自贡小煎鸡，本来也没有报太多的期待，没想到巨好吃。鸡肉煎得很焦香，麻辣味很足，非常够味，不经感叹花椒就得这样用！
+
+另外一个更超出预期的，居然是凉拌豆干丝，本来是点另外一个品，但是没有了，店家帮我换的，没想到特别好吃。这种豆干有一种特殊的香味，但我也不知道是什么。其实我还另外点了份冷吃豆干，不入味，一点也不好吃。
+
+![MVIMG\_20260223\_223501\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260223_223501.jpg)
+
+![MVIMG\_20260223\_225742\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260223_225742.jpg)
+
+还有个一般点的就是甜水面了，面条很粗，面本身硬度适中，略有点弹牙，酱料是红油芝麻甜口的，吃不太惯。
+
+赖汤圆，也比较一般，和普通的汤圆差不多，就是个头比较大，里面黑芝麻很足，一口下去很满足。
+
+![MVIMG\_20260224\_103909\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_103909.jpg)
+
+![MVIMG\_20260224\_103934\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_103934.jpg)
+
+最后一天是回程日了，高铁是下午三点的。上午还有一些时间可以去成都的市场逛逛，找找本地小吃，带点回深圳。
+
+乐山甜皮鸭
+
+![MVIMG\_20260224\_124243\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_124243.jpg)
+
+米老鼠，巨香巨好吃！
+
+![MVIMG\_20260224\_121442\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_121442.jpg)
+
+![MVIMG\_20260224\_121817\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_121817.jpg)
+
+![MVIMG\_20260224\_121436\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_121436.jpg)
+
+![MVIMG\_20260224\_123556\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260224_123556.jpg)
 
 # 三星堆
 
+三星堆的人工讲解很难约，如图所示，排了个特别长的长龙，扭头就租了个电子讲解器。
+
+![MVIMG\_20260223\_165057\.jpg](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/MVIMG_20260223_165057.jpg)
+
 还是小红书姐妹文化水平高，说实话我没有那么多共鸣，人很多，大多数人只是匆匆忙忙拍个照打个卡，其背后的文化底蕴有多少人又是真正地在感受和关心呢？
 
+真不知道是因为没有走人工讲解，还真就是自己的问题，我想大概率还是自己的原因吧。
+
 从此宣布，对博物馆啥的实在提不起来什么兴趣，也没必要去装文化人。
+
+![DSC\_6046\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_6046.JPG)
+
+![DSC\_6070\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_6070.JPG)
+
+![DSC\_6077\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_6077.JPG)
+
+![DSC\_6111\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_6111.JPG)
+
+整体看完也快八点了，坐旅游大巴回成都，在春熙路下车，转了圈没找到什么好吃的，就先回酒店了。
 
 # 自贡灯会
 
@@ -744,11 +806,11 @@
 
 刚进景区时，站在门口往里面望去，第一感觉就是特别大。大片灯组一路铺开，光线从近处延伸到远处，整个视野都被各种颜色填满，确实有一种误入天宫的感觉。也难怪自贡灯会能被称作天下第一灯，这个规模和声势，还是相当震撼的。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGRjNjUxYTRiM2U0ODRlZjA4NzBkMTUzYmRjYTAyN2FfMDY0NjcxZWQzMmVlMzQwYWEwMTY2NzNmZmZjNDVkZGRfSUQ6NzY1MTI0MDA4MjA5OTQ3MzYxM18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5758\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5758.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDg5NzdmNTFmZmQyZDM4YjAzNjU2Zjc0NDRjMWY5YTBfMTJlYmE5NzEwZDdlNTIxZDNlNGYwMTY0ZTk3OTFjMjdfSUQ6NzY1MTI0MDI2OTU4OTIyMDUzMV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5766\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5766.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWZkMGIwNmZlNzE3NGVkMjVhMmI1ZjQwYTQ0ZjZhMzlfMzlmODU1NjZiOWU4M2I2ZDQyNWY0YWY2ZGQ2ZWVhZGVfSUQ6NzY1MTI0MjQyMzM4MDY0MzA1M18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5830\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5830.JPG)
 
 最让我惊艳的，是这个花木兰灯组。她的眼睛会眨，头也会缓缓转动，相比前面看到的其他灯组，这个人物的脸部细腻太多了，没有内部线条，据说是有用到一种特殊的技术，像是一个被放大到巨型尺度的精致手办。站在下面看，很有压迫感。
 
@@ -756,21 +818,21 @@
 
 于是这场灯会最后给我的感觉很复杂：它确实震撼，也确实好看，但我好像很多时候是被人流推着走。更多像是那些灯光从我的时间里匆匆掠过，而不是我去细细体会它们营造的时光。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjE4NDQ5OTUyYWNlMTE4ODlhZGQ0MWEyZTZkZTE0OGRfZWRlNWJiMDc3YzU0ZTdiMDliMDVmYjYwYTUwYWYxOGRfSUQ6NzY1MTI0MDg5NDU4MjI5NTc2OV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5786\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5786.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmU4YmE0MzE2NzMwYzQxZTY2YTA0OTAyYTFjMmIzOWNfOTkwODc1MDIzMDNmZWU1MDExZDRkYzBkZTA2NDFlYzJfSUQ6NzY1MTI0MDU2NzY5NDc4OTg1MF8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5795\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5795.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDE3MWE5OTY4ZDM3NDgzMWZlNDhhMTUxNzcxMjBlMjdfZjM1NDJjNjYwMjlmMzE3MTkwYTkyYjU1Y2IzODI0MTVfSUQ6NzY1MTI0MDk0NDQ5NDM0OTU0N18xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5787\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5787.JPG)
 
 不得不说，视觉冲击感太足了！
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGE0YzZhZDY0M2FkMTc0MTQyYjFkNjZkYTdlZjA3ZjRfOTIxMjcyMTJjODRmMzU2YzY2NzRiNDUwNDcyMjE0MjBfSUQ6NzY1MTI0MTc3MDY1NDY2NTY2Nl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5803\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5803.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzY5NzQzMzBlYjRhNTk1ZDdhNmI5OTQ2NTNkNTUwMGNfZDdlMzMzN2JlY2M0MWE3NTg1MGUwNWFkNDE4MDk0ODdfSUQ6NzY1MTI0MTg2OTU4NjE4OTUwMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5815\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5815.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2I4MWE2OWRiNDYwMjA4MzZkZDExNzZmNWQ2NmRhMmNfOThmYWEzYTUzOGE0MmU3MTE1MTNiYWUwYTQ0YjI4N2ZfSUQ6NzY1MTI0MjI1MTQzOTU1NzU4OV8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5826\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5826.JPG)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmM3YWYwZmM1M2JkOWI0MmNjOGM3MDYzM2Q5MTg3NjZfYjhmYTcwZjc1Mzg2ZTIzMzlhYmZhZmZmOGQ3NzRmZDZfSUQ6NzY1MTI0Mjc4NjQ2NTM4NTcxMl8xNzgxNDUwNzYxOjE3ODE1MzcxNjFfVjM)
+![DSC\_5842\.JPG](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_5842.JPG)
 
 时间实在太匆忙，景区也没来得及完整逛完。原本还想着看完灯会后，顺便去吃点自贡美食，比如自贡蘸水。没想到时间根本不够！！！再加上已经太晚，很多店都关门了，最后只能带着一点遗憾赶回成都。
 
