@@ -29,7 +29,7 @@ jobs:
         id: 161758056
         type: book
         format: csv
-        dir: ./data/douban
+        dir: ./assets/data/douban
 
     # - name: movie
     #   uses: lizheming/doumark-action@master
@@ -37,13 +37,13 @@ jobs:
     #     id: 161758056
     #     type: movie
     #     format: csv
-    #     dir: ./data/douban
+    #     dir: ./assets/data/douban
   
     - name: Commit
       uses: EndBug/add-and-commit@v8
       with:
         message: 'chore: update douban data'
-        add: './data/douban'
+        add: './assets/data/douban'
 ```
 
 ## 添加阅读页面
