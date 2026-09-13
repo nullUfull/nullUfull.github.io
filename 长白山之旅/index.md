@@ -13,7 +13,7 @@
 ## 长春
 透过舷窗俯瞰，松辽平原很是一番辽阔，视线里完全没有山峦起伏的遮挡。地面的农田如同条形码，颜色深浅各异，长短不一。有的色带笔直延伸了几公里，也有大片黄色的几何色块。这种整齐划一的线条铺满了整个视线。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260111000227_26_163.jpg">
+<img src="/images/微信图片_20260111000227_26_163.webp">
 
 今晚住在这有山商场对面的酒店。好久订酒店没被这么坑过了，完全是买家秀和卖家秀的差别，房型都对不上。和商家沟通换了一间，虽然房型一样但实际上与网图相差甚远。
 
@@ -21,14 +21,14 @@
 
 放下行李，在附近找了家东北菜馆。在美团上买了个公鸡排骨锅的套餐，价格很便宜只需90，额外点了一份锅包肉，锅包肉倒是挺正宗的，外酥里嫩。铁锅炖的整体口味倒是一般，鸡肉和排骨很柴，反而土豆、豆角这些配菜更入味。菜的分量出乎意料的大，勉强也没能吃完，肉剩了不少。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260111002250_27_163.jpg">
+<img src="/images/微信图片_20260111002250_27_163.webp">
 
 
 ### 54号有轨列车
 
 饭后去了54号轨道列车站，这里主打复古风情，很多人在这里拍照，不过目前的实景和小红书上的照片有些差距。路边的树叶还绿着，轨道上零落一些落叶，但是各式老式列车还挺出片的。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1757.JPG">
+<img src="/images/DSC_1757.webp">
 
 好久没碰相机，上次她带去阳朔之后，不知道调了哪些设置，这次一拿起来就发现对焦出了问题，拍出来的人像几乎全部虚焦。折腾了半天也没弄好，人有点麻了，最后只能重置所有相机设置。虽然总算恢复正常，但之前调好的个人偏好和云创滤镜都得重新设置，有点麻烦。
 
@@ -44,7 +44,7 @@
 
 总结下来，感觉还是不如传统的炭火烧烤好吃，烧烤还是要那种烟熏火燎的辣才过瘾。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260111002854_4415_2.jpg">
+<img src="/images/微信图片_20260111002854_4415_2.webp">
 
 ### 东北早市
 
@@ -54,13 +54,13 @@
 
 奔着啥都尝尝的原则从各个小店凑起了这么一大桌，最后发现，东北的早市不仅能填饱肚子，更能让南方人体验东北生活的那种新鲜感。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260111002558_28_163.jpg">
+<img src="/images/微信图片_20260111002558_28_163.webp">
 
 ### 伪满皇宫旧址
 
 逛完早市就直奔伪满皇宫旧址。说实话，这里并没有什么好玩的，更多的是一种沉浸式的历史课。长长见识，看看人家百年前的建筑以及办公室长啥样。不出意外，整体装修风格相当气派，不由得感叹：人家一百年前的住宅都比咱们二十一世纪老百姓的狗窝要好太多了。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1793.JPG">
+<img src="/images/DSC_1793.webp">
 
 溜达完以后，因为最近听说高德整了个扫街榜，根据用户行为来排名，会相对比较真实，这回就实践一下，就近找了家馆子。
 
@@ -76,15 +76,15 @@
 
 天气好的不像话，这是净月潭的经典机位。蓝天、碧水、白塔，画面干净得不需要任何滤镜。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1815.JPG">
+<img src="/images/DSC_1815.webp">
 
 午后的阳光透过树梢洒下来，但位置很高，仅存的这一缕阳光，还是没能蹭到脸上来。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1841.JPG">
+<img src="/images/DSC_1841.webp">
 
 最值得的是瓦萨博物馆站的这个站点，在这里呆了很久，出了不少片。出片的地方并不是博物馆，而是这一栋欧式风格的小楼，很有城堡的感觉，特别搭这一身皮衣，随手一拍就很出片。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1865.JPG">
+<img src="/images/DSC_1865.webp">
 
 在净月潭并没有特意赶路，就是走走停停。虽然昨天长春的风很冷，但这里的阳光却又把人晒暖了。
 
@@ -100,20 +100,20 @@
 
 当出租车拐进主干道，就被眼前的景象惊艳了，漫天铺陈的彩色天幕。这座小镇简直太懂什么是“旅游情绪价值”了，来之前做攻略就有所听闻二道白河镇的不少好评，没想到一上来就给了个很不错的印象。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1937.JPG
+<img src="/images/DSC_1937.webp
 ">
 
 放下行李后，我们决定下楼转转，找点吃的。
 
 此时已是晚上九点多，楼下的商业街叫“云顶市集”。因为过了国庆高峰期，街上稀疏几个人影，很安静。街上灯光效果很不错，没有路人抢机位，整条街仿佛被我们包场了，久违地体会到了所谓“小众旅行”的快乐。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260111170557_30_163.jpg">
+<img src="/images/微信图片_20260111170557_30_163.webp">
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_1987.JPG">
+<img src="/images/DSC_1987.webp">
 
 我们在街边的布景里拍了不少照片。看着这句“人生小满胜万全”，还念叨了几句，心情很是舒畅。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/微信图片_20260111171652_4440_2.jpg">
+<img src="/images/微信图片_20260111171652_4440_2.webp">
 
 逛了一圈，店铺基本上都关门了，找了家麻辣烫凑合了一顿，就回房休息了。
 
@@ -135,51 +135,51 @@
 
 也在这里留了张影。阳光挺晒，但一阵风吹来还是有点冷，脚下也冒着热气，空气里还有硫磺味，体感很奇妙。
 
-![长白山聚龙泉温泉群](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-b4e97abf-a91e-4dc9-94df-22b580c80140.jpg)
+![长白山聚龙泉温泉群](/images/codex-clipboard-b4e97abf-a91e-4dc9-94df-22b580c80140.webp)
 
-![聚龙泉温泉群](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-62236be3-3e89-4d7b-a9fd-e5b018671eea.jpg)
+![聚龙泉温泉群](/images/codex-clipboard-62236be3-3e89-4d7b-a9fd-e5b018671eea.webp)
 
 虽然这时候山上已经很光秃秃的了，没什么浓烈的秋色，但我还挺喜欢这张。黑色的石头、裸露的山体，还有一路往下冲的溪水，有种粗粝的美，颜色层次都挺丰富的。
 
-![长白山北坡溪流](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-66c31011-a38a-47e9-b6c7-d23f6e69b13e.jpg)
+![长白山北坡溪流](/images/codex-clipboard-66c31011-a38a-47e9-b6c7-d23f6e69b13e.webp)
 
 一路上看到的那条溪流，源头就是这里的长白瀑布。瀑布落差挺大，但水量看着不算特别大，周围的山体又比较光秃秃的，所以整体没有给我太多惊喜。
 
-![长白瀑布](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-296753c0-101f-4625-825b-37ac593bd065.jpg)
+![长白瀑布](/images/codex-clipboard-296753c0-101f-4625-825b-37ac593bd065.webp)
 
 看完瀑布往回走了，聚龙泉旁边还有卖温泉鸡蛋的，路过买了一个尝尝。味道还行，主要还是在温泉边吃个鸡蛋，感觉比较特别。
 
-![温泉鸡蛋摊](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-3b986ed8-4670-4911-9d3d-7b38ca881073.jpg)
+![温泉鸡蛋摊](/images/codex-clipboard-3b986ed8-4670-4911-9d3d-7b38ca881073.webp)
 
-![温泉鸡蛋](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-52d610ec-7cf6-4116-8622-40e4e9761bdd.jpg)
+![温泉鸡蛋](/images/codex-clipboard-52d610ec-7cf6-4116-8622-40e4e9761bdd.webp)
 
 路上随手拍了张，阳光还挺好，主打一个随意感。
 
-![长白山北坡溪边随拍](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-0d2e9885-f210-495e-b007-f0488d2c7541.jpg)
+![长白山北坡溪边随拍](/images/codex-clipboard-0d2e9885-f210-495e-b007-f0488d2c7541.webp)
 
 长白山北坡的景点基本都在一条线上，按从上往下的顺序一路玩过去就行。近一点的走路，远一点的搭景区车，不用太费心规划路线。而我们，正在前往小天池和绿渊潭的路上。
 
 所谓的小天池很一般，没有拍照的欲望。之后去了绿渊潭，潭水颜色确实挺绿，旁边还有一小段瀑布，拍出来还行。不过整体规模不大，走一圈看看就差不多了，没有特别惊艳的感觉。
 
-![长白山绿渊潭](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-cc862a26-ceaf-4a88-a037-01368396c9a3.jpg)
+![长白山绿渊潭](/images/codex-clipboard-cc862a26-ceaf-4a88-a037-01368396c9a3.webp)
 
 再往下走，就到了谷底森林。
 
-![长白山谷底森林](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-568f7156-6d12-43ca-ad61-e3b24ae604fc.jpg)
+![长白山谷底森林](/images/codex-clipboard-568f7156-6d12-43ca-ad61-e3b24ae604fc.webp)
 
 其实就是在森林里穿行，看看栈道两旁数百年的树木。偶尔还能看到几只小松鼠，这时就会有好些游客驻足围观。
 
-![长白山谷底森林栈道](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-40fdcf55-a60b-45e4-bd96-5810c9be758f.jpg)
+![长白山谷底森林栈道](/images/codex-clipboard-40fdcf55-a60b-45e4-bd96-5810c9be758f.webp)
 
 走到谷底森林的尽头，能俯瞰到一大片沉在谷底的森林，远处还有连绵的山脉，视野一下就开阔了不少。
 
-![长白山谷底森林远景](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-57b1a9a2-d483-4b44-af7a-43ca6ef7fe56.jpg)
+![长白山谷底森林远景](/images/codex-clipboard-57b1a9a2-d483-4b44-af7a-43ca6ef7fe56.webp)
 
 才下午三点，森林里已经有点遮天蔽日了，光线暗得看起来像是很晚。我们加紧脚步往回走，来回徒步大概一个小时，还是有点距离的。
 
 虽然天池没开，但北坡其他地方也算先走了一遍，明天就只剩再来碰碰运气了。从山上下来，其实天色也还算早，天空还是那么纯净，远处还有一点淡淡的晚霞，心情很愉快。
 
-![图片](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-3574f7e6-3864-4f41-96eb-3aa76284aea4.jpg)
+![图片](/images/codex-clipboard-3574f7e6-3864-4f41-96eb-3aa76284aea4.webp)
 
 晚上又去恩都里转了一圈。整体和其他人造景区差不多，灯光、布景和商业街都比较常规，没有什么特别吸引人的地方，甚至逛着逛着还有些无聊。简单走了一圈后，我们便结束了今天的行程，回酒店休息了。
 
@@ -195,9 +195,9 @@
 
 说真的，光是路上看到的那一片辽阔，就已经让我们很满意了，等待还是值得的。
 
-![长白山北坡山顶留影](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-3f11c168-43ac-4c8f-9855-9a1e69f30135.jpg)
+![长白山北坡山顶留影](/images/codex-clipboard-3f11c168-43ac-4c8f-9855-9a1e69f30135.webp)
 
-![长白山北坡山顶](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_2373.JPG)
+![长白山北坡山顶](/images/DSC_2373.webp)
 
 走到观景台后，终于如愿见到了天池。
 
@@ -205,17 +205,17 @@
 
 天池的湖水颜色其实没有想象中那么特别，真正吸引我的，还是眼前的整体景象。湖水被一圈粗粝的火山口山体围在中间，再加上头顶开阔的天空，单独看哪一部分似乎都还好，但组合在一起，感觉就完全不一样了。
 
-![长白山天池](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_2389.JPG)
+![长白山天池](/images/DSC_2389.webp)
 
 在天池边待了很久，拍了不少照片。山顶的风特别大，吹久了人也有点冷，只能准备下山。
 
 下山的时候，如愿坐到了大巴车的最前排。一路看着车从山里开出来，两边都是林子，虽然已经过了最浓的时候，但还留着些黄绿交杂的秋色，风景也挺不错。
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_2441.JPG)
+![](/images/DSC_2441.webp)
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_2442.JPG)
+![](/images/DSC_2442.webp)
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/DSC_2444.JPG)
+![](/images/DSC_2444.webp)
 
 等坐车回到景区门口，已经下午两点多了。下午还要去露水河景区，时间有点赶，来不及好好吃顿正餐，只能顺路买了份吉林特色炸鸡垫垫肚子。
 
@@ -226,16 +226,16 @@
 
 上船前先套上雨衣、鞋套，又穿好救生衣，看起来全副武装。原本还担心十月漂流会不会有点冷，结果实际很惬意，不冷，也不会弄湿身上。
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-52d72f28-f594-496d-bd03-4d88ece8b8a7-2k.jpg)
+![](/images/codex-clipboard-52d72f28-f594-496d-bd03-4d88ece8b8a7-2k.webp)
 
 全程基本就是在森林里慢慢往下漂，两边都是彩林，黄的、绿的、红的混在一起。本以为没有阳光，景色会没那么好看，没想到依然非常漂亮。坐在船上不用赶路，只管一路看过去，比想象中更舒服。
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-5915c983-056d-4d91-ac40-454ca873fbe4-2k.jpg)
+![](/images/codex-clipboard-5915c983-056d-4d91-ac40-454ca873fbe4-2k.webp)
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-37edef76-a73d-4ca9-8e9d-f43a1d8d7bbf-2k.jpg)
+![](/images/codex-clipboard-37edef76-a73d-4ca9-8e9d-f43a1d8d7bbf-2k.webp)
 
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-ba527550-eedc-47c0-830a-8e82955320e3-2k.jpg)
+![](/images/codex-clipboard-ba527550-eedc-47c0-830a-8e82955320e3-2k.webp)
 
 
 漂流结束时，暮色已经是那种快要落下、却还没完全落下来的感觉了。
@@ -259,31 +259,31 @@
 
 到了胜地桥，我们先被桥两边的秋色吸引了。远处的山林并不是单一的黄色，而是深绿、浅黄、橙红一层层交错着，山脚下的水面又把岸边的颜色映了进去。
 
-![胜地桥旁的五花山与水面](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-80a5ae91-6d37-40cd-bb51-d93a28fdaf86-2k.jpg)
+![胜地桥旁的五花山与水面](/images/codex-clipboard-80a5ae91-6d37-40cd-bb51-d93a28fdaf86-2k.webp)
 
 桥上也有不少游客停下来赏景。她也站在栏杆边拍起了照片，身后的桥从林子里绕了过去。
 
-![胜地桥与林间秋色](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-3ebc9b84-ed48-47c8-9e1d-469483122ff9-2k.jpg)
+![胜地桥与林间秋色](/images/codex-clipboard-3ebc9b84-ed48-47c8-9e1d-469483122ff9-2k.webp)
 
 天上还飘着小雨，远处的山林少了些通透感，近处的红叶却依旧鲜艳。走到一棵红枫前，我们也停下来拍了几张人像。
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-d9046ba1-0876-491c-b6ba-52bd151cbd41-2k.jpg" alt="红枫树下的人像" width="50%">
+<img src="/images/codex-clipboard-d9046ba1-0876-491c-b6ba-52bd151cbd41-2k.webp" alt="红枫树下的人像" width="50%">
 
-<img src="https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-4b211453-e0ef-47dd-92ba-f704f6f29b12-2k.jpg" alt="红叶间的人像" width="50%">
+<img src="/images/codex-clipboard-4b211453-e0ef-47dd-92ba-f704f6f29b12-2k.webp" alt="红叶间的人像" width="50%">
 
 继续往里开，道路两旁的颜色甚至比长白山那边还要丰富，黄、绿、红、橙铺在路的两侧。之前做攻略时看过不少“五花山”的照片，直到沿着这条路往里走，我才对这个名字有了直观的感受。
 
-![华美胜地道路两旁的秋色](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-06ffa451-749e-4298-9940-71634292e2bb-2k.jpg)
+![华美胜地道路两旁的秋色](/images/codex-clipboard-06ffa451-749e-4298-9940-71634292e2bb-2k.webp)
 
 沿路看完秋色后，我们又去了山顶一家酒店的观景台。站在那里确实能远远望见长白山，只是距离太远，再加上阴天，拍出来的效果还是不咋地。
 
-![酒店观景台远眺长白山](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-b9d7744d-d6bd-4ba0-b458-095e888f79ca-2k.jpg)
+![酒店观景台远眺长白山](/images/codex-clipboard-b9d7744d-d6bd-4ba0-b458-095e888f79ca-2k.webp)
 
-![长白山远景](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-484be131-2860-4c0b-b1aa-9f88ec010e55-2k.jpg)
+![长白山远景](/images/codex-clipboard-484be131-2860-4c0b-b1aa-9f88ec010e55-2k.webp)
 
 从观景台下来后还有点时间，我们又折返到途中发现的锦江木屋村。村里的供销社门前停着一排全地形车，身后依旧是层层叠叠的秋色。
 
-![锦江木屋村供销社](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-ee94abeb-9d8c-4af9-9241-7787005a4358-2k.jpg)
+![锦江木屋村供销社](/images/codex-clipboard-ee94abeb-9d8c-4af9-9241-7787005a4358-2k.webp)
 
 最后在村里解决了午饭，虽然那时已经下午三点多了。吃的是饺子，味道还不错。
 
@@ -297,7 +297,7 @@
 
 出发时天还没有完全暗，路上遇到不错的风景，我们还是忍不住找地方停了下来，趁着最后一点天光拍了几张照片。虽然一路都在赶时间，但碰到喜欢的景色就停一停，似乎也成了自驾途中最让人期待的部分。
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-fc6744dc-3b25-4370-8dfa-c2867594615e-2k.jpg)
+![](/images/codex-clipboard-fc6744dc-3b25-4370-8dfa-c2867594615e-2k.webp)
 
 后面还让没怎么开过车的女朋友试着开了一段。刚开始的路况不错，道路大多在林子里穿行，车也不多，她开起来还算顺利。只是越往后路面越有些坑坑洼洼，天色也彻底暗了下来，再加上还要继续赶路，最后便换回了我来开。
 
@@ -318,9 +318,11 @@
 
 我们在岔路口附近停了会儿车，拍了几张照片。
 
-![](https://raw.githubusercontent.com/nullUfull/MyPicBed/main/codex-clipboard-eadf1281-5c2d-4b2f-9cf2-ad49654b8b11-2k.jpg)
+![秋日山谷溪流](/images/codex-clipboard-eadf1281-5c2d-4b2f-9cf2-ad49654b8b11-2k.webp)
 
 还没真正抵达溪谷，沿途的秋色已经让人忍不住停了下来。道路两旁都是层层叠叠的五花山，颜色比前一天在华美胜地看到的还要浓一些。深绿、浅黄和橙红混在一起，即便天气依旧阴沉，也比想象中更加鲜艳。
+
+![秋日山谷溪流](/images/codex-clipboard-eadf1281-5c2d-4b2f-9cf2-ad49654b8b11-2k.webp)
 
 当天仍是阴雨天的感觉，好在暂时没有下雨，游客也很少，周围安安静静的，逛起来很舒服。
 
